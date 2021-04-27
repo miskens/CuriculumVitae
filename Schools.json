@@ -1,0 +1,22 @@
+{
+Schools: [
+    {
+	Name: "Utbildning Nord",
+	Course: "System developer C#.Net 3.5(MCPD Certified)",
+	When: "200904-201009",
+	Desc: "ASP.Net, WCF, Windows Forms, Entity Framework, SQL Server",
+    },
+    {
+	Name: "Lexicon",
+	Course: "Front end Development",
+	When: "201510-201602",
+	Desc: "MVC5, Bootstrap, SCRUM",
+    },
+    {
+	Name: "Campus Mölndal",
+	Course: "Azure (IaaS & PaaS)",
+	When: "202102-202105",
+	Desc: "Azure Infrastructure, Policies, Resources, Kubernetes Services, Backups and Disaster Recovery, Automation, IAM(RBAC) and Monitoring",
+    },
+],
+}
