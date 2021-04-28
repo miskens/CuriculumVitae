@@ -27,7 +27,11 @@
   border-style: solid;
   border-width: 2px;
   border-color: black;
+  border-right: 0;
+  border-left: 0;
   background-color: rgb(241, 241, 241);
+  background-image: linear-gradient(to right, #ffffff, #fcfcff, #f9f9ff, #f5f7ff, #f1f4ff, #f1f4ff, #f1f4ff, #f1f4ff, #f5f7ff, #f9f9ff, #fcfcff, #ffffff);
+  /* background-image: linear-gradient(to right, #ffffff, #fbfbff, #f7f8ff, #f2f4ff, #ecf1ff, #ecf1ff, #ecf1ff, #ecf1ff, #f2f4ff, #f7f8ff, #fbfbff, #ffffff); */
   caret-color: transparent;
 }
 .leftFooter {

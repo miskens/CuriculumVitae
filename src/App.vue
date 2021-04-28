@@ -2,8 +2,8 @@
   <div id="layout">
     <Header title="Mikael Puusaari - Curiculum Vitae" /><br>
     <div class="routerLinks">
-    <router-link to="/">Home</router-link> | 
-    <router-link to="/experiences">Experience</router-link> | 
+    <router-link class="rlink" to="/">Home</router-link> 
+    <router-link class="rlink" to="/experiences">Experience</router-link>
     <!-- <router-link to="/Hobbies">Hobbies/Interest</router-link> | 
     <router-link to="/Education">Education</router-link> |  -->
     <!-- <router-link to="/contact">Contact</router-link> -->
@@ -29,15 +29,37 @@ export default {
 
 <style>
 .routerLinks {
+    
   caret-color: transparent;
 }
+.rlink {
+    background-color:rgb(180, 255, 236, 0.5);
+    margin-right: 1vw;
+    padding: 1rem 2rem 1rem 2rem;
+    list-style-type: none;
+    display: inline;
+    border-radius: 2rem;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-width: 3px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.rlink:hover {
+    border-color:gold;
+    font-weight: 700;
+}
 .mainDiv {
+  overflow: hidden;
+  position: relative;
   min-height: 600px;
   height:auto;
   border-top: 8px double #1C6EA4;
   border-bottom: 3px solid #1C6EA4;
   border-radius: 0px 130px 0px 130px;
   background-image: url("./assets/swirlbckgrndbottom.png");
+  caret-color: transparent;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

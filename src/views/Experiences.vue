@@ -25,21 +25,27 @@ export default {
 
 <style scoped>
 .studiesDiv {
+    position: absolute;
     float:left;
-    /* width: 46vw; */
     width: 49%;
-    background-color: beige;  
+    height: 85%;
+    /* background-color: beige;   */
     border-width: 5px;
+    border-image: linear-gradient(to bottom, red, purple);
     border-style: double;
     border-top: 0;
     border-bottom: 0;
+    top:3vh;
+    right:0;
 }
 .worklifeDiv {
+    position: absolute;
     float:left;
     overflow: auto;
     width: 49%;
-    /* width: 46vw; */
-    background-color: rgb(0, 177, 103);
+    height: 85%;
+    top:3vh;
+    /* background-color: rgb(231, 255, 245); */
 
 }
 </style>
