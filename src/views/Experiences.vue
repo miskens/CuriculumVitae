@@ -1,51 +1,97 @@
 <template>
-    <div class="mainDiv">
-        <div class="studiesDiv">
-            <Studies title="Studies"/>
-        </div>
+    <div class="mainDiv" id="maindiv" >
         <div class="worklifeDiv">
-            <Work title="Work experience"/>
+            <Workplaces title="Work experience" :companies="companies"/>
+        </div>
+        <div class="studiesDiv" ref="study">
+            <Studies title="Studies" :schools="studies" />
         </div>
   </div>
 </template>
 
 <script>
 import Studies from '../components/Experience/Studies.vue'
-import Work from '../components/Experience/Work.vue'
+import Workplaces from '../components/Experience/Workplaces.vue'
 
 export default {
     name: 'Experiences',
     props: {},
     components: {
         Studies,
-        Work
+        Workplaces
+    },
+    data() {
+        return {
+            studies: [],
+            companies: [],
+             mainheight: 0
+        }
+    },
+    methods: {
+        async fetchSchools(){
+        const resp = await fetch ("https://csb1003bffd9e4e9a13.blob.core.windows.net/azapi/Schools.json", {
+            headers: {
+                'Content-type': 'application/json'
+            }
+        })
+        const data = await resp.json()
+
+        return data.school
+        },
+        async fetchCompanies(){
+        const resp = await fetch ("https://csb1003bffd9e4e9a13.blob.core.windows.net/azapi/Companies.json", {
+            headers: {
+                'Content-type': 'application/json'
+            }
+        })
+        const data = await resp.json()
+
+        console.log(data)
+
+        return data.company
+    }
+    },
+    async created() {
+        this.studies = await this.fetchSchools()
+        this.companies = await this.fetchCompanies()
+    },
+    mounted() {
     }
 }
 </script>
 
 <style scoped>
+.mainDiv {
+  resize: both;
+  position:relative;
+  height:auto;
+  overflow-y: hidden;
+}
 .studiesDiv {
-    position: absolute;
+    position: relative;
     float:left;
-    width: 49%;
-    height: 85%;
-    /* background-color: beige;   */
-    border-width: 5px;
-    border-image: linear-gradient(to bottom, red, purple);
+    padding-top: 4vh;
+    padding-left: 1vw;
+    width: 48%;
+    height: auto;
+    /* border-width: 5px;
+    border-color: cadetblue;
     border-style: double;
     border-top: 0;
     border-bottom: 0;
+    border-right: 0; */
     top:3vh;
     right:0;
 }
 .worklifeDiv {
-    position: absolute;
+    position: relative;
     float:left;
-    overflow: auto;
-    width: 49%;
-    height: 85%;
+    padding-top: 4vh;
+    padding-right: 1vw;
+    overflow-x: auto;
+    width: 48%;
+    height: auto;
     top:3vh;
-    /* background-color: rgb(231, 255, 245); */
-
+    border-radius: 0px 0px 0px 130px;
 }
 </style>

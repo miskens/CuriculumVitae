@@ -1,7 +1,7 @@
 <template>
   <h1>{{title}}</h1>
-  <div class="schoolDiv">
-      <School />
+  <div :key="school.id" v-for="school in schools" class="schoolDiv">
+      <School :school="school"/>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
             type: String,
             default: 'defaultTitle'
         },
-        schools: Array,
+        schools: Array
     },
     components: {
         School,
@@ -24,5 +24,14 @@ export default {
 </script>
 
 <style>
-
+.schoolDiv {
+    background-image:linear-gradient(to right, rgb(255, 240, 226), rgb(255, 230, 230), rgb(219, 219, 219));
+    border: 1px solid;
+    box-shadow: 12px 12px 10px rgb(211, 200, 189);
+    margin:5px;
+    margin-left: 3vw;
+    padding:10px 20px;
+    width:72%;
+    margin-bottom: 3vh;
+}
 </style>

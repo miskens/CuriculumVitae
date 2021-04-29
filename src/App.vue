@@ -29,7 +29,9 @@ export default {
 
 <style>
 .routerLinks {
-    
+    /* height:100px;
+    border-width: 1;
+    border-style: solid; */
   caret-color: transparent;
 }
 .rlink {
@@ -50,11 +52,14 @@ export default {
     border-color:gold;
     font-weight: 700;
 }
+/* .rlink:focus {
+color:ivory;
+} */
 .mainDiv {
-  overflow: hidden;
   position: relative;
-  min-height: 600px;
-  height:auto;
+  padding-bottom: 10vh;
+  height:700px;
+  overflow-y: hidden;
   border-top: 8px double #1C6EA4;
   border-bottom: 3px solid #1C6EA4;
   border-radius: 0px 130px 0px 130px;
@@ -70,17 +75,20 @@ export default {
 }
 
 #layout {
-  padding: 30px;
-  background-color:rgb(250, 255, 250);
+  padding: 35px;
+  padding-top: 10px;
+  background-color:rgb(250, 250, 255);
+  caret-color: transparent;
 }
 
 #layout a {
   font-weight: bold;
-  color: #2c3e50;
+  color:slategray;
 }
 
 #layout a.router-link-exact-active {
-  color: #42b983;
+  color:navy;
+  
 }
 .spacer {
   height:6vh;

@@ -1,19 +1,19 @@
 {
-Languages: [
+"Languages": [
     {
-	Name: "Swedish",
-	Skill: "Native",
-	Desc: "I don´t feel like there is much to add :)",
+	"Name": "Swedish",
+	"Skill": "Native",
+	"Desc": "I don´t feel like there is much to add :)"
     },
     {
-	Name: "Finnish",
-	Skill: "Native/Rusty",
-	Desc: "I was brought up with finnish but my family moved to southern Sweden when I was quite young and not many young ones understood finnish, so I started speaking swedish more and more. I understand everything in finnish but many words can be hard to find in speech.",
+	"Name": "Finnish",
+	"Skill": "Native/Rusty",
+	"Desc": "I was brought up with finnish but my family moved to southern Sweden when I was quite young and not many young ones understood finnish, so I started speaking swedish more and more. I understand everything in finnish but many words can be hard to find in speech."
     },
     {
-	Name: "English",
-	Skill: "Fluent",
-	Desc: "I started learning english before learning it in school since my interest was mainly adventure games, so I asked my mother to buy me a swedish/english dictionary, which I spent a lot of time with. I have also lead several online gaming teams successfully with english as the main language.",
-    },
-],
+	"Name": "English",
+	"Skill": "Fluent",
+	"Desc": "I started learning english before learning it in school since my interest was mainly adventure games, so I asked my mother to buy me a swedish/english dictionary, which I spent a lot of time with. I have also lead several online gaming teams successfully with english as the main language."
+    }
+]
 }
