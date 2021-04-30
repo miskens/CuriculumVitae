@@ -20,7 +20,6 @@ export default {
   resize: both;
   overflow: hidden;
   position:relative;
-  /* min-height: 600px; */
   height:auto;
   overflow-y: hidden;
 }

@@ -33,9 +33,9 @@
       </div>
   </div>
         <div class="picDiv">
-        <Picture id="thePic" @img-click="imageClick" alt="noting" src="https://csb1003bffd9e4e9a13.blob.core.windows.net/dge-blobstorage01/misk.jpg" />
+        <Picture id="thePic" @img-click="imageClick" alt="noting" src="https://csb1003bffd9e4e9a13.blob.core.windows.net/cvfiles/misk_p.jpg" />
         <p>{{firstName}} {{lastName}}, {{age}} år.</p>
-        <ImageModal id="modal" @closemodal="closeModal" alt="modalalt" src="https://csb1003bffd9e4e9a13.blob.core.windows.net/dge-blobstorage01/misk.jpg" />
+        <ImageModal id="modal" @closemodal="closeModal" alt="modalalt" src="https://csb1003bffd9e4e9a13.blob.core.windows.net/cvfiles/misk_p.jpg" />
       </div>
 </template>
 
@@ -49,10 +49,6 @@ export default {
       firstName: String,
       lastName: String,
       age: String,
-      showModal: {
-          type:Boolean,
-          default: false
-      }
     },
     components: {
         Picture,
@@ -60,7 +56,6 @@ export default {
     },
     data() {
         return {
-            showModal: this.showModal
         }
     },
     methods: {
@@ -71,14 +66,10 @@ export default {
     //     this.toggleLanguage = "English"
     // },
     imageClick() {
-        this.showModal = !this.showModal;
-        
         var modal = document.getElementById("modal")
         modal.style.display = "block"
         },
     closeModal() {
-        this.showmodal = !this.showModal
-           
         var modal = document.getElementById("modal")
         modal.style.display = "none"
       }

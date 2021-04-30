@@ -1,5 +1,5 @@
 <template>
-      <h2>{{school.Name}}</h2>
+      <h2>{{school.Name}} <img alt="pic" :src="school.Picture" /></h2>
       <h3>{{school.Course}}</h3>
       <p>{{school.When}}</p>
       <p>{{school.Desc}}</p>
@@ -9,20 +9,15 @@
 export default {
     name: 'School',
     props: {
-        school: Object
+        school: Object,
+        src: String,
     }
 }
 </script>
 
-<style>
-
+<style scoped>
 .schoolDiv h2 {
     padding-bottom: 2vh;
-     /* border:0;
-     border-color:cadetblue;
-     border-style: solid;
-     border-bottom-width: 2px; */
-    
 }
 .schoolDiv h3 {
     display:flex;

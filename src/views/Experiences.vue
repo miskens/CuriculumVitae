@@ -23,8 +23,7 @@ export default {
     data() {
         return {
             studies: [],
-            companies: [],
-             mainheight: 0
+            companies: []
         }
     },
     methods: {

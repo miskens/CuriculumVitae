@@ -23,6 +23,18 @@ export default {
   components: {
     Header,
     Footer
+  },
+  methods: {
+  },
+  async mounted() {
+      var links = document.getElementById("routerLinks")
+      console.log("Mounted!")
+      await this.window.addEventListener('scroll', function() {
+      console.log('scrolling');
+      });
+
+  //   left: 41%;
+  // position:fixed;
   }
 }
 </script>
@@ -33,9 +45,10 @@ export default {
     border-width: 1;
     border-style: solid; */
   caret-color: transparent;
+  z-index: 1;
 }
 .rlink {
-    background-color:rgb(180, 255, 236, 0.5);
+    background-color:rgb(180, 255, 236, 0.8);
     margin-right: 1vw;
     padding: 1rem 2rem 1rem 2rem;
     list-style-type: none;
