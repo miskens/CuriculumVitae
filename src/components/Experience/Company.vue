@@ -6,18 +6,25 @@
             <p>Boss: {{company.Boss}}</p>
     </div>
     <button class="techMinMax" @click="showHideTech"><span>More</span></button>
-     <div id="tech" class="tech">
-        <div class="moreInfoDiv" :hidden="techHidden">
-            <div class="descDiv">{{company.Desc}}</div>
-                <h4>List of technologies:</h4>
-                <table class="techListTable" :key="t.id" v-for="t in company.Tech">
+    
+        <div class="moreInfoDiv">  
+            <transition-group  name="techTransition" mode="out-in" >
+            <div class="descDiv" v-if="!techHidden">{{company.Desc}}</div>
+            </transition-group >
+                <transition-group   name="techTransition" mode="out-in" >
+                <h4 v-if="!techHidden">List of technologies:</h4>
+                </transition-group >
+                <transition-group   name="techTransition" mode="out-in" >
+                    <div v-if="!techHidden" class="wrapper">
+                <table class="techListTable" :key="t.id" v-for="t in company.Tech" >
                     <tr>
-                        <!-- <td class="typeTd">{{t.Type}}</td> -->
+                         <!-- <td class="typeTd">{{t.Type}}</td>  -->
                         <td class="nameTd">{{t.Name}}</td>
                     </tr>
-                </table>
+                </table></div>
+                </transition-group >
         </div>
-    </div>
+    
 </template>
 
 <script>
@@ -88,18 +95,36 @@ export default {
     margin-right:-6px;
     background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
 }
+
+.techTransition-enter-active, .techTransition-leave-active {
+    transition: opacity;
+}
+.techTransition-enter-from, .techTransition-leave-to {
+    opacity:0;
+    transition-duration: .3s;
+}
+.techTransition-enter-to, .techTransition-leave-from{
+    opacity:1;
+    
+    transition-duration: 1.2s;
+}
+
 .tech {
     width:100%;
     position:relative;
     left: 0vw;
     bottom:1vh; 
-    transition: all 2s ease-in-out;
 }
 .moreInfoDiv {
     margin-top: 50px;
+    height: 100%;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 2s;
 }
 .descDiv {
-    width:320px;
+    padding-left:2vw;
+    width:26vw;
     height: 100%;
     margin-right: 30px;
     margin-bottom: 4vh;
@@ -123,10 +148,6 @@ table {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    /* border-style: solid;
-    border-width: 2px; */
-    /* border-color: rgba(117, 172, 172, 0.8); */
-    /* background-color: rgba(240, 240, 240, 0.8); */
 }
 .typeTd {
     display: inline-block;
