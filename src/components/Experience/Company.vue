@@ -101,24 +101,23 @@ export default {
 }
 .techTransition-enter-active, .techTransition-leave-active {
     transition: opacity ease-in-out;
-    /* transform: 4.5s ease; */
 }
 .techTransition-enter-from, .techTransition-leave-to {
     opacity:0;
-    animation: growin 1s reverse;
-    transition-duration: 1s;
+    animation: bouncein .8s reverse;
+    transition-duration: .8s;
 }
 .techTransition-leave-from, .techTransition-enter-to{
     opacity:1;
-    animation: growin 1s;
-    transition-duration: 1s;
+    animation: bouncein .8s;
+    transition-duration: .8s;
 }
-@keyframes growin {
+@keyframes bouncein {
         0% {
           transform: scale(0);
         }
         50% {
-          transform: scale(1.2);
+          transform: scale(1.7);
         }
         100% {
           transform: scale(1);
