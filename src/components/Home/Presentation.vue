@@ -103,32 +103,6 @@ export default {
     margin-right: 5vw;
     caret-color: transparent;
 }
-.presNav {
-    position: static;
-    z-index: 1;
-}
-.navOl {
-    margin-top: 6vh;
-    display: inline-block;
-}
-/* li {
-    background-color:rgb(180, 255, 236, 0.5);
-    margin-right: 1vw;
-    padding: 1rem 2rem 1rem 2rem;
-    list-style-type: none;
-    display: inline;
-    border-radius: 2rem;
-    font-weight: 500;
-    border-style: solid;
-    border-width: 1px;
-    border-bottom-width: 3px;
-    cursor: pointer;
-    transition: all .3s;
-}
-li:hover {
-    border-color:gold;
-    font-weight: 700;
-} */
 .picDiv {
     height:auto;
     width: auto;

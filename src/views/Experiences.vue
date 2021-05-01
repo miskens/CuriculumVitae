@@ -3,7 +3,7 @@
         <div class="worklifeDiv">
             <Workplaces title="Work experience" :companies="companies"/>
         </div>
-        <div class="studiesDiv" ref="study">
+        <div class="studiesDiv">
             <Studies title="Studies" :schools="studies" />
         </div>
   </div>

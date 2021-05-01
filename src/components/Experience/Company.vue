@@ -5,7 +5,7 @@
             <p>When: {{company.When}}</p>
             <p>Boss: {{company.Boss}}</p>
     </div>
-    <button class="techMinMax" @click="showHideTech"><span>More</span></button>
+    <Button text="More" class="techMinMax" @click="showHideTech"></button>
     
         <div class="moreInfoDiv">  
             <transition-group  name="techTransition" mode="out-in" >
@@ -15,12 +15,11 @@
                 <h4 v-if="!techHidden">List of technologies:</h4>
                 </transition-group >
                 <transition-group   name="techTransition" mode="out-in" >
-                    <div v-if="!techHidden" class="wrapper">
-                <table class="techListTable" :key="t.id" v-for="t in company.Tech" >
-                    <tr>
-                         <!-- <td class="typeTd">{{t.Type}}</td>  -->
-                        <td class="nameTd">{{t.Name}}</td>
-                    </tr>
+                    <div v-if="!techHidden" class="tableWrapperForTransition">
+                        <table class="techListTable" :key="t.id" v-for="t in company.Tech" >
+                        <tr>
+                            <td class="nameTd">{{t.Name}}</td>
+                        </tr>
                 </table></div>
                 </transition-group >
         </div>
@@ -28,12 +27,17 @@
 </template>
 
 <script>
+import Button from "../Shared/Button"
+
 export default {
     inheritAttrs: false,
     name: 'Company',
     props: {
         company: Object,
         src: String,
+    },
+    components: {
+        Button
     },
     data() {
         return {
@@ -96,16 +100,30 @@ export default {
     background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
 }
 .techTransition-enter-active, .techTransition-leave-active {
-    transition: opacity;
+    transition: opacity ease-in-out;
+    /* transform: 4.5s ease; */
 }
 .techTransition-enter-from, .techTransition-leave-to {
     opacity:0;
-    transition-duration: .3s;
+    animation: growin 1s reverse;
+    transition-duration: 1s;
 }
-.techTransition-enter-to, .techTransition-leave-from{
+.techTransition-leave-from, .techTransition-enter-to{
     opacity:1;
-    transition-duration: 1.2s;
+    animation: growin 1s;
+    transition-duration: 1s;
 }
+@keyframes growin {
+        0% {
+          transform: scale(0);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
 .tech {
     width:100%;
     position:relative;

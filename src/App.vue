@@ -4,8 +4,8 @@
     <div class="routerLinks">
     <router-link class="rlink" to="/">Home</router-link> 
     <router-link class="rlink" to="/experiences">Experience</router-link>
-    <!-- <router-link to="/Hobbies">Hobbies/Interest</router-link> | 
-    <router-link to="/Education">Education</router-link> |  -->
+    <router-link class="rlink" to="/interests">Interest</router-link>
+    <!--<router-link to="/Education">Education</router-link> |  -->
     <!-- <router-link to="/contact">Contact</router-link> -->
     </div>
     <div class="spacer"></div>
@@ -27,23 +27,12 @@ export default {
   methods: {
   },
   async mounted() {
-      // var links = document.getElementById("routerLinks")
-      // console.log("Mounted!")
-      // await this.window.addEventListener('scroll', function() {
-      // console.log('scrolling');
-      // });
-
-  //   left: 41%;
-  // position:fixed;
   }
 }
 </script>
 
 <style>
 .routerLinks {
-    /* height:100px;
-    border-width: 1;
-    border-style: solid; */
   caret-color: transparent;
   z-index: 1;
 }
@@ -65,9 +54,6 @@ export default {
     border-color:gold;
     font-weight: 700;
 }
-/* .rlink:focus {
-color:ivory;
-} */
 .mainDiv {
   position: relative;
   padding-bottom: 10vh;
@@ -102,6 +88,31 @@ color:ivory;
 #layout a.router-link-exact-active {
   color:navy;
   
+}
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  min-width: 120px;
+  max-width: 120px;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn-block {
+  display: block;
+  width: 100%;
 }
 .spacer {
   height:6vh;
