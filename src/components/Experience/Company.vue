@@ -95,7 +95,6 @@ export default {
     margin-right:-6px;
     background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
 }
-
 .techTransition-enter-active, .techTransition-leave-active {
     transition: opacity;
 }
@@ -105,10 +104,8 @@ export default {
 }
 .techTransition-enter-to, .techTransition-leave-from{
     opacity:1;
-    
     transition-duration: 1.2s;
 }
-
 .tech {
     width:100%;
     position:relative;
@@ -116,13 +113,11 @@ export default {
     bottom:1vh; 
 }
 .moreInfoDiv {
-    margin-top: 50px;
     height: 100%;
     overflow: hidden;
-    transition-property: height;
-    transition-duration: 2s;
 }
 .descDiv {
+    margin-top: 50px;
     padding-left:2vw;
     width:26vw;
     height: 100%;

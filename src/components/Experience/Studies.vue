@@ -1,7 +1,7 @@
 <template>
   <h1>{{title}}</h1>
   <div :key="school.id" v-for="school in schools" class="schoolDiv">
-      <School :school="school"/>
+      <School :school="school" :descHidden="descHidden" />
   </div>
 </template>
 
@@ -15,6 +15,10 @@ export default {
             type: String,
             default: 'defaultTitle'
         },
+        descHidden: {
+            type: Boolean,
+            default: true
+        },
         schools: Array
     },
     components: {
@@ -27,6 +31,7 @@ export default {
 .schoolDiv {
     background-image:linear-gradient(to right, rgb(255, 240, 226), rgb(255, 230, 230), rgb(219, 219, 219));
     border: 1px solid;
+    border-radius: 10px;
     box-shadow: 12px 12px 10px rgb(211, 200, 189);
     margin:5px;
     margin-left: 3vw;

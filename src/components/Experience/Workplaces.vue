@@ -26,7 +26,6 @@ export default {
     },
     data() {
         return {
-            // techHidden: true
         }
     }
 }
@@ -37,6 +36,7 @@ export default {
     height: auto;
     background-image:linear-gradient(to right, rgb(219, 219, 219), rgb(255, 230, 230), rgb(255, 240, 226));
     border: 1px solid;
+    border-radius: 10px;
     box-shadow: -12px 12px 10px 1px rgb(211, 200, 189);
     margin:5px;
     margin-left: 7vw;
