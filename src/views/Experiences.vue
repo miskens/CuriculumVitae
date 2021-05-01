@@ -71,7 +71,7 @@ export default {
     float:left;
     padding-top: 4vh;
     padding-left: 1vw;
-    width: 48%;
+    width: 44vw;
     height: auto;
     top:3vh;
     right:0;
@@ -82,7 +82,7 @@ export default {
     padding-top: 4vh;
     padding-right: 1vw;
     overflow-x: auto;
-    width: 48%;
+    width: 44vw;
     height: auto;
     top:3vh;
     border-radius: 0px 0px 0px 130px;

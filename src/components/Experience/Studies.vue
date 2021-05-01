@@ -29,14 +29,14 @@ export default {
 
 <style>
 .schoolDiv {
-    background-image:linear-gradient(to right, rgb(255, 240, 226), rgb(255, 230, 230), rgb(219, 219, 219));
+    background-image:linear-gradient(to right, rgb(231, 255, 206), rgb(255, 230, 230), rgb(219, 219, 219));
     border: 1px solid;
     border-radius: 10px;
     box-shadow: 12px 12px 10px rgb(211, 200, 189);
     margin:5px;
     margin-left: 3vw;
     padding:10px 20px;
-    width:72%;
+    width:35vw;
     margin-bottom: 3vh;
 }
 </style>
