@@ -27,11 +27,11 @@ export default {
   methods: {
   },
   async mounted() {
-      var links = document.getElementById("routerLinks")
-      console.log("Mounted!")
-      await this.window.addEventListener('scroll', function() {
-      console.log('scrolling');
-      });
+      // var links = document.getElementById("routerLinks")
+      // console.log("Mounted!")
+      // await this.window.addEventListener('scroll', function() {
+      // console.log('scrolling');
+      // });
 
   //   left: 41%;
   // position:fixed;

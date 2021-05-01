@@ -73,12 +73,6 @@ export default {
     padding-left: 1vw;
     width: 48%;
     height: auto;
-    /* border-width: 5px;
-    border-color: cadetblue;
-    border-style: double;
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0; */
     top:3vh;
     right:0;
 }

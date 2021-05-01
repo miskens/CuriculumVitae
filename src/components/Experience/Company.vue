@@ -4,26 +4,29 @@
         <h3>{{company.Assignment}}</h3>
             <p>When: {{company.When}}</p>
             <p>Boss: {{company.Boss}}</p>
-            <btn class="techMinMax" @click="showHideTech"><span>More</span></btn>
     </div>
+    <button class="techMinMax" @click="showHideTech"><span>More</span></button>
      <div id="tech" class="tech">
-     <!-- Add vue transition -->
-        <div class="moreInfoDiv" :hidden="techHidden ? true : false">
+        <div class="moreInfoDiv" :hidden="techHidden">
             <div class="descDiv">{{company.Desc}}</div>
-            <ul class="techListDiv" :key="t.id" v-for="t in company.Tech">
-                <li>{{t.Name}} </li>
-            </ul>
+                <h4>List of technologies:</h4>
+                <table class="techListTable" :key="t.id" v-for="t in company.Tech">
+                    <tr>
+                        <!-- <td class="typeTd">{{t.Type}}</td> -->
+                        <td class="nameTd">{{t.Name}}</td>
+                    </tr>
+                </table>
         </div>
     </div>
 </template>
 
 <script>
 export default {
+    inheritAttrs: false,
     name: 'Company',
     props: {
         company: Object,
         src: String,
-        techHidden: Boolean
     },
     data() {
         return {
@@ -36,6 +39,7 @@ export default {
         }
     },
     async created() {
+        
     },
     async mounted() {
     }
@@ -44,9 +48,9 @@ export default {
 
 <style scoped>
 .companyHeader {
-    height:210px;
+    height:auto;
     width:100%;
-    padding-bottom: 4vh;
+    padding-bottom: 0vh;
 }
 .companyDiv h2 {
     padding-bottom: 2vh;
@@ -62,22 +66,19 @@ export default {
     justify-content: space-between;
 }
 .techMinMax {
-    display: inline-block;
+    position: relative;
     width: 120px;
-    min-width: 120px;
-    max-width: 120px;
-    height:22px;
     background-image:linear-gradient(to right, rgb(245, 245, 245), rgb(224, 224, 224), rgb(245, 245, 245));
-    padding-top: 10px;
     padding: 10px 20px;
-    margin-left:360px;
+    left: 12vw;
+    right:0vw;
     border-radius: 5px;
     box-shadow: 3px 3px 4px;
     font-size: 18px;
     cursor: pointer;
     user-select: none;
     caret-color: transparent;
-    transition: ease-in-out, 0.05s;
+    transition: ease-in-out, 0.1s;
 }
 .techMinMax:hover {
     background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
@@ -91,18 +92,19 @@ export default {
     width:100%;
     position:relative;
     left: 0vw;
-    bottom:5vh; 
-    overflow:hidden;
+    bottom:1vh; 
     transition: all 2s ease-in-out;
 }
-
+.moreInfoDiv {
+    margin-top: 50px;
+}
 .descDiv {
     width:320px;
     height: 100%;
     margin-right: 30px;
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
 }
-.techListDiv {
+.techListTable {
     width:auto;
     height: auto;
 }
@@ -116,22 +118,40 @@ img{
     border-color:mediumturquoise;
     cursor:pointer;
 }
-ul {
+table {
     display: inline-block;
     list-style-type: none;
-    margin: 0;
-    margin-right: 1vw;
     padding: 0;
     overflow: hidden;
+    /* border-style: solid;
+    border-width: 2px; */
+    /* border-color: rgba(117, 172, 172, 0.8); */
+    /* background-color: rgba(240, 240, 240, 0.8); */
+}
+.typeTd {
+    display: inline-block;
+    min-width: 80px;
+    margin-right: 1vw;
+    text-align: center;
+    max-width: 250px;
+    padding: 10px;
     border-style: solid;
     border-width: 2px;
     border-color: rgba(117, 172, 172, 0.8);
     background-color: rgba(240, 240, 240, 0.8);
+    text-decoration: none;
 }
-li {
+.nameTd {
+    display: inline-block;
+    min-width: 240px;
+    margin-right: 1vw;
     text-align: center;
     max-width: 250px;
-    padding: 16px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(117, 172, 172, 0.8);
+    background-color: rgba(240, 240, 240, 0.8);
     text-decoration: none;
 }
 </style>

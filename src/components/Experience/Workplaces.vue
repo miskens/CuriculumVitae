@@ -1,7 +1,7 @@
 <template>
   <h1>{{title}}</h1>
   <div :key="company.id" v-for="company in companies" class="companyDiv">
-      <Company :company="company" />
+      <Company :company="company" :techHidden="techHidden" />
   </div>
 </template>
 
@@ -15,10 +15,19 @@ export default {
             type: String,
             default: 'defaultTitle'
         },
+        techHidden: {
+            type: Boolean,
+            default: true
+        },
         companies: Array
     },
     components: {
         Company,
+    },
+    data() {
+        return {
+            // techHidden: true
+        }
     }
 }
 </script>
