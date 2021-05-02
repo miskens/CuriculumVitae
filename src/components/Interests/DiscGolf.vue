@@ -1,15 +1,20 @@
 <template>
-
-  <h2>Disc</h2>
+  <h2>A headery thing</h2>
+  <!-- <VideoEmbed /> -->
 </template>
 
 <script>
+// import VideoEmbed from "../Shared/VideoEmbed"
+
 export default {
     name: "DiscGolf",
     props: {},
+    components: {
+        // VideoEmbed
+    },
     data() {
         return {
-            
+
         }
     },
     methods: {

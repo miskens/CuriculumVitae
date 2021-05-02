@@ -1,5 +1,5 @@
 <template>
-    <div class="mainDiv" id="maindiv" >
+    <div class="mainDiv page" id="maindiv" >
         <div class="worklifeDiv">
             <Workplaces title="Work experience" :companies="companies"/>
         </div>

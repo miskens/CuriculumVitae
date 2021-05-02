@@ -1,5 +1,5 @@
 <template>
-  <div class="mainDiv">
+  <div class="mainDiv page">
     <Presentation firstName="Mikael" lastName="Puusaari" age="40"/>
   </div>
 </template>

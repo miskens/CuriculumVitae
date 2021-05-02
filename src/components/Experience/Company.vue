@@ -5,7 +5,7 @@
             <p>When: {{company.When}}</p>
             <p>Boss: {{company.Boss}}</p>
     </div>
-    <Button text="More" class="techMinMax" @click="showHideTech"></button>
+    <Button text="More" class="techMinMaxBtn" @click="showHideTech"></button>
     
         <div class="moreInfoDiv">  
             <transition-group  name="techTransition" mode="out-in" >
@@ -76,7 +76,7 @@ export default {
     align-items: center;
     justify-content: space-between;
 }
-.techMinMax {
+.techMinMaxBtn {
     position: relative;
     width: 120px;
     background-image:linear-gradient(to right, rgb(245, 245, 245), rgb(224, 224, 224), rgb(245, 245, 245));
@@ -91,10 +91,7 @@ export default {
     caret-color: transparent;
     transition: ease-in-out, 0.1s;
 }
-.techMinMax:hover {
-    background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
-}
-.techMinMax:active {
+.techMinMaxBtn:active {
     box-shadow: 1px 1px 1px;
     margin-right:-6px;
     background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
@@ -104,8 +101,8 @@ export default {
 }
 .techTransition-enter-from, .techTransition-leave-to {
     opacity:0;
-    animation: bouncein .8s reverse;
-    transition-duration: .8s;
+    animation: leave .6s;
+    transition-duration: .5s;
 }
 .techTransition-leave-from, .techTransition-enter-to{
     opacity:1;
@@ -117,12 +114,20 @@ export default {
           transform: scale(0);
         }
         50% {
-          transform: scale(1.7);
+          transform: scale(1.4);
         }
         100% {
           transform: scale(1);
         }
-      }
+    }
+@keyframes leave {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0);
+        }
+    }
 .tech {
     width:100%;
     position:relative;
