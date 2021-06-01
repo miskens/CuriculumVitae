@@ -1,40 +1,73 @@
 <template>
 <div class="HobbiesDiv">
-    <div>
-    </div>
-    <!-- <Button class="btn" text="the button" color="turquoise" @click="onClick"/> -->
     <DiscGolf />
+    <Gaming/>
+    <SeriesMovies />
+    <Learning />
   </div>
 </template>
 
 <script>
-import Button from "../Shared/Button"
 import DiscGolf from "../Interests/DiscGolf"
+import Gaming from "../Interests/Gaming"
+import SeriesMovies from "../Interests/SeriesMovies"
+import Learning from "../Interests/Learning"
 
 export default {
     inheritAttrs: false,
     name: "Hobbies",
     props:{},
     components: {
-        Button,
-        DiscGolf
+        DiscGolf,
+        Gaming,
+        SeriesMovies,
+        Learning
     },
     methods: {
-        onClick() {
-            console.log("clicked")
-        }
     },
     data(){return {}}
 }
 </script>
 
-<style scoped>
+<style>
 .HobbiesDiv {
-    width: 50vw;
-    padding: 2vw 2vw 2vw 2vw;
+    width: 100%;
+    float:left;
+    padding-bottom: 4vh;
 }
-.btn {
+.hobbyBtn {
     margin-top: 5vh;
     float: right;
+}
+@media all and (max-width: 290px) { /*Galaxy fold: maxwidth due to interference towards higher*/
+.HobbiesDiv {
+    padding-top: 4vh;
+}
+}
+@media all and (min-width: 320px) { /*iPhone 5/SE*/
+}
+@media all and (min-width: 360px) { /*Moto 4 & Galaxy S5 */
+}
+@media all and (min-width: 375px) { /*iPhone 6/7/8/X */
+}
+@media all and (min-width: 411px) { /*Pixel 2, Pixel 2 XL*/ /*414px: iPhone 6/7/8 Plus*/
+}
+@media all and (min-width: 540px) { /*Surface Duo*/
+}
+@media all and (min-width: 768px) { /*iPad*/
+}
+@media all and (min-width: 1024px) { /*iPad Pro*/
+}
+@media all and (min-width: 1124px) { /*Smallest laptop screens*/
+}
+@media all and (min-width: 1256px) { /*Smaller laptop screens*/
+}
+@media all and (min-width: 1496px) { /*smaller-medium laptop screens*/
+}
+@media all and (min-width: 1660px) { /*medium laptop screens*/
+}
+@media all and (min-width: 18240px) { /*medium-larger laptop screens*/
+}
+@media all and (min-width: 1996px) { /*larger laptop screens*/
 }
 </style>

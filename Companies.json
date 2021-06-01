@@ -5,6 +5,7 @@
     "Boss": "Joen Hägglöf",
     "Assignment": "Integration Developer",
     "When": "201102-201306",
+    "Dsec": "Development, ",
     "Tech": [
 	{ "Name": "Visual Studio" },
 	{ "Name": "C#.Net" },

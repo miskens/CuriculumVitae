@@ -30,8 +30,6 @@ export default {
   padding-top: 100px; /* Location of the box */
   right: 0vw;
   top: 0;
-  height:100vh;
-  width: 50vw;
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.6); /* Black w/ opacity */

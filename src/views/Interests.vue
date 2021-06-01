@@ -7,7 +7,7 @@
             <!-- <Studies title="Studies" :schools="studies" /> -->
             <Hobbies />
         </div>
-        <div class="rightDiv">    
+        <!-- <div class="rightDiv">    
             <nav>
                 <ul>
                     <li ><router-link class="rlink" to="/discgolf.vue">Discgolf</router-link></li>
@@ -16,7 +16,7 @@
                     <li><router-link class="rlink" to="/learning.vue">Learning</router-link></li>
                 </ul>
             </nav>
-        </div>
+        </div> -->
   </div>
 </template>
 
@@ -40,13 +40,14 @@ export default {
   overflow-y: hidden;
 }
 .interestsDiv {
+    width: 96vw;
     resize: both;
-    width:auto;
     float:left;
 }
-.rightDiv {
-    width:auto;
+.rightDiv {   
+    width:20vw;
     overflow: hidden;
+    margin-top: 3vw;
     padding-right:2vw;
 }
 nav {
@@ -54,15 +55,13 @@ nav {
     width:auto;
 }
 ul {
-    float:right;
+    float:left;
     list-style: none;
     overflow: hidden;
-    margin: 4vw 4vh;
     padding-top: 3vh;
 }
 li {
     width: 14vw;
-    margin-right: 4vw;
     height: 6vh;
     background-color:rgba(216, 216, 216, 0);
     transition: all .2s;
@@ -89,5 +88,55 @@ li:hover {
 }
 #layout a:hover {
     color:rgb(54, 0, 116);
+}
+@media all and (max-width: 290px) { /*Galaxy fold: maxwidth due to interference towards higher*/
+}
+@media all and (min-width: 320px) { /*iPhone 5/SE*/
+nav {
+    display: none;
+}
+}
+@media all and (min-width: 360px) { /*Moto 4 & Galaxy S5 */
+}
+@media all and (min-width: 375px) { /*iPhone 6/7/8/X */
+}
+@media all and (min-width: 411px) { /*Pixel 2, Pixel 2 XL*/ /*414px: iPhone 6/7/8 Plus*/
+}
+@media all and (min-width: 540px) { /*Surface Duo*/
+.interestsDiv {
+    width: 80%;
+    margin-left: 8%;
+}
+}
+@media all and (min-width: 768px) { /*iPad*/
+.interestsDiv {
+    width: 78%;
+    margin-left: 8%;
+}
+}
+@media all and (min-width: 1024px) { /*iPad Pro*/
+.interestsDiv {
+    width: 76%;
+    margin-left: 8%;
+}
+}
+@media all and (min-width: 1124px) { /*Smallest laptop screens*/
+.interestsDiv {
+    width: 90%;
+    margin-left: 2%;
+}
+}
+@media all and (min-width: 1256px) { /*Smaller laptop screens*/
+}
+@media all and (min-width: 1496px) { /*smaller-medium laptop screens*/
+
+}
+@media all and (min-width: 1660px) { /*medium laptop screens*/
+
+}
+@media all and (min-width: 18240px) { /*medium-larger laptop screens*/
+
+}
+@media all and (min-width: 1996px) { /*larger laptop screens*/
 }
 </style>

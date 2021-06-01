@@ -1,15 +1,12 @@
 <template>
+<div class="picDiv">
+        <Picture id="thePic" @img-click="imageClick" alt="noting" src="https://mppersonalsg.blob.core.windows.net/cvfiles/welcome.jpg" />
+        <!-- <p>{{firstName}} {{lastName}}</p> -->
+        <ImageModal id="modal" @closemodal="closeModal" alt="modalalt" src="https://mppersonalsg.blob.core.windows.net/cvfiles/welcome.jpg" />
+      </div>
   <div class="presentationDiv">
 
       <h2>presentation</h2>
-       <!-- <nav id="presNav" class="presNav">
-           <ul class="navOl">
-              <li>Presentation</li>
-              <li>Intressen</li>
-              <li>Framtiden</li>
-          </ul>
-        </nav> -->
-
         <div class="textDiv">
         <p>Hej och välkommen!</p><br/>
 
@@ -31,12 +28,8 @@
         också, denna CV är skriven helt och hållet i VueJS och är hostas på Azure.
       </p>
       </div>
+      <div class="lilbox"></div>
   </div>
-        <div class="picDiv">
-        <Picture id="thePic" @img-click="imageClick" alt="noting" src="https://csb1003bffd9e4e9a13.blob.core.windows.net/cvfiles/misk_p.jpg" />
-        <p>{{firstName}} {{lastName}}, {{age}} år.</p>
-        <ImageModal id="modal" @closemodal="closeModal" alt="modalalt" src="https://csb1003bffd9e4e9a13.blob.core.windows.net/cvfiles/misk_p.jpg" />
-      </div>
 </template>
 
 <script>
@@ -48,7 +41,6 @@ export default {
     props: {
       firstName: String,
       lastName: String,
-      age: String,
     },
     components: {
         Picture,
@@ -97,18 +89,19 @@ export default {
 
 <style scoped>
 .presentationDiv {
-    max-width: 50vw;
+    max-width: 50%;
     float: left;
     padding-left: 5vw;
     margin-right: 5vw;
     caret-color: transparent;
+    /* background-color: rgba(255,255,255, .7); */
 }
 .picDiv {
     height:auto;
     width: auto;
     padding-top: 15vh;
-    float: right;
-    margin-right: 10vw;
+    float: left;
+    left: 5vw;
     overflow:auto;
 }
 .textDiv {
@@ -120,5 +113,125 @@ p {
   /* text-indent: 30px; */
   text-align: justify;
   letter-spacing: 1px;
+}
+.lilbox {
+  position: absolute;
+  right:0px;
+  bottom: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 88, 88, 0);
+}
+
+@media all and (max-width: 290px) { /*Galaxy fold: maxwidth due to interference towards higher*/
+.presentationDiv {
+  max-width: 98%;
+  padding: 2vw;
+  margin: 0;
+  padding-top: 5vh;
+}
+.textDiv {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    padding: 0;
+}
+p {
+  text-align: justify;
+  letter-spacing: 0;
+}
+.picDiv {
+    width: auto;
+    /* left:22%; */
+    padding:0;
+    padding-top: 5vh;
+    margin: 0;
+    margin-left: 18vw;
+}
+}
+@media all and (min-width: 320px) { /*iPhone 5/SE*/
+.presentationDiv {
+  max-width: 98%;
+  padding: 5vw;
+  margin: 0;
+  padding-top: 5vh;
+}
+.presentationDiv h2 {
+  padding:0;
+  margin:0;
+}
+.textDiv {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    padding: 0;
+    padding-left: 3vw;
+    padding-right: 5vw;
+    padding-top:3vh;
+}
+p {
+  text-align: justify;
+  letter-spacing: 0;
+}
+.picDiv {
+    height:40vh;
+    width: auto;
+    padding:0;
+    padding-top: 6vh;
+    margin: 0;
+     margin-left: 25vw;
+}
+}
+@media all and (min-width: 360px) { /*Moto 4 & Galaxy S5 */
+}
+@media all and (min-width: 375px) { /*iPhone 6/7/8/X */
+}
+@media all and (min-width: 411px) { /*Pixel 2, Pixel 2 XL*/ /*414px: iPhone 6/7/8 Plus*/
+.picDiv {
+     margin-left: 25vw;
+}
+}
+@media all and (min-width: 540px) { /*Surface Duo*/
+.presentationDiv {
+  padding-left: 8vw;
+  padding-right: 12vw;
+}
+.picDiv {
+  position:relative;
+  float:left;
+    width: 50%;
+}
+}
+@media all and (min-width: 768px) { /*iPad*/
+.presentationDiv {
+  width:90%;
+  margin:0;
+  padding:5vw;
+}
+.presentationDiv h2{
+  font-size: xx-large;
+}
+.textDiv p {
+  font-size: x-large;
+}
+.picDiv {
+  width:100%;
+  margin:0;
+  padding:0;
+  padding-top: 5vh;
+  left:0;
+}
+}
+@media all and (min-width: 1024px) { /*iPad Pro*/
+}
+@media all and (min-width: 1124px) { /*Smallest laptop screens*/
+}
+@media all and (min-width: 1256px) { /*Smaller laptop screens*/
+}
+@media all and (min-width: 1496px) { /*smaller-medium laptop screens*/
+}
+@media all and (min-width: 1660px) { /*medium laptop screens*/
+}
+@media all and (min-width: 18240px) { /*medium-larger laptop screens*/
+}
+@media all and (min-width: 1996px) { /*larger laptop screens*/
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
 <div class="titleDiv">
-  <h1 class="title">{{title}}</h1>
+   <p class="title">{{title}}</p> 
+   <h1 class="h2Title">{{title}}</h1>
   </div>
 </template>
 
@@ -19,7 +20,7 @@ export default {
 <style scoped>
 .titleDiv {
     margin-top:20px;
-    padding: 10px 0px 10px 0px;
+    padding: 8vh 3vw 5vh 3vw;
     border-top: 3px solid #1C6EA4;
     border-bottom: 8px double #1C6EA4;
     border-radius: 130px 0px 130px 0px;
@@ -29,5 +30,33 @@ export default {
     }
 .title {
 font-weight: 600;
+}
+@media all and (min-width: 280px) { /*Galaxy fold: maxwidth due to interference towards higher*/
+.titleDiv {
+    padding: 8vh 3vw 2vh 3vw;
+}
+.title {
+    display: inline-block;
+    width:60%;
+    font-size:large;
+    }
+.h2Title {
+    display: none;
+    }
+}
+@media all and (min-width: 320px) { /*iPhone 5/SE*/
+}
+@media all and (min-width: 540px) { /*Surface Duo*/
+.title {
+    display: none;
+    }
+.h2Title {
+    display: inline-block;
+    }
+}
+@media all and (min-width: 768px) { /*iPad*/
+.titleDiv {
+    padding: 8vh 3vw 5vh 3vw;
+}
 }
 </style>
