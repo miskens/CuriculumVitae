@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Button from "../Shared/Button"
+import Button from "../Shared/sharedAssets/Button"
 
 export default {
     inheritAttrs: false,

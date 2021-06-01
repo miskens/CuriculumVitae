@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import DiscGolf from "../Interests/DiscGolf"
-import Gaming from "../Interests/Gaming"
-import SeriesMovies from "../Interests/SeriesMovies"
-import Learning from "../Interests/Learning"
+import DiscGolf from "../Interests/Hobbies/DiscGolf"
+import Gaming from "../Interests/Hobbies/Gaming"
+import SeriesMovies from "../Interests/Hobbies/SeriesMovies"
+import Learning from "../Interests/Hobbies/Learning"
 
 export default {
     inheritAttrs: false,

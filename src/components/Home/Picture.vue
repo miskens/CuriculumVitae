@@ -45,7 +45,7 @@ export default {
 .thePic {
     height: 34vh;
     width: auto;
-    padding-left: 5vw;
+    
     padding:0;
     margin:0;
     border-width: 0px;

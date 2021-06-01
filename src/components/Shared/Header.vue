@@ -24,7 +24,7 @@ export default {
     border-top: 3px solid #1C6EA4;
     border-bottom: 8px double #1C6EA4;
     border-radius: 130px 0px 130px 0px;
-    background-image: url('./swirlbckgrndtop.png');
+    background-image: url('./sharedAssets/swirlbckgrndtop.png');
     caret-color: transparent;
     margin-bottom:4vh;
     }

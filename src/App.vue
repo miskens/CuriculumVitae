@@ -37,7 +37,7 @@ export default {
   z-index: 1;
 }
 .rlink {
-    background-color:rgba(70, 182, 62, 0.8);
+    background-image:linear-gradient(to bottom, rgb(214, 111, 228), rgb(157, 107, 165), rgb(220, 113, 235));
     margin-right: 1vw;
     padding: 1rem 2rem 1rem 2rem;
     list-style-type: none;
@@ -81,7 +81,7 @@ export default {
 }
 
 #layout a.router-link-exact-active {
-  color:rgb(255, 244, 87);
+  color:rgb(255, 249, 159);
   
 }
 .btn {
