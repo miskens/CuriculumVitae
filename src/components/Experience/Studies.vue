@@ -39,29 +39,53 @@ export default {
     width:35vw;
     margin-bottom: 3vh;
 }
-@media all and (max-width: 290px) { /*Galaxy fold: maxwidth due to interference towards higher*/
+@media all and (max-width: 280px)  and (max-height:654px){ /*Galaxy fold: maxwidth due to interference towards higher*/
 .schoolDiv {
-    width:78%;
+    width:72%;
     margin:0;
     padding:20px 28px;
     margin-bottom: 3vh;
 }
 }
-@media all and (min-width: 320px) { /*iPhone 5/SE*/
+@media all and (min-width: 320px) and (max-height:570px) { /*iPhone 5/SE*/
 .schoolDiv {
-    width:78%;
+    width:72%;
     margin:0;
     padding:20px 28px;
     margin-bottom: 3vh;
 }
 }
-@media all and (min-width: 360px) { /*Moto 4 & Galaxy S5 */
+@media all and (min-width: 360px) and (max-height:641px) { /*Moto 4 & Galaxy S5 */
+.schoolDiv {
+    width:72%;
+    margin:0;
+    padding:20px 28px;
+    margin-bottom: 3vh;
+}
 }
 @media all and (min-width: 375px) { /*iPhone 6/7/8/X */
+.schoolDiv {
+    width:72%;
+    margin:0;
+    padding:20px 28px;
+    margin-bottom: 3vh;
+}
 }
 @media all and (min-width: 411px) { /*Pixel 2, Pixel 2 XL*/ /*414px: iPhone 6/7/8 Plus*/
+.schoolDiv {
+    width:72%;
+    margin:0;
+    padding:20px 28px;
+    margin-bottom: 3vh;
+}
 }
 @media all and (min-width: 540px) { /*Surface Duo*/
+.schoolDiv {
+    width:82%;
+    margin:0;
+    padding:20px 28px;
+    margin-bottom: 3vh;
+}
 }
 @media all and (min-width: 768px) { /*iPad*/
 }

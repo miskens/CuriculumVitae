@@ -19,10 +19,8 @@ export default {
 
 <style scoped>
 .mainDiv {
-  resize: both;
-  overflow: hidden;
-  position:relative;
+  width:94%;
+  margin-left: 3%;
   height:auto;
-  overflow-y: hidden;
 }
 </style>

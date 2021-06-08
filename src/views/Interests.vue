@@ -1,10 +1,6 @@
 <template>
     <div class="mainDiv page" id="maindiv" >
-        <!-- <div class="worklifeDiv">
-            <Workplaces title="Work experience" :companies="companies"/>
-        </div> -->
         <div class="interestsDiv">
-            <!-- <Studies title="Studies" :schools="studies" /> -->
             <Hobbies />
         </div>
         <!-- <div class="rightDiv">    
@@ -33,14 +29,12 @@ export default {
 
 <style scoped>
 .mainDiv {
-  resize: both;
-  overflow: hidden;
-  position:relative;
+  width:94%;
+  margin-left: 3%;
   height:auto;
-  overflow-y: hidden;
 }
 .interestsDiv {
-    width: 96vw;
+    width: 100%;
     resize: both;
     float:left;
 }
@@ -89,54 +83,53 @@ li:hover {
 #layout a:hover {
     color:rgb(54, 0, 116);
 }
-@media all and (max-width: 290px) { /*Galaxy fold: maxwidth due to interference towards higher*/
+@media all and (max-width: 280px) and (max-height:654px) { /*Galaxy fold: maxwidth due to interference towards higher*/
 }
-@media all and (min-width: 320px) { /*iPhone 5/SE*/
+@media all and (min-width: 320px)  and (max-height:570px){ /*iPhone 5/SE*/
 nav {
     display: none;
 }
 }
-@media all and (min-width: 360px) { /*Moto 4 & Galaxy S5 */
+@media all and (min-width: 360px) and (max-height:641px) { /*Moto 4 & Galaxy S5 */
 }
-@media all and (min-width: 375px) { /*iPhone 6/7/8/X */
+@media all and (min-width: 375px) and (max-height:669px) { /*iPhone 6/7/8 */
 }
-@media all and (min-width: 411px) { /*Pixel 2, Pixel 2 XL*/ /*414px: iPhone 6/7/8 Plus*/
+@media all and (min-width: 411px) { /*Pixel 2, Pixel 2 XL */
 }
-@media all and (min-width: 540px) { /*Surface Duo*/
+@media all and (min-width: 414px) and (max-height:737px) { /*  iPhone 6/7/8 Plus*/
 .interestsDiv {
     width: 80%;
     margin-left: 8%;
 }
 }
-@media all and (min-width: 768px) { /*iPad*/
+@media all and (min-width: 375px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */
+.interestsDiv {
+    width: 86%;
+    margin-left: 3%;
+}
+} 
+@media all and (min-width: 540px) and (max-height:721px) { /*Surface Duo*/
+.interestsDiv {
+    width: 80%;
+    margin-left: 8%;
+}
+}
+@media all and (min-width: 768px) and (max-height: 1024px) { /*iPad*/
 .interestsDiv {
     width: 78%;
     margin-left: 8%;
 }
 }
-@media all and (min-width: 1024px) { /*iPad Pro*/
+@media all and (min-width: 1024px) and (max-height: 1365px) { /*iPad Pro*/
 .interestsDiv {
     width: 76%;
     margin-left: 8%;
 }
 }
-@media all and (min-width: 1124px) { /*Smallest laptop screens*/
+@media all and (min-width: 400px) and (min-height:900px) { /* For smaller window than smallest laptop screens */
 .interestsDiv {
     width: 90%;
     margin-left: 2%;
 }
-}
-@media all and (min-width: 1256px) { /*Smaller laptop screens*/
-}
-@media all and (min-width: 1496px) { /*smaller-medium laptop screens*/
-
-}
-@media all and (min-width: 1660px) { /*medium laptop screens*/
-
-}
-@media all and (min-width: 18240px) { /*medium-larger laptop screens*/
-
-}
-@media all and (min-width: 1996px) { /*larger laptop screens*/
 }
 </style>

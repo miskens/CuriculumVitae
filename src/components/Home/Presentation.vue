@@ -89,25 +89,23 @@ export default {
 
 <style scoped>
 .presentationDiv {
-    max-width: 50%;
     float: left;
     padding-left: 5vw;
+    margin-bottom: 10vh;
     margin-right: 5vw;
     caret-color: transparent;
-    /* background-color: rgba(255,255,255, .7); */
 }
 .picDiv {
     height:auto;
-    width: auto;
-    padding-top: 15vh;
+    width: 100%;
+    padding-top: 8vh;
     float: left;
-    left: 5vw;
-    overflow:auto;
 }
 .textDiv {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 600;
     padding: 25px;
+    max-width: 90%;
 }
 p {
   /* text-indent: 30px; */
@@ -123,36 +121,35 @@ p {
   background-color: rgb(255, 88, 88, 0);
 }
 
-@media all and (max-width: 290px) { /*Galaxy fold: maxwidth due to interference towards higher*/
+@media all and (max-width: 280px)  and (max-height:654px){ /*Galaxy fold: maxwidth due to interference towards higher*/
 .presentationDiv {
-  max-width: 98%;
-  padding: 2vw;
-  margin: 0;
-  padding-top: 5vh;
+  width:90%;
+  margin-bottom: 5vh;
+}
+.presentationDiv h2 {
+  font-size: 1rem;
 }
 .textDiv {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 600;
-    padding: 0;
+    padding: 1vh 2vw;
 }
 p {
   text-align: justify;
   letter-spacing: 0;
+  font-size: .8rem;
 }
 .picDiv {
     width: auto;
-    /* left:22%; */
-    padding:0;
-    padding-top: 5vh;
+    padding:4vh 0vw 0vh 0vw;
     margin: 0;
-    margin-left: 18vw;
+    margin-left: 20%;
 }
 }
-@media all and (min-width: 320px) { /*iPhone 5/SE*/
+@media all and (min-width: 320px)and (min-height:570px) and (max-height:571px) { /*iPhone 5/SE*/
 .presentationDiv {
   max-width: 98%;
   padding: 5vw;
-  margin: 0;
   padding-top: 5vh;
 }
 .presentationDiv h2 {
@@ -180,34 +177,142 @@ p {
      margin-left: 25vw;
 }
 }
-@media all and (min-width: 360px) { /*Moto 4 & Galaxy S5 */
-}
-@media all and (min-width: 375px) { /*iPhone 6/7/8/X */
-}
-@media all and (min-width: 411px) { /*Pixel 2, Pixel 2 XL*/ /*414px: iPhone 6/7/8 Plus*/
+@media all and (min-width: 568px) and (min-height:320px) and (max-height:321px)  { /*iPhone 5/SE rotated*/
 .picDiv {
+    height:40vh;
+    width: auto;
+    padding:0;
+    padding-top: 10vh;
+    padding-bottom: 38vh;
+    margin: 0;
+     margin-left: 30vw;
+}
+}
+@media all and (min-width: 360px)and (min-height:640px) and (max-height:641px) { /*Moto 4 & Galaxy S5 */
+.presentationDiv h2 {
+  font-size: 1.2rem;
+}
+p {
+  text-align: justify;
+  letter-spacing: 0;
+}
+.picDiv {
+    height:40vh;
+    width: auto;
+    padding:0;
+    padding-top: 6vh;
+    margin: 0;
      margin-left: 25vw;
 }
 }
-@media all and (min-width: 540px) { /*Surface Duo*/
-.presentationDiv {
-  padding-left: 8vw;
-  padding-right: 12vw;
+@media all and (min-width: 375px) and (min-height:667px) and (max-height:668px) { /*iPhone 6/7/8 */
+.presentationDiv h2 {
+  font-size: 1.2rem;
+}
+p {
+  text-align: justify;
+  letter-spacing: 0;
 }
 .picDiv {
-  position:relative;
-  float:left;
-    width: 50%;
+    height:40vh;
+    width: auto;
+    padding:0;
+    padding-top: 6vh;
+    margin: 0;
+     margin-left: 25vw;
 }
 }
-@media all and (min-width: 768px) { /*iPad*/
+@media all and (min-width: 414px) and (min-height:735) and (max-height:737px) { /*iPhone 6/7/8 Plus */
+.presentationDiv h2 {
+  font-size: 1.2rem;
+}
+p {
+  text-align: justify;
+  letter-spacing: 0;
+}
+.picDiv {
+    height:40vh;
+    width: 100%;
+    padding:0;
+    padding-top: 6vh;
+    margin: 0;
+    float:left;
+}
+}
+@media all and (min-width: 414px) and (min-height:736px) and (max-height:737px) { /* iPhone 6/7/8 Plus*/
+.presentationDiv h2 {
+  font-size: 1.2rem;
+}
+}
+@media all and (min-width: 411px) and (min-height:731px) and (max-height:732px) { /*Pixel 2 */
+p {
+  text-align: justify;
+  letter-spacing: 0;
+}
+.picDiv {
+    height:40vh;
+    width: 100%;
+    padding:0;
+    padding-top: 6vh;
+    margin: 0;
+     margin-left: 25vw;
+}
+}
+@media all and (min-width: 411px) and (min-height:823px) and (max-height:824px) { /* Pixel 2 XL */
+p {
+  text-align: justify;
+  letter-spacing: 0;
+}
+.picDiv {
+    height:40vh;
+    width: 100%;
+    padding:0;
+    padding-top: 6vh;
+    margin: 0;
+     margin-left: 25vw;
+}
+}
+@media all and (min-width: 375px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */
+p {
+  text-align: justify;
+  letter-spacing: 0;
+}
+.picDiv {
+    height:30vh;
+    width: auto;
+    padding:0;
+    padding-top: 6vh;
+    margin: 0;
+     margin-left: 25vw;
+}
+}
+@media all and (min-width: 540px) and (min-height:720px)  and (max-height:721px)  { /*Surface Duo*/
+.presentationDiv {
+ padding-right: 4vw;
+}
+.presentationDiv h2{
+  font-size: 1.4rem;
+}
+.picDiv {
+  padding-left: 0vw;
+}
+}
+@media all and (min-width: 720px) and (min-height:540px) and (max-height:541px) { /*Surface Duo rotated*/
+.picDiv {
+  padding-left: 8vw;
+}
+p {
+  font-size: 1rem;
+}
+}
+@media all and (min-width: 768px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad*/
 .presentationDiv {
   width:90%;
   margin:0;
   padding:5vw;
 }
 .presentationDiv h2{
-  font-size: xx-large;
+  font-size: 1.8rem;
 }
 .textDiv p {
   font-size: x-large;
@@ -217,10 +322,34 @@ p {
   margin:0;
   padding:0;
   padding-top: 5vh;
-  left:0;
 }
 }
-@media all and (min-width: 1024px) { /*iPad Pro*/
+@media all and (min-width: 1024px) and (min-height:768px) and (max-height:769px) { /* iPad rotated*/
+.presentationDiv {
+  width:90%;
+  margin:0;
+  padding:5vw;
+}
+.presentationDiv h2{
+  font-size: 1.8rem;
+}
+.textDiv p {
+  font-size: 1rem;
+}
+.picDiv {
+  width:100%;
+  margin:0;
+  padding:0;
+  padding-top: 5vh;
+}
+}
+@media all and (min-width: 1024px) and (min-height: 1366px) and (max-height: 1367px) { /*iPad Pro*/
+h2 {
+  font-size: 2.5rem;
+}
+.textDiv p {
+  font-size: 1.8rem;
+}
 }
 @media all and (min-width: 1124px) { /*Smallest laptop screens*/
 }

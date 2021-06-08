@@ -45,41 +45,74 @@ export default {
     margin-bottom: 3vh;
 }
 h2 {
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
-@media all and (max-width: 290px) { /*Galaxy fold: maxwidth due to interference towards higher*/
+@media all and (max-width: 280px)  and (max-height:654px){ /*Galaxy fold: maxwidth due to interference towards higher*/
 .companyDiv {
-    width:70%;
+    width:98%;
     margin:0;
-    margin-left:0px;
-    padding:20px 28px;
+    margin-bottom: 3vh;
+    padding:0;
+    padding-bottom: 3vh;
+}
+h2 {
+    font-size: 1.1rem;
+}
+}
+@media all and (min-width: 320px) and (max-height:570px) { /*iPhone 5/SE*/
+.companyDiv {
+    width:85%;
+    margin:0;
+    padding-left:10;
     margin-bottom: 3vh;
 }
+h2 {
+    font-size: 1.1rem;
 }
-@media all and (min-width: 320px) { /*iPhone 5/SE*/
+}
+@media all and (min-width: 360px) and (max-height:641px) { /*Moto 4 & Galaxy S5 */
 .companyDiv {
-    width:78%;
+    width:85%;
     margin:0;
-    margin-left:0px;
-    /* padding:20px 28px; */
     padding-left:10;
     margin-bottom: 3vh;
 }
 }
-@media all and (min-width: 360px) { /*Moto 4 & Galaxy S5 */
+@media all and (min-width: 375px) and (max-height:669px) { /*iPhone 6/7/8 */
+.companyDiv {
+    width:85%;
+    margin:0;
+    padding-left:10;
+    margin-bottom: 3vh;
 }
-@media all and (min-width: 375px) { /*iPhone 6/7/8/X */
-}
+} 
 @media all and (min-width: 411px) { /*Pixel 2, Pixel 2 XL*/ /*414px: iPhone 6/7/8 Plus*/
+.companyDiv {
+    width:85%;
+    margin:0;
+    padding-left:10;
+    margin-bottom: 3vh;
+}
+}
+@media all and (min-width: 375px) and (min-height:812px) and (max-height:813px)  { /*iPhone 6/7/8 and X */
+.companyDiv {
+    width:86%;
+    margin:0;
+    padding-left:10;
+    margin-bottom: 3vh;
+}
 }
 @media all and (min-width: 540px) { /*Surface Duo*/
-}
-@media all and (min-width: 768px) { /*iPad*/
 h2 {
     font-size: 1.3rem;
 }
 }
-@media all and (min-width: 1024px) { /*iPad Pro*/
+@media all and (min-width: 768px) and (max-height: 1024px) { /*iPad*/
+h2 {
+    font-size: 1.3rem;
+}
+}
+@media all and (min-width: 1024px) and (max-height: 1365px) { /*iPad Pro*/
 }
 @media all and (min-width: 1124px) { /*Smallest laptop screens*/
 }

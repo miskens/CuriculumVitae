@@ -33,41 +33,24 @@ export default {
 .HobbiesDiv {
     width: 100%;
     float:left;
+    padding-top: 4vh;
     padding-bottom: 4vh;
 }
 .hobbyBtn {
     margin-top: 5vh;
     float: right;
 }
-@media all and (max-width: 290px) { /*Galaxy fold: maxwidth due to interference towards higher*/
+@media all and (max-width: 280px)  and (max-height:654px){ /*Galaxy fold: maxwidth due to interference towards higher*/
 .HobbiesDiv {
     padding-top: 4vh;
 }
 }
-@media all and (min-width: 320px) { /*iPhone 5/SE*/
+@media all and (min-width: 400px) and (min-height:900px) { /* For smaller window than smallest laptop screens */
+.HobbiesDiv {
+    width: 100%;
+    float:left;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
-@media all and (min-width: 360px) { /*Moto 4 & Galaxy S5 */
-}
-@media all and (min-width: 375px) { /*iPhone 6/7/8/X */
-}
-@media all and (min-width: 411px) { /*Pixel 2, Pixel 2 XL*/ /*414px: iPhone 6/7/8 Plus*/
-}
-@media all and (min-width: 540px) { /*Surface Duo*/
-}
-@media all and (min-width: 768px) { /*iPad*/
-}
-@media all and (min-width: 1024px) { /*iPad Pro*/
-}
-@media all and (min-width: 1124px) { /*Smallest laptop screens*/
-}
-@media all and (min-width: 1256px) { /*Smaller laptop screens*/
-}
-@media all and (min-width: 1496px) { /*smaller-medium laptop screens*/
-}
-@media all and (min-width: 1660px) { /*medium laptop screens*/
-}
-@media all and (min-width: 18240px) { /*medium-larger laptop screens*/
-}
-@media all and (min-width: 1996px) { /*larger laptop screens*/
 }
 </style>
