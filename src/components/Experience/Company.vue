@@ -209,8 +209,6 @@ img{
 .descDiv {
     margin-top: 5vh;
     padding:0;
-    width:100%;
-    height: 100%;
     margin-right: 30px;
     margin-bottom: 4vh;
 }
