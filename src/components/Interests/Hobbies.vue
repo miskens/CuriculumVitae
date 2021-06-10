@@ -83,16 +83,6 @@ p {
 .HobbiesDiv {
     padding-top: 4vh;
 }
-.hobbyDiv {
-    width:90%;
-    resize: both;
-    padding: 2vh 3vw 1vh;
-    margin: 3vh 5vw;
-    margin-bottom: 4vh;
-    background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(222, 231, 216), rgb(255, 255, 255));
-    border-radius: 10px;
-    box-shadow: -12px 12px 10px 1px rgb(211, 200, 189); 
-    }
 }
 @media all and (min-width: 653px) and (max-width: 654px) and (min-height:280px) and (max-height:281px) { /* Galaxy fold rotated */
 .hobbyheader {

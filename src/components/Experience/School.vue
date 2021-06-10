@@ -585,7 +585,7 @@ img {
 }
 p {
     font-weight: 300;
-    font-size: x-small;
+    font-size: .9rem;
 }
 }
 @media all and (min-width: 411px) and (max-width: 412px) and (min-height:823px) and (max-height:824px) { /* Pixel 2 XL */

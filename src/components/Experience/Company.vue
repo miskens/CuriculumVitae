@@ -512,7 +512,7 @@ img {
 }
 p {
     font-weight: 300;
-    font-size: x-small;
+    font-size: .9rem;
 }
 }
 @media all and (min-width: 667px)and (min-height:375px) and (max-height:376px)   { /*iPhone 6/7/8 rotated */
