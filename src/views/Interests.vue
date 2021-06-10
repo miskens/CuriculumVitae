@@ -79,20 +79,12 @@ li:hover {
     color:rgb(54, 0, 116);
 }
 }
-@media all and (max-width: 280px) and (max-height:654px) { /*Galaxy fold */
+@media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /*Galaxy fold */
 }
-@media all and (min-width: 320px)  and (max-height:570px){ /*iPhone 5/SE*/
+@media all and (min-width: 320px) and (max-width: 321px) and (min-height:570px) and (max-height:571px) { /*iPhone 5/SE*/
 nav {
     display: none;
 }
-}
-@media all and (min-width: 360px) and (max-height:641px) { /*Moto 4 & Galaxy S5 */
-}
-@media all and (min-width: 375px) and (max-height:669px) { /*iPhone 6/7/8 */
-}
-@media all and (min-width: 667px) and (max-width: 668px) and (min-height:375px)and (max-height:376px) { /*iPhone 6/7/8 */
-}
-@media all and (min-width: 411px) { /*Pixel 2, Pixel 2 XL */
 }
 @media all and (min-width: 414px) and (max-width: 415px) and (min-height:736px) and (max-height:737px) { /*  iPhone 6/7/8 Plus*/
 .interestsDiv {
@@ -108,19 +100,19 @@ nav {
     margin-left: 3%;
 }
 } 
-@media all and (min-width: 540px) and (max-height:721px) { /*Surface Duo*/
+@media all and (min-width: 540px) and (max-width: 541px) and (min-height:720px) and (max-height:721px) { /*Surface Duo*/
 .interestsDiv {
     width: 80%;
     margin-left: 8%;
 }
 }
-@media all and (min-width: 768px) and (max-height: 1024px) { /*iPad*/
+@media all and (min-width: 768px) and (max-width: 769px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad*/
 .interestsDiv {
     width: 78%;
     margin-left: 8%;
 }
 }
-@media all and (min-width: 1024px) and (max-height: 1365px) { /*iPad Pro*/
+@media all and (min-width: 1024px) and (max-width: 1025px) and (min-height: 1366px) and (max-height: 1367px) { /*iPad Pro*/
 .interestsDiv {
     width: 76%;
     margin-left: 8%;

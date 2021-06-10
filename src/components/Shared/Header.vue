@@ -35,7 +35,7 @@ export default {
     display: inline-block;
     padding:0;
     width:60%;
-    font-size:small;
+    font-size:1rem;
 }
 }
 @media all and (min-width: 50px) and (min-height:50px) { /* RESPONSIVE */

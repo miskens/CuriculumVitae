@@ -97,7 +97,7 @@ export default {
     padding-bottom: 13vh;
 }
 }
-@media all and (min-width: 653px) and (min-height:280px) and (max-height:281px){ /*Galaxy fold rotated */
+@media all and (min-width: 653px) and (max-width: 654px) and (min-height:280px) and (max-height:281px){ /*Galaxy fold rotated */
 .worklifeDiv {
     margin-left: 3%;
     width: 86%;
@@ -111,7 +111,7 @@ export default {
     width: 86%;
 }
 }
-@media all and (min-width: 320px) and (min-height:568px) and (max-height:569px) { /*iPhone 5/SE*/
+@media all and (min-width: 320px) and (max-width: 321px) and (min-height:568px) and (max-height:569px) { /*iPhone 5/SE*/
 .worklifeDiv {
     width: 90%;
     margin-left: 2vw;
@@ -121,7 +121,7 @@ export default {
     margin-left: 4vw;
 }
 }
-@media all and (min-width: 568px) and (min-height:320px) and (max-height:321px) { /*iPhone 5/SE rotated */
+@media all and (min-width: 568px) and (max-width: 569px) and (min-height:320px) and (max-height:321px) { /*iPhone 5/SE rotated */
 .worklifeDiv {
     width: 90%;
     margin-left: 2vw;
@@ -132,7 +132,7 @@ export default {
     margin-bottom: 6vh;
 }
 }
-@media all and (min-width: 360px) and (min-height:640px) and (max-height:641px) { /*Moto 4 & Galaxy S5 */
+@media all and (min-width: 360px) and (max-width: 361px) and (min-height:640px) and (max-height:641px) { /*Moto 4 & Galaxy S5 */
 .worklifeDiv {
     width: 95%;
     margin-left: 2vw;
@@ -143,7 +143,7 @@ export default {
     margin-bottom: 6vh;
 }
 }
-@media all and (min-width: 640px) and (min-height:360px) and (max-height:361px)  { /* Moto 4 & Galaxy S5 rotated */
+@media all and (min-width: 640px) and (max-width: 641px) and (min-height:360px) and (max-height:361px)  { /* Moto 4 & Galaxy S5 rotated */
 .worklifeDiv {
     width: 82%;
     margin-left: 0vw;
@@ -153,7 +153,7 @@ export default {
     margin-left: 4vw;
 }
 }
- @media all and (min-width: 375px) and (min-height:667px) and (max-height:668px) { /*iPhone 6/7/8  */
+ @media all and (min-width: 375px) and (max-width: 376px) and (min-height:667px) and (max-height:668px) { /*iPhone 6/7/8  */
 .worklifeDiv {
     width: 88%;
     margin-left: 0vw;
@@ -213,7 +213,7 @@ export default {
     margin-left: 4vw;
 }
 }
-@media all and (min-width: 411px) and (min-height:731px) and (max-height:732px) { /*Pixel 2 */
+@media all and (min-width: 411px) and (max-width: 412px) and (min-height:731px) and (max-height:732px) { /*Pixel 2 */
 .worklifeDiv {
     width: 100%;
     margin-left: 0vw;
@@ -223,7 +223,7 @@ export default {
     margin-left: 4vw;
 }
 }
-@media all and (min-width: 731px) and (min-height:411px) and (max-height:412px) { /*Pixel 2 rotated */
+@media all and (min-width: 731px) and (max-width: 732px) and (min-height:411px) and (max-height:412px) { /*Pixel 2 rotated */
 .worklifeDiv {
     width: 45%;
     padding:0;
@@ -236,7 +236,7 @@ export default {
     margin-left: 2vw;
 }
 }
-@media all and (min-width: 411px) and (min-height:823px) and (max-height:824px) { /* Pixel 2 XL */
+@media all and (min-width: 411px) and (max-width: 412px) and (min-height:823px) and (max-height:824px) { /* Pixel 2 XL */
 .worklifeDiv {
     width: 88%;
     margin-left: 0vw;
@@ -281,7 +281,7 @@ export default {
     width: 40%;
 }
 }
-@media all and (min-width: 768px) and (min-height: 1024px)  and (max-height: 1025px) { /*iPad*/
+@media all and (min-width: 768px) and (max-width: 769px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad*/
 .worklifeDiv {
     padding-top: 0;
     width: 44%;
@@ -296,7 +296,7 @@ export default {
     width: 44%;
 }
 }
-@media all and (min-width: 1024px) and (min-height:768px) and (max-height:769px) { /* iPad rotated*/
+@media all and (min-width: 1024px) and (max-width: 1025px) and (min-height:768px) and (max-height:769px) { /* iPad rotated*/
 .worklifeDiv {
     padding-top: 0;
     width: 44%;
