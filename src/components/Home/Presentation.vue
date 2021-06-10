@@ -88,6 +88,7 @@ export default {
 </script>
 
 <style scoped>
+@media all and (min-width: 50px) and (min-height:50px) {
 .presentationDiv {
     float: left;
     padding-left: 5vw;
@@ -104,11 +105,11 @@ export default {
 .textDiv {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 600;
-    padding: 25px;
+    padding: 2% 2%;
     max-width: 90%;
 }
 p {
-  /* text-indent: 30px; */
+  font-weight: 500;
   text-align: justify;
   letter-spacing: 1px;
 }
@@ -120,8 +121,8 @@ p {
   height: 50px;
   background-color: rgb(255, 88, 88, 0);
 }
-
-@media all and (max-width: 280px)  and (max-height:654px){ /*Galaxy fold: maxwidth due to interference towards higher*/
+}
+@media all and (min-width: 280px) and (max-width:281px) and (min-height:653px)  and (max-height:654px){ /*Galaxy fold */
 .presentationDiv {
   width:90%;
   margin-bottom: 5vh;
@@ -132,7 +133,8 @@ p {
 .textDiv {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 600;
-    padding: 1vh 2vw;
+    padding: 2% 2%;
+    margin-bottom: 8%;
 }
 p {
   text-align: justify;
@@ -174,7 +176,7 @@ p {
     padding:0;
     padding-top: 6vh;
     margin: 0;
-     margin-left: 25vw;
+     margin-left: 25%;
 }
 }
 @media all and (min-width: 568px) and (min-height:320px) and (max-height:321px)  { /*iPhone 5/SE rotated*/
@@ -219,7 +221,7 @@ p {
     padding:0;
     padding-top: 6vh;
     margin: 0;
-     margin-left: 25vw;
+    margin-left: 25%;
 }
 }
 @media all and (min-width: 414px) and (min-height:735) and (max-height:737px) { /*iPhone 6/7/8 Plus */
@@ -244,18 +246,26 @@ p {
   font-size: 1.2rem;
 }
 }
+@media all and (min-width: 375px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */
+.textDiv {
+  padding: 1% 1%
+}
+.textDiv p {
+  font-size: .9rem;
+}
+}
 @media all and (min-width: 411px) and (min-height:731px) and (max-height:732px) { /*Pixel 2 */
 p {
   text-align: justify;
   letter-spacing: 0;
 }
 .picDiv {
-    height:40vh;
+    height:32vh;
     width: 100%;
     padding:0;
     padding-top: 6vh;
     margin: 0;
-     margin-left: 25vw;
+    margin-left: 25%;
 }
 }
 @media all and (min-width: 411px) and (min-height:823px) and (max-height:824px) { /* Pixel 2 XL */
@@ -264,26 +274,12 @@ p {
   letter-spacing: 0;
 }
 .picDiv {
-    height:40vh;
+    height:30vh;
     width: 100%;
     padding:0;
-    padding-top: 6vh;
+    padding-top: 4vh;
     margin: 0;
-     margin-left: 25vw;
-}
-}
-@media all and (min-width: 375px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */
-p {
-  text-align: justify;
-  letter-spacing: 0;
-}
-.picDiv {
-    height:30vh;
-    width: auto;
-    padding:0;
-    padding-top: 6vh;
-    margin: 0;
-     margin-left: 25vw;
+    margin-left: 25%;
 }
 }
 @media all and (min-width: 540px) and (min-height:720px)  and (max-height:721px)  { /*Surface Duo*/
@@ -350,17 +346,5 @@ h2 {
 .textDiv p {
   font-size: 1.8rem;
 }
-}
-@media all and (min-width: 1124px) { /*Smallest laptop screens*/
-}
-@media all and (min-width: 1256px) { /*Smaller laptop screens*/
-}
-@media all and (min-width: 1496px) { /*smaller-medium laptop screens*/
-}
-@media all and (min-width: 1660px) { /*medium laptop screens*/
-}
-@media all and (min-width: 18240px) { /*medium-larger laptop screens*/
-}
-@media all and (min-width: 1996px) { /*larger laptop screens*/
 }
 </style>
