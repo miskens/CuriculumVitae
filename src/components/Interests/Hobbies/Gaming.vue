@@ -46,6 +46,11 @@ export default {
 </script>
 
 <style scoped>
+@media all and (min-width: 50px) and (min-height:50px) {
+.hobbyDiv {
+    background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(216, 229, 231), rgb(255, 255, 255));
+}
+}
 @media all and (min-width: 280px) and (max-width:281px) and (min-height:653px) and (max-height:654px){ /*Galaxy fold */
 .hobbyHeader {
     font-size: 1rem;

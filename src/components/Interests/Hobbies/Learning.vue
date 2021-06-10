@@ -44,6 +44,9 @@ export default {
 
 <style scoped>
 @media all and (min-width: 50px) and (min-height:50px) {
+.hobbyDiv {
+    background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(221, 216, 231), rgb(255, 255, 255));
+}
 ul {
     width: 97%;
     height: auto;
