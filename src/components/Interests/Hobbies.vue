@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style>
-@media all and (min-width: 50px) and (min-height:50px) {
+@media all and (min-width: 1px) and (min-height:1px) { /* RESPONSIVE Defaultish */
 .HobbiesDiv {
     width: 100%;
     float:left;
@@ -38,12 +38,10 @@ export default {
     padding-bottom: 4vh;
 }
 .hobbyDiv {
-    width:82%;
+    /* width:60%; */
     resize: both;
     padding: 2vh 3vw 1vh;
-    margin: 3vh 5vw;
     margin-bottom: 4vh;
-    background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(222, 231, 216), rgb(255, 255, 255));
     border-radius: 10px;
     box-shadow: -12px 12px 10px 1px rgb(211, 200, 189); 
 }
@@ -62,15 +60,11 @@ ul {
     
 }
 li {
-    background-color: rgb(231, 231, 231);
     width:90%;
     margin-bottom:6px;
     padding: 4px;
     padding-left: 0;
     font-weight: 600;
-    border: solid;
-    border-color: blueviolet;
-    border-width: 1px;
 }
 h6 {
     font-size: 1rem;
@@ -101,7 +95,8 @@ p {
 }
 @media all and (min-width: 568px) and (min-height:320px)  and (max-height:321px) { /*iPhone 5/SE rotated */
 .hobbyDiv {
-    width: 80%;
+    margin-left: 15%;
+    width: 70%;
 }
 }
 @media all and (min-width: 375px) and (max-width: 376px) and (min-height:667px)  and (max-height:668px) { /*iPhone 6/7/8 */
@@ -129,8 +124,11 @@ p {
 }
 @media all and (min-width: 375px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */
 .hobbyDiv {
+    width:90%;
     margin-left:8%;
-    width:80%; 
+}
+.hobbyHeader {
+    margin-bottom: 1vh;
 }
 }
 @media all and (min-width: 411px) and (min-height:731px) and (max-height:732px) { /*Pixel 2 */
@@ -147,6 +145,9 @@ p {
 .hobbyDiv {
     margin-left:8%;
 }
+.hobbyHeader {
+    margin-bottom: 1vh;
+}
 }
 @media all and (min-width: 823px) and (min-height:411px) and (max-height:412px) { /* Pixel 2 XL rotated */
 .hobbyDiv {
@@ -161,6 +162,10 @@ p {
 }
 }
 @media all and (min-width: 768px) and (max-width: 769px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad*/
+.hobbyDiv {
+    width:90%;
+    margin-left:3%;
+}
 .hobbyheader {
     font-size: 1rem;
 }
@@ -168,6 +173,13 @@ p {
 @media all and (min-width: 1024px) and (max-width: 1025px) and (min-height:768px) and (max-height:769px) { /* iPad rotated*/
 }
 @media all and (min-width: 1024px) and (max-width: 1025px) and (min-height: 1366px) and (max-height: 1367px) { /*iPad Pro*/
+.hobbyDiv {
+    width:96%;
+    margin-left:3%;
+}
+.hobbyheader {
+    font-size: 1rem;
+}
 }
 @media all and (min-width: 1366px) and (max-width: 1367px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad Pro rotated */
 

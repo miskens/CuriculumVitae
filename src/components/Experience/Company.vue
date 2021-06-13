@@ -59,36 +59,35 @@ export default {
 </script>
 
 <style scoped>
-.companyDiv p {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
+@media all and (min-width: 1px) and (min-height:1px) {
+p {
+    font-size: 1.1rem;
 }
 .companyHeader {
-    height:auto;
     width:100%;
-    padding-bottom: 0vh;
+    height:auto;
+    padding: 3%;
 }
-.companyDiv h2 {
+h2 {
+    font-size: 1.2rem;
     padding-bottom: 2vh;
 }
-.companyDiv h3 {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
+h6 {
+    font-size: 1rem;
 }
 .techMinMaxBtn {
-    position: relative;
+    position:relative;
+    width: 80px !important;
+    height: 30px !important;
     background-image:linear-gradient(to right, rgb(245, 245, 245), rgb(224, 224, 224), rgb(245, 245, 245));
-    left: 12vw;
-    right:0vw;
+    left: 26%;
     border-radius: 5px;
     box-shadow: 1.5px 1.5px 2px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     cursor: pointer;
     user-select: none;
     caret-color: transparent;
-    transition: ease-in-out, .6s;
+    transition: ease-in-out, 0.02s;
 }
 .techMinMaxBtn:active {
     box-shadow: 0px 0px 0px;
@@ -153,7 +152,7 @@ export default {
 img{
     height: 80px;
     width: auto;
-    float:right;
+    float:none;
     border-style: solid;
     border-radius: 10%;
     border-width: 1px;
@@ -178,28 +177,41 @@ img{
     margin-right: 1vw;
     text-align: center;
     padding: 10px;
-    border-style: solid;
+    border-left: solid;
+    border-bottom: solid;
     border-width: 2px;
     border-color: rgba(117, 172, 172, 0.8);
     background-color: rgba(240, 240, 240, 0.8);
     text-decoration: none;
 }
-@media all and (min-width: 50px) and (min-height:50px) {
+@media all and (min-width: 350px) and (min-height:1px) {
 .techMinMaxBtn {
-    position: relative;
-    left: 20vw;
-    padding: .6rem;
-    font-size: 1.1rem;
-    line-height: 2px;
+    left: 30%;
 }
 }
-@media all and (min-width: 801px) and (min-height: 200px) {
+@media all and (min-width: 600px) and (min-height:1px) {
 .techMinMaxBtn {
-    position: relative;
-    left: 6vw;
-    padding: .6rem;
-    font-size: 1.1rem;
-    line-height: 2px;
+    left: 34%;
+}
+}
+@media all and (min-width: 700px) and (min-height:1px) {
+.techMinMaxBtn {
+    left: 38%;
+}
+}
+@media all and (min-width: 800px) and (min-height:1px) {
+.techMinMaxBtn {
+    left: 23%;
+}
+}
+@media all and (min-width: 1000px) and (min-height:1px) {
+.techMinMaxBtn {
+    left: 28%;
+}
+}
+@media all and (min-width: 1200px) and (min-height:1px) {
+.techMinMaxBtn {
+    left: 33%;
 }
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px){ /*Galaxy fold */
@@ -254,6 +266,7 @@ p {
     font-size: .9rem;
 }
 }
+}
 @media all and (min-width: 653px) and (min-height:280px) and (max-height:281px){ /*Galaxy fold rotated */
 .companyHeader {
     padding-left: 1vw;
@@ -262,15 +275,14 @@ p {
     font-size: 1rem;
 }
 img{
-    height: 50px;
+    height: 80px;
     float:none;
     margin-top: 3vh;
     margin-left: 0vw;
 }
 .techMinMaxBtn {
     position: relative;
-    left: 20vw;
-    bottom: 5vh;
+    left: 22vw;
     padding: .8rem .4rem;
     font-size: .8rem;
     line-height: 2px;
@@ -288,12 +300,12 @@ img{
     width:50vw;
 }
 .techListTable {
-    margin-left: 10vw;
+    margin-left: 30%;
 }
 .nameTd {
     display: inline-block;
     min-width: 20vw;
-    width:39vw;
+    width:24vw;
     height: auto;
     margin-right: 0;
     text-align:left;
@@ -309,7 +321,7 @@ p {
 }
 @media all and (min-width: 320px) and (max-width: 321px) and (min-height:568px) and (max-height:569px) { /*iPhone 5/SE*/
 .companyHeader {
-    padding: 5%;
+    padding: 3%;
 }
 .companyHeader h2 {
     font-size: 1rem;
@@ -324,8 +336,7 @@ img {
 }
 .techMinMaxBtn {
     position: relative;
-    left: 28vw;
-    bottom: 2vh;
+    left: 20vw;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
     font-size: .8rem;
@@ -343,11 +354,13 @@ img {
     display:list-item;
     width:50vw;
 }
+.techListTable {
+    margin-left: 20%;
+}
 .nameTd {
     display: inline-block;
     min-width: 0;
     width:39vw;
-    margin-left: 35%;
     text-align:left;
     padding: 10px;
     margin-bottom: 0.5vh;
@@ -373,8 +386,7 @@ img {
 }
 .techMinMaxBtn {
     position: relative;
-    left: 32vw;
-    bottom:4vh;
+    left: 26vw;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -394,8 +406,8 @@ img {
 .nameTd {
     display: inline-block;
     min-width: 0;
-    width:39vw;
-    margin-left: 45%;
+    width:28vw;
+    margin-left: 50%;
     text-align:left;
     margin-bottom: 0.5vh;
 }
@@ -417,7 +429,7 @@ img {
     font-size: 1rem;
 }
 .techListTable {
-    margin-left: 10vw;
+    margin-left: 18%;
 }
 .nameTd {
     display: inline-block;
@@ -427,8 +439,8 @@ img {
     margin-bottom: 0.5vh;
 }
 .techMinMaxBtn {
-    position: relative;
-    left: 22vw;
+    /* position: relative; */
+    margin-left: 4%;
     bottom: 2vh;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
@@ -458,16 +470,15 @@ img {
 .nameTd {
     display: inline-block;
     min-width: 0;
-    width:39vw;
-    margin-right: 0;
+    width:25vw;
+    margin-left:10%;
     text-align:left;
     padding: 10px;
     margin-bottom: 0.5vh;
 }
 .techMinMaxBtn {
     position: relative;
-    left: 22vw;
-    bottom: 4vh;
+    left: 20vw;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -490,12 +501,12 @@ img {
     font-size: .9rem;
 }
 .techListTable {
-    margin-left: 10vw;
+    margin-left: 20%;
 }
 .nameTd {
     display: inline-block;
     min-width: 0;
-    width:38vw;
+    width:32vw;
     margin-right: 0;
     text-align:left;
     padding: 10px;
@@ -503,8 +514,7 @@ img {
 }
 .techMinMaxBtn {
     position: relative;
-    left: 26vw;
-    bottom:2vh;
+    left: 28%;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
     font-size: .8rem;
@@ -528,16 +538,15 @@ img {
 .nameTd {
     display: inline-block;
     min-width: 0;
-    width:39vw;
-    margin-right: 0;
+    width:100%;
+    margin-left:35%;
     text-align:left;
     padding: 10px;
     margin-bottom: 0.5vh;
 }
 .techMinMaxBtn {
     position: relative;
-    left: 24vw;
-    bottom:3vh;
+    left: 23vw;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -566,16 +575,15 @@ img {
 .nameTd {
     display: inline-block;
     min-width: 0;
-    width:39vw;
-    margin-right: 0;
+    width:30vw;
+    margin-left: 10%;
     text-align:left;
     padding: 10px;
     margin-bottom: 0.5vh;
 }
 .techMinMaxBtn {
     position: relative;
-    left: 23vw;
-    bottom:4vw;
+    left: 32%;
     padding: .9rem 1.1rem;
     padding-right:3rem;
     font-size: .8rem;
@@ -605,16 +613,15 @@ img {
 .nameTd {
     display: inline-block;
     min-width: 0;
-    width:39vw;
-    margin-right: 0;
+    width:18vw;
+    margin-left:0%;
     text-align:left;
     padding: 10px;
     margin-bottom: 0.5vh;
 }
 .techMinMaxBtn {
     position: relative;
-    left: 28vw;
-    bottom: 3vh;
+    left: 36%;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -642,16 +649,15 @@ img {
 .nameTd {
     display: inline-block;
     min-width: 0;
-    width:39vw;
-    margin-right: 0;
+    width:30vw;
+    margin-left:10%;
     text-align:left;
     padding: 10px;
     margin-bottom: 0.5vh;
 }
 .techMinMaxBtn {
     position: relative;
-    left: 24vw;
-    bottom: 2vh;
+    left: 32%;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
     font-size: .8rem;
@@ -680,8 +686,8 @@ img {
 .nameTd {
     display: inline-block;
     min-width: 0;
-    width:80%;
-    margin-left: 45%;
+    width:75%;
+    margin-left: 38%;
     margin-right: 0;
     text-align:left;
     padding: 10px;
@@ -717,17 +723,15 @@ img {
 }
 .nameTd {
     display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
+    margin-left: 14%;
+    width:120%;
     text-align:left;
     padding: 10px;
     margin-bottom: 0.5vh;
 }
 .techMinMaxBtn {
     position: relative;
-    left: 24vw;
-    bottom: 2vh;
+    left: 32%;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
     font-size: .8rem;
@@ -756,8 +760,8 @@ img {
 }
 .nameTd {
     display: inline-block;
-    width:22vw;
-    margin-right: 0;
+    width:110%;
+    margin-left:0%;
     text-align:left;
     padding: 10px;
     margin-bottom: 0.5vh;
@@ -765,7 +769,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 12vw;
-    bottom: 4vh;
     padding: .9rem 1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -792,17 +795,51 @@ img {
 }
 .nameTd {
     display: inline-block;
-    min-width: 0;
-    width:39vw;
+    margin-left: 5%;
+    width:30vw;
     padding: 10px;
     margin-bottom: 0.5vh;
 }
 .techMinMaxBtn {
     position: relative;
-    left: 26vw;
-    bottom: 2vh;
+    left: 30%;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
+    font-size: .8rem;
+    line-height: 2px;
+}
+h6 {
+    font-size: 1rem;
+}
+p {
+    font-size: 1rem;
+}
+}
+@media all and (min-width: 823px) and (max-width: 824px) and (min-height:411px) and (max-height:412px) { /* Pixel 2 XL rotated */
+.companyHeader {
+    padding: 3%;
+}
+img {
+    float:none;
+}
+.companyHeader h2 {
+    font-size: 1.1rem;
+}
+.techListTable {
+    margin-left: 10vw;
+    padding-bottom: 5vh;
+}
+.nameTd {
+    display: inline-block;
+    margin-left: 0%;
+    width:110%;
+    padding: 10px;
+    margin-bottom: 0.5vh;
+}
+.techMinMaxBtn {
+    position: relative;
+    left: 34%;
+    padding: .9rem 1rem;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -828,15 +865,14 @@ img {
 }
 .nameTd {
     display: inline-block;
-    min-width: 0;
-    width:39vw;
+    margin-left: 10%;
+    width:30vw;
     padding: 10px;
     margin-bottom: 0.5vh;
 }
 .techMinMaxBtn {
     position: relative;
-    left: 26vw;
-    bottom: 2vh;
+    left: 22vw;
     padding: 1rem 1.2rem;
     padding-right: 10vw;
     font-size: .8rem;
@@ -860,11 +896,10 @@ img {
     font-size: 1.1rem;
 }
 .techListTable {
-    margin-left: 10vw;
+    margin-left: 20%;
 }
 .nameTd {
     display: inline-block;
-    min-width: 0;
     width:18vw;
     padding: 10px;
     margin-bottom: 0.5vh;
@@ -886,22 +921,29 @@ p {
 }
 }
 @media all and (min-width: 768px) and (max-width: 769px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad*/
+.companyHeader {
+    padding: 3%;
+}
 img{
-    height: 110px;
+    height: 120px;
     width: auto;
     max-width: 30vw;
     float:none;
 }
 .techMinMaxBtn {
-    left: 10vw;
-    bottom: 1vh;
+    margin-right: 28%;
     line-height: 4px;
     padding: 1.4rem 1rem 1.4rem 2rem;
     padding-right: 5rem;
     font-size: 1.6rem;
 }
-.companyHeader h3 {
-    font-size: xx-large;
+.techMinMaxBtn:active {
+    box-shadow: 0px 0px 0px;
+    margin-right:58px;
+    background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
+}
+.companyHeader h2 {
+    font-size: 1.5rem;
 }
 .companyHeader p {
     font-size: x-large;
@@ -917,7 +959,7 @@ p {
     font-size: .8rem;
 }
 h6 {
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 }
 @media all and (min-width: 1024px) and (min-height:768px) and (max-height:769px) { /* iPad rotated*/
@@ -959,6 +1001,9 @@ h6 {
 }
 }
 @media all and (min-width: 1024px) and (max-width:10257px) and (min-height: 1366px) and (max-height: 1367px) { /*iPad Pro*/
+.companyHeader {
+    padding: 3%;
+}
 img{
     height: 110px;
     width: auto;
@@ -966,50 +1011,77 @@ img{
     float:none;
 }
 .techMinMaxBtn {
-    left: 10vw;
-    bottom: 1vh;
+    margin-left: 10%;
     line-height: 4px;
     padding: 1.4rem 1rem 1.4rem 2rem;
     padding-right: 5rem;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
-.companyHeader h3 {
-    font-size: xx-large;
+.companyHeader h2 {
+    font-size: 2rem;
 }
 .companyHeader p {
-    font-size: x-large;
+    font-size: 1.8rem;
 }
 .techListTable {
     width:65%;
 }
 .nameTd {
-    margin-left: 30%;
+    margin-left: 35%;
     width:80%;
+    font-size: 1.5rem;
 }
 p {
-    font-size: .8rem;
+    font-size: 1.6rem;
+    padding:2%;
+}
+h5 {
+    font-size: 1.4rem;
 }
 h6 {
-    font-size: 1rem;
+    font-size: 1.8rem;
 }
 }
-@media all and (min-width: 1366px) and (max-width:1367px) and (min-height:1024px) and (max-height:1025px) { /* iPad rotated*/
-img {
-    max-width:40%;
+@media all and (min-width: 1366px) and (max-width: 1367px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad Pro rotated*/
+.companyHeader {
+    padding:3%;
+}
+img{
+    height: 110px;
+    width: auto;
+    max-width: 30vw;
+    float:none;
 }
 .techMinMaxBtn {
-    position: relative;
-    left: 11vw;
-    padding: 1.2rem 2.5rem;
-    padding-right: 4.5rem;
-    font-size: 1.2rem;
-    line-height: 2px;
+    margin-left: 10%;
+    line-height: 4px;
+    padding: 1.4rem 1rem 1.4rem 2rem;
+    padding-right: 6rem;
+    font-size: 1.6rem;
 }
-h6 {
-    font-size: 1.3rem;
+.companyHeader h3 {
+    font-size: 1.6rem;
+}
+.companyHeader p {
+    font-size: 1.6rem;
+}
+.techListTable {
+    width:65%;
+}
+.nameTd {
+    margin-left: 40%;
+    width:70%;
+    font-size: 1.6rem;
 }
 p {
-  font-size: 1.2rem;
+    font-size: 1.6rem;
+    padding:2%;
+}
+h5 {
+    font-size: 1.4rem;
+}
+h6 {
+    font-size: 1.6rem;
 }
 }
 </style>

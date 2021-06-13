@@ -45,7 +45,7 @@ export default {
 <style scoped>
 @media all and (min-width: 50px) and (min-height:50px) {
 .hobbyDiv {
-    background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(221, 216, 231), rgb(255, 255, 255));
+    background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(254, 255, 211), rgb(255, 255, 255));
 }
 ul {
     width: 97%;
@@ -54,14 +54,14 @@ ul {
     list-style: none;
     }
 li {
-    background-color: rgb(231, 231, 231);
+    /* background-color: rgb(231, 231, 231); */
     width: 20vw;
     margin-bottom:6px;
     padding: 4px;
     padding-left: 0;
     font-weight: 600;
     line-height: 1px;
-    border: solid;
+    border-bottom: solid;
     border-color: blueviolet;
     border-width: 1px;
 }
@@ -300,7 +300,7 @@ p {
 }
 ul {
     width:80%;
-    margin-left: 20%;
+    margin-left: 24%;
     margin:none;
 }
 li {
@@ -318,11 +318,11 @@ p {
 }
 ul {
     width:60%;
-    margin-left: 26%;
+    margin-left: 34%;
     margin:none;
 }
 li {
-    height:4vh;
+    height:5vh;
     line-height: 0px;
 }
 }
@@ -391,7 +391,7 @@ p {
     font-size: 1rem;
 }
 ul {
-    margin-left: 22%;
+    margin-left: 34%;
     width: 45%;
 }
 li {
@@ -411,7 +411,7 @@ h5 {
     font-size: 1.4rem;
 }
 ul {
-    margin-left: 25%;
+    margin-left: 34%;
     width: 37%;
 }
 li {
@@ -430,7 +430,7 @@ h5 {
     font-size: 1.4rem;
 }
 ul {
-    margin-left: 25%;
+    margin-left: 35%;
     width: 37%;
 }
 li {
@@ -449,7 +449,7 @@ h5 {
     font-size: 1.7rem;
 }
 ul {
-    margin-left: 22%;
+    margin-left: 25%;
     width:36%;
 }
 li {
@@ -469,7 +469,7 @@ h5 {
     font-size: 1.7rem;
 }
 ul {
-    margin-left: 22%;
+    margin-left: 24%;
     width:90%;
 }
 li {

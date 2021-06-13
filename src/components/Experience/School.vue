@@ -38,36 +38,44 @@ export default {
 </script>
 
 <style scoped>
-.schoolDiv p {
+@media all and (min-width: 1px) and (min-height:1px) {
+    .schoolHeader {
+        padding: 3%;
+    }
+p {
+    font-size: .9rem;
     display:flex;
     align-items: center;
     justify-content: space-between;
 }
-.schoolDiv h2 {
+h2 {
+    font-size: 1.1rem;
     padding-bottom: 2vh;
 }
-.schoolDiv h3 {
+h6 {
+    font-size: .9rem;
     display:flex;
     align-items: center;
     justify-content: space-between;
 }
 .descDiv {
-    margin-top: 5vh;
-    padding:0;
     width:100%;
     height: 100%;
     margin-right: 30px;
     margin-bottom: 4vh;
+    margin-top: 5vh;
+    padding:0;
 }
 .descMinMaxBtn {
-    position: relative;
+    position:relative;
+    width: 80px !important;
+    height: 30px !important;
     background-image:linear-gradient(to right, rgb(245, 245, 245), rgb(224, 224, 224), rgb(245, 245, 245));
-    padding: 10px 20px;
-    left: 17vw;
-    right:0vw;
+    left: 26%;
+    width: 500px;
     border-radius: 5px;
     box-shadow: 1.5px 1.5px 2px;
-    font-size: 18px;
+    font-size: 1.2rem;
     cursor: pointer;
     user-select: none;
     caret-color: transparent;
@@ -95,6 +103,7 @@ export default {
 img{
     height: 65px;
     width: auto;
+    max-width: 100%;
     float:none;
     border-style: solid;
     border-radius: 10%;
@@ -102,14 +111,34 @@ img{
     border-color:mediumturquoise;
     cursor:pointer;
 }
-@media all and (min-width: 50px) and (min-height:50px) {
+@media all and (min-width: 350px) and (min-height:1px) {
 .descMinMaxBtn {
-    position: relative;
-    top: 1vh;
-    left: 20vw;
-    padding: .6rem;
-    font-size: 1.1rem;
-    line-height: 2px;
+    left: 30%;
+}
+}
+@media all and (min-width: 600px) and (min-height:1px) {
+.descMinMaxBtn {
+    left: 34%;
+}
+}
+@media all and (min-width: 700px) and (min-height:1px) {
+.descMinMaxBtn {
+    left: 38%;
+}
+}
+@media all and (min-width: 800px) and (min-height:1px) {
+.descMinMaxBtn {
+    left: 23%;
+}
+}
+@media all and (min-width: 1000px) and (min-height:1px) {
+.descMinMaxBtn {
+    left: 28%;
+}
+}
+@media all and (min-width: 1200px) and (min-height:1px) {
+.descMinMaxBtn {
+    left: 33%;
 }
 }
 @media all and (min-width: 280px) and (max-width:281px) and (min-height:653px) and (max-height:654px){ /*Galaxy fold */
@@ -121,25 +150,11 @@ img{
 }
 .descMinMaxBtn {
     position: relative;
-    left: 28vw;
+    left: 22vw;
     padding: .8rem;
     padding-right: 13vw;
     font-size: .8rem;
     line-height: 2px;
-}
-
-.tableWrapperForTransition {
-    display:list-item;
-    width:50vw;
-}
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
 }
 h6 {
     font-size: .9rem;
@@ -148,7 +163,8 @@ p {
     font-size: .9rem;
 }
 }
-@media all and (min-width: 653px) and (min-height:280px) and (max-height:281px){ /*Galaxy fold rotated */
+}
+@media all and (min-width: 653px) and (max-width: 654px) and (min-height:280px) and (max-height:281px){ /*Galaxy fold rotated */
 .schoolHeader {
     padding-left: 1vw;
 }
@@ -161,7 +177,7 @@ img{
 }
 .descMinMaxBtn {
     position: relative;
-    left: 22vw;
+    left: 23vw;
     padding: .8rem .4rem;
     font-size: .8rem;
     line-height: 2px;
@@ -181,7 +197,10 @@ p {
     font-size: .9rem;
 }
 }
-@media all and (min-width: 320px) and (min-height:568px) and (max-height:569px) { /*iPhone 5/SE*/
+@media all and (min-width: 320px) and (max-width: 321px) and (min-height:568px) and (max-height:569px) { /*iPhone 5/SE*/
+.schoolHeader {
+    padding:3%;
+}
 .schoolHeader h2 {
     font-size: 1rem;
 }
@@ -194,25 +213,11 @@ img{
 }
 .descMinMaxBtn {
     position: relative;
-    left: 28vw;
-    bottom:4vh;
+    left: 20vw;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
     font-size: .8rem;
     line-height: 2px;
-}
-.tableWrapperForTransition {
-    display:list-item;
-    width:50vw;
-}
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
 }
 h6 {
     font-size: 1rem;
@@ -221,7 +226,7 @@ p {
     font-size: .9rem;
 }
 }
-@media all and (min-width: 568px) and (min-height:320px) and (max-height:321px) { /*iPhone 5/SE rotated */
+@media all and (min-width: 568px) and (max-width: 569px) and (min-height:320px) and (max-height:321px) { /*iPhone 5/SE rotated */
 .schoolHeader h2 {
     font-size: 1rem;
 }
@@ -230,7 +235,7 @@ p {
 }
 .descMinMaxBtn {
     position: relative;
-    left: 30vw;
+    left: 23vw;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -243,19 +248,6 @@ p {
     margin-right: 30px;
     margin-bottom: 4vh;
 }
-.tableWrapperForTransition {
-    display:list-item;
-    width:50vw;
-}
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
-}
 h6 {
     font-size: 1.1rem;
 }
@@ -263,7 +255,7 @@ p {
     font-size: .9rem;
 }
 }
-@media all and (min-width: 360px) and (min-height:640px) and (max-height:641px) { /*Moto 4 & Galaxy S5 */
+@media all and (min-width: 360px) and (max-width: 361px) and (min-height:640px) and (max-height:641px) { /*Moto 4 & Galaxy S5 */
 .schoolHeader h2 {
     font-size: 1rem;
 }
@@ -271,18 +263,9 @@ img{
     margin-top: 1vh;
     margin-left: 0vw;
 }
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
-}
 .descMinMaxBtn {
     position: relative;
-    left: 24vw;
+    left: 18vw;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
     font-size: .8rem;
@@ -295,25 +278,13 @@ p {
     font-size: .9rem;
 }
 }
-@media all and (min-width: 640px) and (min-height:360px) and (max-height:361px)  { /* Moto 4 & Galaxy S5 rotated */
+@media all and (min-width: 640px) and (max-width: 641px) and (min-height:360px) and (max-height:361px)  { /* Moto 4 & Galaxy S5 rotated */
 .schoolHeader h2 {
     font-size: 1rem;
 }
-.techListTable {
-    margin-left: 10vw;
-}
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
-}
 .descMinMaxBtn {
     position: relative;
-    left: 25vw;
+    left: 20vw;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -325,7 +296,7 @@ p {
     font-size: .9rem;
 }
 }
-@media all and (min-width: 375px) and (min-height: 667px) and (max-height:668px) { /*iPhone 6/7/8 */
+@media all and (min-width: 375px) and (max-width: 376px) and (min-height: 667px) and (max-height:668px) { /*iPhone 6/7/8 */
 .schoolHeader {
     padding:3%;
 }
@@ -336,18 +307,9 @@ img{
     margin-top: 1vh;
     margin-left: 0vw;
 }
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
-}
 .descMinMaxBtn {
     position: relative;
-    left: 26vw;
+    left: 28%;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
     font-size: .8rem;
@@ -370,21 +332,9 @@ img {
 .schoolHeader h2 {
     font-size: 1.1rem;
 }
-.techListTable {
-    margin-left: 10vw;
-}
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
-}
 .descMinMaxBtn {
     position: relative;
-    left: 31vw;
+    left: 24vw;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -406,18 +356,9 @@ h6 {
 img{
     float:none;
 }
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
-}
 .descMinMaxBtn {
     position: relative;
-    left: 26vw;
+    left: 32%;
     padding: .9rem 1.1rem;
     padding-right:3rem;
     font-size: .8rem;
@@ -440,21 +381,9 @@ img {
 .schoolHeader h2 {
     font-size: .9rem;
 }
-.techListTable {
-    margin-left: 10vw;
-}
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
-}
 .descMinMaxBtn {
     position: relative;
-    left: 25vw;
+    left: 36%;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -476,18 +405,9 @@ p {
 img{
     float:none;
 }
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
-}
 .descMinMaxBtn {
     position: relative;
-    left: 26vw;
+    left: 32%;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
     font-size: .8rem;
@@ -532,18 +452,9 @@ img{
     margin-top: 1vh;
     margin-left: 0vw;
 }
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
-}
 .descMinMaxBtn {
     position: relative;
-    left: 25vw;
+    left: 32%;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
     font-size: .8rem;
@@ -563,18 +474,6 @@ img {
 }
 .companyHeader h2 {
     font-size: .9rem;
-}
-.techListTable {
-    margin-left: 10vw;
-}
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-right: 0;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
 }
 .descMinMaxBtn {
     position: relative;
@@ -600,10 +499,33 @@ img {
 }
 .descMinMaxBtn {
     position: relative;
-    left: 27vw;
-    bottom: 2vh;
+    left: 30%;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
+    font-size: .8rem;
+    line-height: 2px;
+}
+h6 {
+    font-size: 1rem;
+}
+p {
+    font-size: 1rem;
+}
+}
+@media all and (min-width: 823px) and (max-width: 824px) and (min-height:411px) and (max-height:412px) { /* Pixel 2 XL rotated */
+.schoolHeader {
+    padding: 3%;
+}
+img {
+    float:none;
+}
+.schoolHeader h2 {
+    font-size: 1.1rem;
+}
+.descMinMaxBtn {
+    position: relative;
+    left: 34%;
+    padding: .9rem 1rem;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -626,7 +548,7 @@ img {
 }
 .descMinMaxBtn {
     position: relative;
-    left: 28vw;
+    left: 22vw;
     padding: 1rem 1.6rem;
     padding-right: 3.5rem;
     font-size: .9rem;
@@ -665,30 +587,30 @@ p {
 }
 }
 @media all and (min-width: 768px) and (max-width: 769px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad*/
+.schoolHeader {
+    padding: 3%;
+}
 img{
-    height: 110px;
+    height: 120px;
     width: auto;
     max-width: 30vw;
     float:none;
 }
 .descMinMaxBtn {
-    left: 10vw;
+    margin-right: 28%;
     padding: 1.4rem 1rem 1.4rem 2rem;
+    margin-bottom: 1vh;
     padding-right: 5rem;
     line-height: 4px;  
     font-size: 1.6rem;
 }
+.descMinMaxBtn:active {
+    box-shadow: 0px 0px 0px;
+    margin-right:58px;
+    background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
+}
 .schoolHeader h3 {
     font-size: xx-large;
-}
-.nameTd {
-    display: inline-block;
-    min-width: 0;
-    width:39vw;
-    margin-left:25%;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 0.5vh;
 }
 .schoolHeader p {
     font-size: x-large;
@@ -697,7 +619,7 @@ p {
     font-size: large;
 }
 h6 {
-    font-size: large;
+    font-size: 1.4rem;
 }
 }
 @media all and (min-width: 1024px) and (min-height:768px) and (max-height:769px) { /* iPad rotated*/
@@ -705,11 +627,11 @@ img {
     max-width:40%;
 }
 .descMinMaxBtn {
-    left: 11vw;
+    left: 12vw;
     bottom: 1vh;
     line-height: 4px;
     padding: 1.4rem 1rem 1.4rem 2rem;
-    padding-right: 3rem;
+    padding-right: 5rem;
     font-size: 1.6rem;
 }
 h6 {
@@ -730,44 +652,57 @@ img{
     float:none;
 }
 .descMinMaxBtn {
-    position: relative;
-    left: 10vw;
-    line-height: 4px;
+    margin-left: 11%;
     padding: 1.4rem 1rem 1.4rem 2rem;
-    padding-right: 5rem;
-    margin-bottom: 1vh;
-    font-size: 1.6rem;
-}
-.schoolHeader h3 {
-    font-size: xx-large;
-}
-.schoolHeader p {
-    font-size: x-large;
-}
-p {
-    font-size: .8rem;
-}
-h6 {
-    font-size: 1rem;
-}
-}
-@media all and (min-width: 1366px) and (max-width:1367px) and (min-height:1024px) and (max-height:1025px) { /* iPad rotated*/
-img {
-    max-width:40%;
-}
-.descMinMaxBtn {
-    position: relative;
-    left: 11vw;
-    padding: 1.2rem 2.5rem;
-    padding-right: 4.5rem;
-    font-size: 1.2rem;
+    padding-right: 4.8rem;
+    font-size: 1.7rem;
     line-height: 2px;
 }
-h6 {
-    font-size: 1.3rem;
+.schoolHeader h2 {
+    font-size: 2rem;
+}
+.schoolHeader p {
+    font-size: 1.8rem;
 }
 p {
-  font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+h6 {
+    font-size: 1.8rem;
+}
+}
+@media all and (min-width: 1366px) and (max-width:1367px) and (min-height:1024px) and (max-height:1025px) { /* iPad Pro rotated*/
+.companyHeader {
+    padding:3%;
+}
+img{
+    height: 110px;
+    width: auto;
+    max-width: 30vw;
+    float:none;
+}
+.descMinMaxBtn {
+    margin-left: 10%;
+    line-height: 4px;
+    padding: 1.4rem 1rem 1.4rem 2rem;
+    padding-right: 6rem;
+    font-size: 1.6rem;
+}
+.scoolHeader h3 {
+    font-size: 1.6;
+}
+.scoolHeader p {
+    font-size: 1.6;
+}
+p {
+    font-size: 1.6rem;
+    padding:2%;
+}
+h5 {
+    font-size: 1.4rem;
+}
+h6 {
+    font-size: 1.6rem;
 }
 }
 </style>

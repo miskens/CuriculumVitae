@@ -55,27 +55,33 @@ export default {
 </script>
 
 <style scoped>
+h5 {
+    width: 45%;
+    margin-left: 30%;
+    font-size: 1.3rem;
+    color:darkcyan;
+    border-bottom: solid;
+    border-color: blueviolet;
+    border-width: 1px;
+}
 @media all and (min-width: 50px) and (min-height:50px) {
 .hobbyDiv {
     background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(231, 216, 231), rgb(255, 255, 255));
 }
 ul {
-    width: 97%;
+    width: 80%;
+    margin-left:10%;
     height: auto;
     padding:0;
     list-style: none;
     }
 li {
-    background-color: rgb(231, 231, 231);
-    width: 80%;
+    width: 100%;
     margin-bottom:6px;
     padding: 4px;
     padding-left: 0;
     font-weight: 600;
-    line-height: 1px;
-    border: solid;
-    border-color: blueviolet;
-    border-width: 1px;
+    line-height: 1px
 }
 }
 @media all and (min-width: 280px) and (max-width:281px) and (min-height:653px) and (max-height:654px){ /*Galaxy fold */
@@ -86,19 +92,22 @@ li {
 p {
     font-size: 1rem;
 }
-    .moviesDiv {
+.moviesDiv {
     width: 100%;
     float:left;
     overflow: none;
-    }
-    .seriesDiv {
+}
+.seriesDiv {
     width:100%;
     overflow: none;
+}
+ul {
+    width: 90%;
+    margin-left:5%;
     }
-    li {
-    margin-left: 10%;
+li {
     line-height: 1px;
-    }
+}
     
 }
 @media all and (min-width: 653px) and (max-width: 654px) and (min-height:280px) and (max-height:281px) { /* Galaxy fold rotated */
@@ -109,9 +118,11 @@ p {
 p {
     font-size: 1rem;
 }
+ul {
+    margin-left: 25%;
+}
 li {
     width:60%;
-    margin-left: 26%;
     height:8vh;
 }
 }
@@ -123,7 +134,7 @@ li {
 p {
     font-size: 1rem;
 }
-li {
+ul {
     margin-left: 10%;
     }
 }
@@ -131,6 +142,9 @@ li {
 .hobbyHeader {
     font-size: 1rem;
     padding-bottom: 4vh;
+}
+h5 {
+    font-size: 1rem;
 }
 p {
     font-size: 1rem;
@@ -148,9 +162,11 @@ li {
 p {
     font-size: 1rem;
 }
+ul {
+    margin-left: 20%;
+}
 li {
-    width:70%;
-    margin-left: 14%;
+    width:90%;
     line-height: 1px;
     }
 }
@@ -162,9 +178,11 @@ li {
 p {
     font-size: 1rem;
 }
+ul {
+    margin-left: 24%;
+}
 li {
-    width: 55%;
-    margin-left: 22%;
+    width: 70%;
     height:8vh;
 }
 }
@@ -176,9 +194,11 @@ li {
 p {
     font-size: 1rem;
 }
+ul {
+    margin-left: 15%;
+}
 li {
-    width: 70%;
-    margin-left: 14%;
+    width: 84%;
     height:5vh;
 }
 }
@@ -198,10 +218,13 @@ p {
     overflow: hidden;
     width:50%;
 }
+ul {
+    margin-left: 1%;;
+    width: 92%;
+}
 li {
-    width: 90%;
+    width: 100%;
     height:7vh;
-    margin-left: 5%;
     line-height: 2px;
 }
 }
@@ -221,7 +244,6 @@ p {
 }
 li {
     height:5vh;
-    margin-left: 10%;
 }
 }
 @media all and (min-width: 736px) and (max-width: 737px) and (min-height:414px) and (max-height:415px) { /* iPhone 6/7/8 Plus rotated */
@@ -242,9 +264,9 @@ p {
     overflow: none;
 }
 li {
-    width: 70%;
+    width: 50%;
     height:7vh;
-    margin-left: 15%;
+    margin-left: 25%;
 }
 }
 @media all and (min-width: 375px) and (max-width: 376px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */
@@ -266,10 +288,9 @@ p {
 }
 li {
     height:5vh;
-    margin-left: 10%;
 }
 }
-@media all and (min-width: 812px) and (max-width: 813px) and (min-height:375px) and (max-height:376px)  { /*iPhone X */
+@media all and (min-width: 812px) and (max-width: 813px) and (min-height:375px) and (max-height:376px)  { /*iPhone X rotated */
 .hobbyHeader {
     font-size: 1rem;
     padding-bottom: 4vh;
@@ -286,10 +307,13 @@ p {
     width:100%;
     overflow: none;
 }
+ul {
+    margin-left: 28%;
+    padding-bottom: 5%;
+}
 li {
     height:5vh;
     width: 60%;
-    margin-left: 22%;
 }
 }
 @media all and (min-width: 411px) and (max-width: 412px) and (min-height:731px) and (max-height:732px) { /*Pixel 2 */
@@ -299,6 +323,9 @@ li {
 .hobbyHeader {
     font-size: 1rem;
     padding-bottom: 4vh;
+}
+h5 {
+    font-size: 1.1rem;
 }
 p {
     font-size: 1rem;
@@ -312,15 +339,18 @@ p {
     float: left;
     overflow: hidden;
 }
+ul {
+    margin-left: 15%;
+    padding-bottom: 5%;
+}
 li {
     height:3vh;
-    margin-left: 14%;
     line-height: 0px;
 }
 }
 @media all and (min-width: 731px) and (max-width: 732px) and (min-height:411px) and (max-height:412px) { /*Pixel 2 rotated */
 .hobbyDiv {
-    padding-bottom:64vh;
+    padding-bottom:70vh;
 }
 .hobbyHeader {
     font-size: 1rem;
@@ -367,7 +397,7 @@ p {
 }
 li {
     width: 80%;
-    margin-left: 16%;
+    margin-left: 18%;
     height:3vh;
     line-height: 0px;
 }
@@ -411,9 +441,11 @@ p {
     width: 90%;
     overflow: none;
 }
+ul {
+    margin-left: 14%;
+}
 li {
     height:5vh;
-    margin-left: 15%;
     line-height: 0px;
 }
 }
@@ -458,7 +490,11 @@ h5 {
     overflow: hidden;
 }
 li {
+    width: 100%;
     height:5vh;
+}
+li p {
+    font-size: 1.2rem;
 }
 }
 @media all and (min-width: 1024px) and (max-width: 1025px) and (min-height:768px) and (max-height:769px) { /* iPad rotated*/
@@ -480,8 +516,10 @@ h5 {
     width: 50%;
     overflow: hidden;
 }
-li {
+ul {
     margin-left: 10%;
+}
+li {
     height:5vh;
 }
 }
@@ -504,10 +542,15 @@ h5 {
     width:50%;
     overflow: hidden;
 }
+ul {
+    margin-left: 14%;
+}
 li {
-    width:90%;
-    margin-left: 2%;
+    width:100%;
     line-height: 0px;
+}
+li p {
+    font-size: 1.5rem;
 }
 }
 @media all and (min-width: 1366px) and (max-width: 1367px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad Pro rotated */
@@ -529,8 +572,10 @@ h5 {
     width:50%;
     overflow: hidden;
 }
+ul {
+    margin-left: 10%;
+}
 li {
-    margin-left: 8%;
     line-height: 0px;
 }
 }

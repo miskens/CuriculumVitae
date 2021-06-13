@@ -22,31 +22,30 @@
 </script>
 
 <style  scoped>
-@media all and (min-width: 50px)  and (min-height:50px) { /* Responsive defaultish*/
+@media all and (min-width: 1px) and (min-height:1px) { /* RESPONSIVE Defaultish */
   .footer {
     height:34vh;
     margin-top: 2vh;
     padding: 2%;
     padding-bottom:0;
-    border-bottom: solid;
-    border-width: 2px;
-    border-color: black;
     background-image: linear-gradient(to right, #ffffff, #fcfcff, #f9f9ff, #f5f7ff, #f1f4ff, #f1f4ff, #f1f4ff, #f1f4ff, #f5f7ff, #f9f9ff, #fcfcff, #ffffff);
     caret-color: transparent;
   }
   .leftFooter {
-    display:inline;
     width: 40%;
     float:left;
   }
+  .contactInfoDiv {
+    margin-left:35%;
+  }
   .rightFooter {
-  width:40%;
+    width:40%;
     padding:0;
-    padding-left: 18vw;
+    padding-left: 4vw;
     top: 0;
     left: 0px;
     margin: 0;
-    overflow: auto;
+    overflow: hidden;
   }
   h5 {
     margin-bottom: 1vh;
@@ -60,6 +59,8 @@
     font-size:1rem;
   }
 }
+@media all and (min-width: 1000px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+}
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /*Galaxy fold */
 .footer {
   height:32vh;
@@ -68,9 +69,6 @@
   margin-left:5%;
   padding: 2%;
   padding-bottom:0;
-  border-bottom: solid;
-  border-width: 2px;
-  border-color: black;
   background-image: linear-gradient(to right, #ffffff, #fcfcff, #f9f9ff, #f5f7ff, #f1f4ff, #f1f4ff, #f1f4ff, #f1f4ff, #f5f7ff, #f9f9ff, #fcfcff, #ffffff);
   caret-color: transparent;
 }
@@ -123,8 +121,14 @@ p {
   margin-left: 10%;
   width:30%;
 }
+.contactInfoDiv {
+  margin-left: 5%;
+}
+.rightFooter {
+  padding-left: 20%;
+  font-size: 1rem;
+}
 .rightFooter h5 {
-  margin-left: 50vw;
   font-size: 1rem;
 }
 #layout a {
@@ -138,6 +142,14 @@ p {
 .footer {
   height: 72vh;
 }
+.leftFooter {
+  margin-left: 10%;
+  width:30%;
+}
+.rightFooter{
+  padding-left: 15%;
+  font-size: 1rem;
+}
 }
 @media all and (min-width: 360px) and (max-width: 361px) and (min-height:640px) and (max-height:641px) { /*Moto 4 & Galaxy S5 */
   .footer {
@@ -147,10 +159,22 @@ p {
     padding:2%;
     font-size: 1rem;
   }
+  .contactInfoDiv {
+  margin-left: 5%;
+}
+.rightFooter {
+  padding-left: 15%;
+}
 }
 @media all and (min-width: 640px) and (max-width: 641px) and (min-height:360px) and (max-height:361px)  { /* Moto 4 & Galaxy S5 rotated */
 .footer {
   height: 65vh;
+}
+.contactInfoDiv {
+  margin-left: 45%;
+}
+.rightFooter {
+  padding-left: 10vw;
 }
 }
 @media all and (min-width: 375px) and (max-width: 376px) and (min-height:667px) and (max-height:668px) { /*iPhone 6/7/8 */
@@ -161,6 +185,12 @@ p {
     padding:5%;
     font-size: 1rem;
   }
+  .contactInfoDiv {
+  margin-left: 5%;
+}
+.rightFooter {
+  padding-left: 15%;
+}
 }
 @media all and (min-width: 667px) and (max-width: 668px) and (min-height:375px) and (max-height:376px)   { /*iPhone 6/7/8 rotated */
 .footer {
@@ -170,26 +200,44 @@ p {
     padding:2%;
     font-size: 1rem;
   }
+  .contactInfoDiv {
+  margin-left: 45%;
+}
+  .rightFooter {
+    padding-left: 12%;
+  }
 }
 @media all and (min-width: 414px) and (max-width: 415px) and (min-height:736px) and (max-height:737px)  { /*iPhone 6/7/8 Plus */
 .footer {
-  height: 30vh;
+  height: 32vh;
 }
 .footer h5 {
   font-size: 1rem;
 }
+.contactInfoDiv {
+  margin-left: 5%
+}
 .contactInfoDiv p{
-  font-size: .9rem;
+  font-size: 1rem;
   margin-right: 5%;
 }
+.rightFooter {
+    padding-left: 12%;
+  }
 .rightFooter p {
-  font-size: .9rem;
+  font-size: 1rem;
 }
 }
 @media all and (min-width: 736px) and (max-width: 737px) and (min-height:414px) and (max-height:415px) { /* iPhone 6/7/8 Plus rotated */
 .footer {
   height: 58vh;
 }
+.contactInfoDiv {
+  margin-left: 45%;
+}
+.rightFooter {
+    padding-left: 12%;
+  }
 }
 @media all and (min-width: 375px) and (max-width: 376px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */
 .footer {
@@ -198,11 +246,23 @@ p {
 .footer h5 {
   font-size: 1.1rem;
 }
+.contactInfoDiv {
+  margin-left: 5%
+}
+.rightFooter {
+    padding-left: 12%;
+  }
 }
 @media all and (min-width: 812px) and (max-width: 813px) and (min-height:375px) and (max-height:376px)  { /*iPhone X rotated */
 .footer {
   height: 64vh;
 }
+.contactInfoDiv {
+  margin-left: 45%;
+}
+.rightFooter {
+    padding-left: 12%;
+  }
 }
 @media all and (min-width: 411px) and (max-width: 412px) and (min-height:731px) and (max-height:732px) { /*Pixel 2 */
 .footer {
@@ -211,6 +271,12 @@ p {
 .footer h5 {
   font-size: 1rem;
 }
+.contactInfoDiv {
+  margin-left: 10%;
+}
+.rightFooter {
+    padding-left: 14%;
+  }
 }
 @media all and (min-width: 731px) and (min-height:411px) and (max-height:412px) { /*Pixel 2 rotated */
 .footer {
@@ -219,11 +285,23 @@ p {
 .footer h5 {
   font-size: 1rem;
 }
+.contactInfoDiv {
+  margin-left: 45%;
+}
+.rightFooter {
+    padding-left: 12%;
+  }
 }
 @media all and (min-width: 411px) and (min-height:823px) and (max-height:824px) { /* Pixel 2 XL */
 .footer {
   height: 28vh;
 }
+.contactInfoDiv {
+  margin-left: 10%;
+}
+.rightFooter {
+    padding-left: 14%;
+  }
 }
 @media all and (min-width: 540px) and (max-width: 541px) and (min-height:720px) and (max-height:721px) { /*Surface Duo*/
 .footer {
@@ -232,12 +310,23 @@ p {
 .footer h5 {
   font-size: 1rem;
 }
-
+.contactInfoDiv {
+  margin-left: 10%;
+}
+.rightFooter {
+    padding-left: 14%;
+  }
 }
 @media all and (min-width: 720px) and (max-width: 721px) and (min-height:540px) and (max-height:541px) { /*Surface Duo rotated*/
 .footer {
   height: 46vh;
 }
+.contactInfoDiv {
+  margin-left: 45%;
+}
+.rightFooter {
+    padding-left: 12%;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 769px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad*/
 .footer {
@@ -253,11 +342,13 @@ p {
 .footer h5 {
   font-size: 1.6rem;
 }
+.contactInfoDiv {
+  margin-left:20%;
+}
 .rightFooter {
   width:40%;
-  border-top: none;
   overflow: hidden;
-  padding-left:6vw;
+  padding-left:8vw;
 }
 p {
   font-size: 1.4rem;
@@ -269,6 +360,12 @@ p {
 }
 #layout a {
 font-size: 1.2rem;
+}
+.contactInfoDiv {
+  margin-left: 40%;
+}
+.rightFooter {
+  padding-left: 10vw;
 }
 h5 {
   font-size: 1.3rem;
@@ -287,6 +384,28 @@ p {
 }
 .footer {
   height: 34vh;
+}
+.rightFooter {
+  padding:0;
+  padding-left: 10%;
+}
+p {
+  font-size: 1.8rem;
+}
+}
+@media all and (min-width: 1366px) and (max-width: 1367px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad Pro rotated */
+#layout a{
+  font-size: 1.8rem;
+}
+.footer {
+  height: 46vh;
+}
+.footer h5 {
+  font-size: 2rem;
+  padding-bottom: 2vh;
+}
+.contactInfoDiv {
+  margin-left: 40%;
 }
 .rightFooter {
   padding:0;
