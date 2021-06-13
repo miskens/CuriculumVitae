@@ -152,6 +152,7 @@ h6 {
 img{
     height: 80px;
     width: auto;
+    max-width: 100%;
     float:none;
     border-style: solid;
     border-radius: 10%;
@@ -174,7 +175,10 @@ img{
 }
 .nameTd {
     display: inline-block;
+    width:34vw;
+    margin-left: 35%;
     margin-right: 1vw;
+    margin-bottom: 0.5vh;
     text-align: center;
     padding: 10px;
     border-left: solid;
@@ -185,6 +189,10 @@ img{
     text-decoration: none;
 }
 @media all and (min-width: 350px) and (min-height:1px) {
+.nameTd {
+    width:28vw;
+    margin-left: 45%;
+}
 .techMinMaxBtn {
     left: 30%;
 }
@@ -200,6 +208,10 @@ img{
 }
 }
 @media all and (min-width: 800px) and (min-height:1px) {
+.nameTd {
+    width:14vw;
+    margin-left: 25%;
+}
 .techMinMaxBtn {
     left: 23%;
 }

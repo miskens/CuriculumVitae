@@ -49,6 +49,7 @@ export default {
 }
 ul {
     width: 97%;
+    margin-left: 30%;
     height: auto;
     padding:0;
     list-style: none;
@@ -74,9 +75,11 @@ li {
 p {
     font-size: 1rem;
 }
+ul {
+    margin-left: 20%;
+}
     li {
     width:60%;
-    margin-left: 20%;
     }
 }
 @media all and (min-width: 653px) and (max-width: 654px) and (min-height:280px) and (max-height:281px){ /*Galaxy fold rotated */
@@ -87,9 +90,11 @@ p {
 p {
     font-size: 1rem;
 }
+ul {
+    margin-left: 26%;
+}
 li {
     width:45%;
-    margin-left: 26%;
 }
 }
 @media all and (min-width: 320px) and (max-width: 321px) and (min-height:568px) and (max-height:569px) { /* iPhone 5/SE*/
@@ -102,7 +107,7 @@ p {
 }
 ul {
     width: 80%;
-    margin-left: 22%;
+    margin-left: 20%;
     margin:none;
     padding-top: 6vw;
 }
@@ -121,7 +126,7 @@ p {
 }
 ul {
     width: 45%;
-    margin-left: 22%;
+    margin-left: 26%;
     margin:none;
     padding-top: 6vw;
 }
@@ -202,7 +207,7 @@ p {
 }
 ul {
     width: 45%;
-    margin-left: 27.5%;
+    margin-left: 30%;
     margin:none;
     padding-top: 6vw;
 }
@@ -231,7 +236,7 @@ li {
     width: 96%;
 }
 }
-@media all and (min-width: 736px) and (max-width: 737px) and (min-height:414px) and (max-height:415px) { /* iPhone 6/7/8 Plus*/
+@media all and (min-width: 736px) and (max-width: 737px) and (min-height:414px) and (max-height:415px) { /* iPhone 6/7/8 Plus rotated */
 .hobbyHeader {
     font-size: 1rem;
     padding-bottom: 4vh;
@@ -241,7 +246,7 @@ p {
 }
 ul {
     width: 45%;
-    margin-left: 27.5%;
+    margin-left: 30%;
     margin:none;
     padding-top: 6vw;
 }
@@ -261,16 +266,15 @@ p {
 }
 ul {
     width: 90%;
-    margin:none;
+    margin-left: 18%;
     padding-top: 6vw;
 }
 li {
     height:4vh;
     width: 70%;
-    margin-left: 18%;
 }
 }
-@media all and (min-width: 812px) and (max-width: 813px) and (min-height:375px) and (max-height:376px) { /* iPhone rotated X*/
+@media all and (min-width: 812px) and (max-width: 813px) and (min-height:375px) and (max-height:376px) { /* iPhone X rotated */
 .hobbyHeader {
     font-size: 1rem;
     padding-bottom: 4vh;
@@ -280,7 +284,7 @@ p {
 }
 ul {
     width: 45%;
-    margin-left: 27.5%;
+    margin-left: 30%;
     margin:none;
     padding-top: 6vw;
 }
@@ -318,7 +322,7 @@ p {
 }
 ul {
     width:60%;
-    margin-left: 34%;
+    margin-left: 36%;
     margin:none;
 }
 li {
@@ -391,7 +395,7 @@ p {
     font-size: 1rem;
 }
 ul {
-    margin-left: 34%;
+    margin-left: 36%;
     width: 45%;
 }
 li {
@@ -430,7 +434,7 @@ h5 {
     font-size: 1.4rem;
 }
 ul {
-    margin-left: 35%;
+    margin-left: 36%;
     width: 37%;
 }
 li {
@@ -469,8 +473,8 @@ h5 {
     font-size: 1.7rem;
 }
 ul {
-    margin-left: 24%;
-    width:90%;
+    margin-left: 36%;
+    width:50%;
 }
 li {
     width:50%;

@@ -195,7 +195,7 @@ h2 {
     font-size: 1.3rem;
 }
 }
-@media all and (min-width: 768px) and (max-width: 769px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad*/
+@media all and (min-width: 768px) and (max-width: 769px) and (min-height: 1024px) and (max-height: 1025px) { /* iPad */
 .companyDiv {
     width:80%;
     margin-left:1%;
@@ -205,7 +205,7 @@ h2 {
     font-size: 1.6rem;
 }
 }
-@media all and (min-width: 1024px) and (max-height: 1365px) { /*iPad Pro*/
+@media all and (min-width: 1024px) and (max-width: 1025px) and (min-height: 1366px) and (max-height: 1367px) { /* iPad Pro */
 .companyDiv {
     width:80%;
     margin-left:1%;
@@ -215,7 +215,7 @@ h2 {
     font-size: 1.6rem;
 }
 }
-@media all and (min-width: 1366ppx) and (max-width: 1367ppx) and (min-height: 1024px) and (max-height: 1025px) { /*iPad Pro*/
+@media all and (min-width: 1366ppx) and (max-width: 1367ppx) and (min-height: 1024px) and (max-height: 1025px) { /* iPad Pro rotated */
 .companyDiv {
     width:80%;
     margin-left:1%;
