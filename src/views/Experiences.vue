@@ -180,12 +180,12 @@ export default {
 }
 @media all and (min-width: 653px) and (max-width: 654px) and (min-height:280px) and (max-height:281px){ /*Galaxy fold rotated */
 .worklifeDiv {
-    margin-left: 3%;
-    width: 76%;
+    width: 72%;
+    padding-left: 15%;
 }
 .studiesDiv {
-    width: 76%;
-    margin-left: 3%;
+    width: 72%;
+    padding-left: 15%;
     padding-bottom: 13vh;
 }
 }
@@ -254,7 +254,7 @@ export default {
 }
 .studiesDiv {
     width: 88%;
-    margin-left: 4vw;
+    margin-left: 0vw;
 }
 }
 @media all and (min-width: 736px) and (max-width: 737px) and (min-height:414px) and (max-height:415px) { /* iPhone 6/7/8 Plus rotated */
@@ -288,35 +288,38 @@ export default {
 @media all and (min-width: 411px) and (max-width: 412px) and (min-height:731px) and (max-height:732px) { /*Pixel 2 */
 .worklifeDiv {
     width: 80%;
-    margin-left: 15%;
+    margin-left: 0%;
 }
 .studiesDiv {
     width: 80%;
-    margin-left: 6%;
+    margin-left: 0%;
 }
 }
 @media all and (min-width: 731px) and (max-width: 732px) and (min-height:411px) and (max-height:412px) { /*Pixel 2 rotated */
 .worklifeDiv {
-    width: 45%;
+    width: 36%;
     padding:0;
-    padding-left:3vw;
+    padding-left:5vw;
     margin-left: 0vw;
     margin-bottom: 6vh;
 }
 .studiesDiv {
-    width: 45%;
-    margin-left: 2vw;
+    width: 36%;
+    padding-left: 8%;
+    margin-left: 0vw;
     padding-top: 0vh;
 }
 }
 @media all and (min-width: 411px) and (max-width: 412px) and (min-height:823px) and (max-height:824px) { /* Pixel 2 XL */
 .worklifeDiv {
     width: 80%;
+    padding-left: 0%;
     margin-left: 0vw;
 }
 .studiesDiv {
     width: 80%;
-    margin-left: 4vw;
+    padding-left: 0%;
+    margin-left: 0vw;
 }
 }
 @media all and (min-width: 823px) and (max-width: 824px) and (min-height:411px) and (max-height:412px) { /* Pixel 2 XL rotated */

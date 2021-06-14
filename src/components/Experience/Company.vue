@@ -303,6 +303,7 @@ p {
 }
 .companyHeader h2 {
     font-size: 1rem;
+    margin-left: 25%;
 }
 img{
     height: 80px;
@@ -312,7 +313,7 @@ img{
 }
 .techMinMaxBtn {
     position: relative;
-    left: 22vw;
+    left: 18vw;
     padding: .8rem .4rem;
     font-size: .8rem;
     line-height: 2px;
@@ -335,6 +336,7 @@ img{
 .nameTd {
     display: inline-block;
     min-width: 20vw;
+    margin-left: 0%;
     width:24vw;
     height: auto;
     text-align:left;
@@ -785,7 +787,7 @@ img {
     font-size: 1.1rem;
 }
 .techListTable {
-    margin-left: 10vw;
+    margin-left: 4vw;
 }
 .nameTd {
     display: inline-block;
@@ -797,7 +799,7 @@ img {
 }
 .techMinMaxBtn {
     position: relative;
-    left: 12vw;
+    left: 9vw;
     padding: .9rem 1rem;
     font-size: .8rem;
     line-height: 2px;

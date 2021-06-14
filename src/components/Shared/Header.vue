@@ -1,8 +1,10 @@
 <template>
 <div class="titleDiv">
-   <p class="title">{{title}}</p> 
-   <p class="name">Mikael Puusaari</p>
+        <h1 class="title">{{title}}</h1> 
+        <h2 class="name">Mikael Puusaari</h2>
+            <img src="./sharedAssets/flag_swedish.jpg">
   </div>
+  
 </template>
 
 <script>
@@ -31,7 +33,7 @@ export default {
 .titleDiv {
     width:86%;
     margin-left: 1%;
-    padding: 5vh 3vw;
+    padding: 0vh 3vw;
     border-top: 3px solid #1C6EA4;
     border-bottom: 8px double #1C6EA4;
     border-radius: 130px 0px 130px 0px;
@@ -41,26 +43,34 @@ export default {
     caret-color: transparent;
     margin-top: 1vh;
     margin-bottom:0vh;
-    }
-    .titleDiv p {
-        width: auto;
-    }
+}
 .title {
     font-weight: 600;
-    display: inline-block;
+    display:inline-block;
     padding:0;
     width:60%;
     font-family: "cassandra";
-    font-size:1.4rem;
+    border-bottom: double;
+    border-width: .5rem;
 }
 .name {
+    display: inline-block;
+    width:60%;
     font-family: "cassandra";
-    font-size:1rem;
+    color: rgb(114, 112, 212);
+}
+img {
+    width: 50px;
 }
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /* Galaxy fold */
 .titleDiv {
      width: 91%;
+}
+img {
+    width: 50px;
+    position: relative;
+    bottom: 10vh;
 }
 }
 @media all and (min-width: 653px) and (max-width: 654px) and (min-height:280px) and (max-height:281px){ /*Galaxy fold rotated */
@@ -77,6 +87,11 @@ export default {
 }
 .title {
     font-size: 1.1rem;
+}
+img {
+    width: 50px;
+    position: relative;
+    bottom: 8vh;
 }
 }
 @media all and (min-width: 568px) and (max-width: 569px) and (min-height:320px) and (max-height:321px) { /*iPhone 5/SE rotated */
@@ -95,6 +110,11 @@ export default {
 .title {
     font-size: 1.2rem;
 }
+img {
+    width: 50px;
+    position: relative;
+    bottom: 10vh;
+}
 }
 @media all and (min-width: 640px) and (max-width: 641px) and (min-height:360px) and (max-height:361px)  { /*Moto 4 & Galaxy S5 rotated */
 .titleDiv {
@@ -110,6 +130,11 @@ export default {
 }
 .title {
     font-size: 1.2rem;
+}
+img {
+    width: 50px;
+    position: relative;
+    bottom: 10vh;
 }
 }
 @media all and (min-width: 667px) and (max-width: 668px) and (min-height:375px)  and (max-height:376px)  { /*iPhone 6/7/8 rotated */
@@ -128,6 +153,11 @@ export default {
 .title {
     font-size: 1.2rem;
 }
+img {
+    width: 50px;
+    position: relative;
+    bottom: 9vh;
+}
 }
 @media all and (min-width: 736px) and (max-width: 737px) and (min-height:414px) and (max-height:415px) { /* iPhone 6/7/8 Plus rotated */
 .titleDiv {
@@ -144,6 +174,11 @@ export default {
 }
 .title {
     font-size: 1.4rem;
+}
+img {
+    width: 50px;
+    position: relative;
+    bottom: 8vh;
 }
 }
 @media all and (min-width: 812px) and (max-width: 813px) and (min-height:375px) and (max-height:376px)  { /*iPhone X rotated */
@@ -162,6 +197,11 @@ export default {
 }
 .title {
     font-size: 1.4rem;
+}
+img {
+    width: 50px;
+    position: relative;
+    bottom: 9vh;
 }
 }
 @media all and (min-width: 731px) and (max-width: 732px) and (min-height:411px) and (max-height:412px) { /*Pixel 2 rotated */
@@ -194,7 +234,7 @@ export default {
 @media all and (min-width: 540px) and (max-width: 541px) and (min-height:720px) and (max-height:721px) { /*Surface Duo*/
 .titleDiv {
     width: 92%;
-    margin-bottom:2vh;
+    margin-bottom:0vh;
 }
 .title {
     font-size: 1.5rem;
@@ -203,7 +243,7 @@ export default {
 @media all and (min-width: 720px) and (max-width: 721px) and (min-height:540px) and (max-height:541px) { /*Surface Duo rotated*/
 .titleDiv {
     width: 91%;
-    margin-bottom:3vh;
+    margin-bottom:0vh;
 }
 .title {
     font-size: 1.5rem;
@@ -230,27 +270,31 @@ export default {
 }
 @media all and (min-width: 1024px) and (max-width: 1025px) and (min-height: 1366px) and (max-height: 1367px) { /*iPad Pro*/
 .titleDiv {
-    width: 92%;
-    padding: 1vh 3vw;
-    margin-bottom:3vh;
+    width: 91%;
+    margin-bottom:1vh;
 }
 .title {
     font-size: 2.4rem;
 }
-}
-@media all and (min-width: 1366px) and (max-width: 1367px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad Pro*/
-.titleDiv {
-    width: 91%;
+img {
+    position:relative;
+    width: 80px;
+    top: 1vh;
 }
 }
 @media all and (min-width: 1366px) and (max-width: 1367px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad Pro rotated */
 .titleDiv {
     width: 92%;
     padding: 1vh 3vw;
-    margin-bottom:3vh;
+    margin-bottom:0vh;
 }
 .title {
     font-size: 2.4rem;
+}
+img {
+    position:relative;
+    width: 80px;
+    top: 1vh;
 }
 }
 </style>

@@ -374,7 +374,7 @@ p {
 }
 ul {
     width:60%;
-    margin-left: 36%;
+    margin-left: 18%;
     margin:none;
 }
 li {
@@ -468,7 +468,7 @@ h5 {
 }
 ul {
     margin-left: 34%;
-    width: 37%;
+    width: 42%;
 }
 li {
     height:5vh;
@@ -493,7 +493,7 @@ li {
     height:6vh;
 }
 }
-@media all and (min-width: 1024px) and (max-width: 1025px) and (min-height: 1366px) and (max-height: 1367px) { /*iPad Pro*/
+@media all and (min-width: 1024px) and (max-width: 1025px) and (min-height: 1366px) and (max-height: 1367px) { /* iPad Pro */
 .hobbyHeader {
     font-size: 2rem;
     padding-bottom: 4vh;
@@ -505,15 +505,16 @@ h5 {
     font-size: 1.7rem;
 }
 ul {
-    margin-left: 25%;
-    width:36%;
+    margin-left: 22%;
+    width:46%;
 }
 li {
+    width: 100%;
     height:4vh;
-    margin-left: 30%;
+    margin-left: 10%;
 }
 }
-@media all and (min-width: 1366px) and (max-width: 1367px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad Pro rotated */
+@media all and (min-width: 1366px) and (max-width: 1367px) and (min-height: 1024px) and (max-height: 1025px) { /* iPad Pro rotated */
 .hobbyHeader {
     font-size: 2rem;
     padding-bottom: 4vh;
@@ -529,7 +530,7 @@ ul {
     width:50%;
 }
 li {
-    width:50%;
+    width:60%;
     height:4vh;
     margin-left: 4%;
 }

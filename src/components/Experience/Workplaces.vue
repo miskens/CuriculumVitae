@@ -65,12 +65,13 @@ h2 {
 }
 @media all and (min-width: 653px) and (max-width: 654px) and (min-height:280px) and (max-height:281px){ /* Galaxy fold rotated */
 .companyDiv {
-    width:80%;
+    width:70%;
     padding-left: 3%;
-    margin-left: 10%;
     margin-bottom: 3vh;
 }
-h2 {
+.worklifeDiv h2 {
+    position: relative;
+    right: 10%;
     font-size: 1.2rem;
 }
 }
@@ -129,7 +130,7 @@ h2 {
 @media all and (min-width: 414px) and (max-width: 415px) and (min-height: 736px) and (max-height: 737px) { /* iPhone 6/7/8 Plus*/
 .companyDiv {
     width:72%;
-    margin-left:18%;
+    margin-left:5%;
     margin-bottom: 3vh;
 }
 }
@@ -176,7 +177,7 @@ h2 {
 @media all and (min-width: 411px) and (max-width: 412px) and (min-height:823px) and (max-height:824px)  { /* Pixel2 XL */
 .companyDiv {
     width:80%;
-    margin-left:18%;
+    margin-left:8%;
     margin-bottom: 3vh;
 }
 }

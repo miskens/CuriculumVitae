@@ -1,6 +1,6 @@
 <template>
   <div id="layout">
-    <Header title="Curiculum Vitae - Mikael Puusaari"/><br>
+    <Header title="Curiculum Vitae"/><br>
       <div class="routerLinks">
       <router-link class="rlink" to="/">Home</router-link> 
       <router-link class="rlink" to="/experiences">Experience</router-link>
@@ -57,7 +57,7 @@ body {
 }
 .routerLinks {
   width: 40%;
-  padding-bottom: 4vh;
+  padding-bottom: 2vh;
   margin-left: 3%;
 }
 .rlink {
@@ -562,7 +562,7 @@ body {
 }
 .routerLinks {
   margin-left: 6%;
-  margin-bottom: 1vh;
+  margin-bottom: 0vh;
   padding-bottom: 0vh;
 }
 .rlink {
@@ -586,7 +586,7 @@ body {
 }
 .routerLinks {
   margin-left: 4%;
-  margin-bottom: 1vh;
+  margin-bottom: 0vh;
   padding-bottom: 0vh;
 }
 .rlink {
@@ -610,7 +610,7 @@ body {
 }
 .routerLinks {
   margin-left: 4%;
-  margin-bottom: 1vh;
+  margin-bottom: 0vh;
   padding-bottom: 0vh;
 }
 .rlink {
@@ -634,7 +634,7 @@ body {
 }
 .routerLinks {
   margin-left:4%;
-  margin-bottom: 1vh;
+  margin-bottom: 0vh;
   padding-bottom: 0vh;
 }
 .rlink {
@@ -658,7 +658,7 @@ body {
 }
 .routerLinks {
   margin-left: 4%;
-  margin-bottom: 1vh;
+  margin-bottom: 0vh;
   padding-bottom: 0vh;
 }
 .rlink {

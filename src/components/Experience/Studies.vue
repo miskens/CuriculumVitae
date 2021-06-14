@@ -57,10 +57,13 @@ export default {
 }
 }@media all and (min-width: 653px) and (max-width: 654px) and (min-height:280px) and (max-height:281px) { /*Galaxy fold rotated */
 .schoolDiv {
-    width:80%;
-    margin-left: 3%;
+    width:70%;
+    padding-left: 3%;
     margin-bottom: 3vh;
-    margin-bottom: 3vh;
+}
+.studiesDiv h2 {
+    position: relative;
+    right: 10%;
 }
 }
 @media all and (min-width: 320px) and (max-width: 321px) and (min-height:568px) and (max-height:569px) { /*iPhone 5/SE*/
@@ -107,7 +110,7 @@ export default {
 @media all and (min-width: 414px) and (max-width: 415px) and (min-height:736px) and (max-height:737px) { /*iPhone 6/7/8 Plus */
 .schoolDiv {
     width:72%;
-    margin:0;
+    margin-left:5%;
     margin-bottom: 3vh;
 }
 }
@@ -153,7 +156,7 @@ export default {
 @media all and (min-width: 411px) and (max-width: 412px) and (min-height:823px) and (max-height:824px) { /* Pixel 2 XL */
 .schoolDiv {
     width:80%;
-    margin:0;
+    margin-left: 8%;
     margin-bottom: 3vh;
 }
 }

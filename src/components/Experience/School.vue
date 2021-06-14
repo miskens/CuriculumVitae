@@ -176,6 +176,7 @@ p {
 }
 .schoolHeader h2 {
     font-size: 1rem;
+    margin-left: 25%;
 }
 img{
     margin-top: 3vh;
@@ -183,7 +184,7 @@ img{
 }
 .descMinMaxBtn {
     position: relative;
-    left: 23vw;
+    left: 18vw;
     padding: .8rem .4rem;
     font-size: .8rem;
     line-height: 2px;
@@ -483,7 +484,7 @@ img {
 }
 .descMinMaxBtn {
     position: relative;
-    left: 13vw;
+    left: 9vw;
     padding: .9rem 1rem;
     font-size: .8rem;
     line-height: 2px;

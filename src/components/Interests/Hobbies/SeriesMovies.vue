@@ -417,10 +417,14 @@ p {
     float: left;
     overflow: hidden;
 }
+ul {
+    width: 100%;
+    margin-left: 0;
+}
 li {
-    width: 80%;
+    width: 100%;
     height:5vh;
-    margin-left: 14%;
+    margin-left: 0%;
     line-height: 0px;
 }
 }
@@ -538,12 +542,15 @@ h5 {
     width: 50%;
     overflow: hidden;
 }
+ul {
+    width:100%;
+}
 li {
     width: 100%;
     height:5vh;
 }
 li p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 }
 @media all and (min-width: 1024px) and (max-width: 1025px) and (min-height:768px) and (max-height:769px) { /* iPad rotated*/
@@ -592,7 +599,8 @@ h5 {
     overflow: hidden;
 }
 ul {
-    margin-left: 14%;
+    width: 100%;
+    margin-left: 4%;
 }
 li {
     width:100%;
@@ -622,9 +630,11 @@ h5 {
     overflow: hidden;
 }
 ul {
+    width:90%;
     margin-left: 10%;
 }
 li {
+    width:100%;
     line-height: 0px;
 }
 }
