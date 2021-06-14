@@ -65,17 +65,77 @@ export default {
     width: 80%;
     float:left;
     padding: 0;
-    padding-left: 3%;
+    padding-left: 1%;
     padding-top: 4vh;
-    margin-left: 8%;
+    margin-left: 1%;
 }
 .studiesDiv {
     width: 80%;
     float:left;
     padding: 0;
     padding-top: 4vh;
-    margin-left: 2%;
+    margin-left: 1%;
     margin-bottom:14%;
+}
+}
+@media all and (min-width: 300px) and (min-height:1px) {
+.worklifeDiv {
+    width: 75%;
+    padding-left: 3%;
+    margin-left: 1%;
+}
+.studiesDiv {
+    width: 75%;
+    padding-left: 3%;
+    margin-left: 1%;
+}
+}
+@media all and (min-width: 340px) and (min-height:1px) {
+.worklifeDiv {
+    width: 70%;
+    padding-left: 5%;
+    margin-left: 1%;
+}
+.studiesDiv {
+    width: 70%;
+    padding-left: 5%;
+    margin-left: 1%;
+}
+}
+@media all and (min-width: 400px) and (min-height:1px) {
+.worklifeDiv {
+    width: 65%;
+    padding-left: 8%;
+    margin-left: 1%;
+}
+.studiesDiv {
+    width: 65%;
+    padding-left: 8%;
+    margin-left: 1%;
+}
+}
+@media all and (min-width: 500px) and (min-height:1px) {
+.worklifeDiv {
+    width: 55%;
+    padding-left: 12%;
+    margin-left: 1%;
+}
+.studiesDiv {
+    width: 55%;
+    padding-left: 12%;
+    margin-left: 1%;
+}
+}
+@media all and (min-width: 600px) and (min-height:1px) {
+.worklifeDiv {
+    width: 45%;
+    padding-left: 15%;
+    margin-left: 1%;
+}
+.studiesDiv {
+    width: 45%;
+    padding-left: 15%;
+    margin-left: 1%;
 }
 }
 @media all and (min-width: 800px) and (min-height:1px) { /* RESPONSIVE Defaultish */

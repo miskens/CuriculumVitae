@@ -58,12 +58,12 @@ body {
 .routerLinks {
   width: 40%;
   padding-bottom: 4vh;
-  margin-left: 0%;
+  margin-left: 3%;
 }
 .rlink {
   background-image:linear-gradient(to bottom, rgb(214, 111, 228), rgb(157, 107, 165), rgb(220, 113, 235));
-    margin-right: 2%;;
-    padding: 0.3rem .5rem;
+    margin-right: 1%;
+    padding: 0.3rem .4rem;
     list-style-type: none;
     display: inline;
     cursor: pointer;
@@ -115,16 +115,15 @@ body {
   height:0vh;
 }
 }
-@media all and (min-width: 220px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 300px) and (min-height:1px) {
 .routerLinks {
-  width: 50%;
   margin-left: 5%;
 }
 .rlink {
   padding: .3rem .5rem;
 }
 }
-@media all and (min-width: 340px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 340px) and (min-height:1px) { 
 .routerLinks {
   margin-left: 10%;
 }
@@ -132,7 +131,7 @@ body {
   padding: 0.4rem .6rem;
 }
 }
-@media all and (min-width: 400px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 400px) and (min-height:1px) {
 .routerLinks {
   margin-left: 10%;
 }
@@ -140,7 +139,7 @@ body {
   padding: 0.4rem 1rem;
 }
 }
-@media all and (min-width: 500px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 500px) and (min-height:1px) {
 .routerLinks {
   width:80%;
   margin-left: 6%;
@@ -149,13 +148,13 @@ body {
   padding: 0.5rem 2rem;
 }
 }
-@media all and (min-width: 600px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 600px) and (min-height:1px) {
 .routerLinks {
   width: 80%;
   margin-left: 6%;
 }
 }
-@media all and (min-width: 800px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 800px) and (min-height:1px) {
 #layout {
   width: 70%;
   margin-left: 15%;
@@ -164,7 +163,7 @@ body {
   margin-left: 2%;
 }
 }
-@media all and (min-width: 1000px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 1000px) and (min-height:1px) {
 #layout {
   width: 65%;
   margin-left: 17.5%;

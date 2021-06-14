@@ -64,7 +64,7 @@ h5 {
     border-color: blueviolet;
     border-width: 1px;
 }
-@media all and (min-width: 50px) and (min-height:50px) {
+@media all and (min-width: 1px) and (min-height:1px) {
 .hobbyDiv {
     background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(231, 216, 231), rgb(255, 255, 255));
 }
@@ -83,6 +83,55 @@ li {
     font-weight: 600;
     line-height: 1px
 }
+}
+@media all and (min-width: 300px) and (min-height:1px) {
+    .hobbyDiv {
+    width: 90%;
+    margin-left: 3%;
+
+    }
+}
+@media all and (min-width: 340px) and (min-height:1px) {
+    .hobbyDiv {
+    width: 85%;
+    margin-left: 5%;
+
+    }
+}
+@media all and (min-width: 400px) and (min-height:1px) {
+    .hobbyDiv {
+    width: 80%;
+    margin-left: 8%;
+
+    }
+}
+@media all and (min-width: 500px) and (min-height:1px) {
+    .hobbyDiv {
+    width: 70%;
+    margin-left: 12%;
+
+    }
+}
+@media all and (min-width: 600px) and (min-height:1px) {
+    .hobbyDiv {
+    width: 60%;
+    margin-left: 15%;
+
+    }
+}
+@media all and (min-width: 800px) and (min-height:1px) {
+    .hobbyDiv {
+    width: 65%;
+    margin-left: 15%;
+
+    }
+}
+@media all and (min-width: 1100px) and (min-height:1px) {
+    .hobbyDiv {
+    width: 55%;
+    margin-left: 18%;
+
+    }
 }
 @media all and (min-width: 280px) and (max-width:281px) and (min-height:653px) and (max-height:654px){ /*Galaxy fold */
 .hobbyHeader {

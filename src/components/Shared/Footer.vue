@@ -24,7 +24,7 @@
 <style  scoped>
 @media all and (min-width: 1px) and (min-height:1px) { /* RESPONSIVE Defaultish */
   .footer {
-    height:34vh;
+    height:38vh;
     margin-top: 2vh;
     padding: 2%;
     padding-bottom:0;
@@ -36,12 +36,12 @@
     float:left;
   }
   .contactInfoDiv {
-    margin-left:35%;
+    margin-left:2%;
   }
   .rightFooter {
-    width:40%;
+    width:30%;
     padding:0;
-    padding-left: 4vw;
+    padding-left: 25%;
     top: 0;
     left: 0px;
     margin: 0;
@@ -56,26 +56,32 @@
     width:100%;
   }
   p {
+    font-size:.9rem;
+  }
+}
+@media all and (min-width: 340px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+p {
     font-size:1rem;
   }
 }
-@media all and (min-width: 220px) and (min-height:1px) { /* RESPONSIVE Defaultish */
-
-}
-@media all and (min-width: 340px) and (min-height:1px) { /* RESPONSIVE Defaultish */
-
-}
 @media all and (min-width: 400px) and (min-height:1px) { /* RESPONSIVE Defaultish */
-
+p {
+    font-size:1rem;
+  }
+    #layout a{
+    font-size: 1rem;
+  }
 }
 @media all and (min-width: 500px) and (min-height:1px) { /* RESPONSIVE Defaultish */
 
 }
 @media all and (min-width: 600px) and (min-height:1px) { /* RESPONSIVE Defaultish */
-
-}
-@media all and (min-width: 800px) and (min-height:1px) { /* RESPONSIVE Defaultish */
-
+.contactInfoDiv {
+    margin-left:20%;
+  }
+  .rightFooter {
+    padding-left: 15%;
+  }
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /*Galaxy fold */
 .footer {
