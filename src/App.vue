@@ -725,4 +725,7 @@ body {
 @media all and (min-width: 1536px) and (max-width:1537px) and (min-height:2048px) and (max-height:2049px) { /* Galaxy S3 Pro rotated*/
 
 }
+@media all and (min-width: 1440px) and (max-width:1441px) and (min-height:3168px) and (max-height:3169px) { /* Galaxy S3 Pro rotated*/
+
+}
 </style>
