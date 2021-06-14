@@ -18,8 +18,13 @@ export default {
 
 <style scoped>
 @font-face {
-        font-family: 'Cassandra';
-        src: '../sharedAssets/Cassandra.ttf';
+    font-family: 'cassandra';
+    src: url('./sharedAssets/cassandra-webfont.woff2') format('woff2'),
+         url('./sharedAssets/cassandra-webfont.woff') format('woff'),
+         url('./sharedAssets/cassandra.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2rem;
     }
 @media all and (min-width: 50px)  and (min-height:50px) { /* Responsive defaultish*/
 .titleDiv {
@@ -36,12 +41,15 @@ export default {
     margin-top: 1vh;
     margin-bottom:0vh;
     }
+    .titleDiv p {
+        width: auto;
+    }
 .title {
     font-weight: 600;
     display: inline-block;
     padding:0;
     width:60%;
-    font-family: "Cassandra";
+    font-family: "cassandra";
     font-size:1.4rem;
 }
 }

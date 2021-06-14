@@ -79,8 +79,9 @@ h6 {
     position:relative;
     width: 80px !important;
     height: 30px !important;
-    background-image:linear-gradient(to right, rgb(245, 245, 245), rgb(224, 224, 224), rgb(245, 245, 245));
+    background-image:linear-gradient(to right, rgb(235, 235, 235), rgb(245,245,245), rgb(235, 235, 235));
     left: 26%;
+    border-color: lightgrey;
     border-radius: 5px;
     box-shadow: .6px .6px .6px;
     font-size: 1.2rem;

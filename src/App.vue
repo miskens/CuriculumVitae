@@ -1,6 +1,6 @@
 <template>
   <div id="layout">
-    <Header title="Mikael Puusaari - Curiculum Vitae" /><br>
+    <Header title="Curiculum Vitae - Mikael Puusaari"/><br>
       <div class="routerLinks">
       <router-link class="rlink" to="/">Home</router-link> 
       <router-link class="rlink" to="/experiences">Experience</router-link>
@@ -61,17 +61,14 @@ body {
   margin-left: 3%;
 }
 .rlink {
-  background-image:linear-gradient(to bottom, rgb(214, 111, 228), rgb(157, 107, 165), rgb(220, 113, 235));
+  background-image:linear-gradient(to bottom, rgb(178, 176, 255), rgb(121, 122, 185), rgb(178, 176, 255));
     margin-right: 1%;
     padding: 0.3rem .4rem;
     list-style-type: none;
     display: inline;
     cursor: pointer;
     transition: all .3s;
-    border: solid;
-    border-width: 2px;
     border-radius: 0.6rem;
-    border-color: rgb(124, 124, 124);
 }
 .mainDiv {
   width:86%;
@@ -699,5 +696,33 @@ body {
 .spacer {
   height: 3vh;
 }
+}
+@media all and (min-width: 1536px) and (max-width:1537px) and (min-height:2048px) and (max-height:2049px) { /* Galaxy S3 */
+#layout {
+  width: 98%;
+  margin-left: 1%;
+}
+#layout a {
+  font-size: 1rem;
+}
+.routerLinks {
+  margin-top: 3vh;
+  margin-left:3%;
+  margin-bottom: 1vh;
+  padding-bottom: 0vh;
+}
+.rlink {
+    margin-right: 1vw;
+    padding: .8rem 2rem;
+}
+.mainDiv {
+  width: 95%;
+}
+.spacer {
+  height: 3vh;
+}
+}
+@media all and (min-width: 1536px) and (max-width:1537px) and (min-height:2048px) and (max-height:2049px) { /* Galaxy S3 Pro rotated*/
+
 }
 </style>
