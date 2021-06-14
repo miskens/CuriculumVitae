@@ -1,6 +1,7 @@
 <template>
 <div class="titleDiv">
    <p class="title">{{title}}</p> 
+   <p class="name">Mikael Puusaari</p>
   </div>
 </template>
 
@@ -51,6 +52,10 @@ export default {
     width:60%;
     font-family: "cassandra";
     font-size:1.4rem;
+}
+.name {
+    font-family: "cassandra";
+    font-size:1rem;
 }
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /* Galaxy fold */
