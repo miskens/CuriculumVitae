@@ -117,39 +117,51 @@ export default {
 @media all and (min-width: 500px) and (min-height:1px) {
 .worklifeDiv {
     width: 55%;
-    padding-left: 12%;
+    padding-left: 15%;
     margin-left: 1%;
 }
 .studiesDiv {
     width: 55%;
-    padding-left: 12%;
+    padding-left: 15%;
     margin-left: 1%;
 }
 }
 @media all and (min-width: 600px) and (min-height:1px) {
 .worklifeDiv {
-    width: 45%;
-    padding-left: 15%;
+    width: 50%;
+    padding-left: 18%;
     margin-left: 1%;
 }
 .studiesDiv {
-    width: 45%;
-    padding-left: 15%;
+    width: 50%;
+    padding-left: 18%;
     margin-left: 1%;
 }
 }
-@media all and (min-width: 800px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 600px) and (min-height:1px) {
 .worklifeDiv {
-    width: 45%;
+    width: 48%;
+    padding-left: 22%;
+    margin-left: 1%;
+}
+.studiesDiv {
+    width: 48%;
+    padding-left: 22%;
+    margin-left: 1%;
+}
+}
+@media all and (min-width: 800px) and (min-height:1px) {
+.worklifeDiv {
+    width: 40%;
     float:left;
-    padding-left: 1%;
+    padding-left: 2%;
     padding-bottom: 3vh;
     margin-left: 1%;
 }
 .studiesDiv {
-    width:45%;
+    width:40%;
     padding-left: 3%;
-    margin-left: 1%;
+    margin-left: 5%;
 }
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px)  { /*Galaxy fold */

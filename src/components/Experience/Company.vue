@@ -82,7 +82,7 @@ h6 {
     background-image:linear-gradient(to right, rgb(245, 245, 245), rgb(224, 224, 224), rgb(245, 245, 245));
     left: 26%;
     border-radius: 5px;
-    box-shadow: 1.5px 1.5px 2px;
+    box-shadow: .6px .6px .6px;
     font-size: 1.2rem;
     cursor: pointer;
     user-select: none;
@@ -90,8 +90,8 @@ h6 {
     transition: ease-in-out, 0.02s;
 }
 .techMinMaxBtn:active {
-    box-shadow: 0px 0px 0px;
-    margin-right:-5px;
+    transform: scale(0.98);
+    margin-right:-3px;
     background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
 }
 .techTransition-enter-active, .techTransition-leave-active {
@@ -187,6 +187,12 @@ img{
     background-color: rgba(240, 240, 240, 0.8);
     text-decoration: none;
 }
+h6 {
+    font-size: .9rem;
+}
+p {
+    font-size: .9rem;
+}
 @media all and (min-width: 350px) and (min-height:1px) {
 .nameTd {
     width:28vw;
@@ -196,7 +202,15 @@ img{
     left: 30%;
 }
 }
+@media all and (min-width: 500px) and (min-height:1px) {
+.nameTd {
+    margin-left: 20%;
+}
+}
 @media all and (min-width: 600px) and (min-height:1px) {
+.nameTd {
+    margin-left: 12%;
+}
 .techMinMaxBtn {
     left: 34%;
 }

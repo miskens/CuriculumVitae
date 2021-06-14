@@ -39,11 +39,44 @@ export default {
     margin-top: 3vw;
     padding-right:2vw;
 }
+nav {
+    height:auto;
+    width:auto;
 }
-@media all and (min-width: 1px) and (min-height:1px) {
-.interestsDiv {
-    width: 80%;
-    margin-left: 5%;
+ul {
+    float:left;
+    list-style: none;
+    overflow: hidden;
+    padding-top: 3vh;
+}
+li {
+    width: 14vw;
+    height: 6vh;
+    background-color:rgba(216, 216, 216, 0);
+    transition: all .2s;
+}
+li:hover {
+    background-color:rgba(216, 216, 216, 0.4);
+}
+.rlink {
+    text-align: center;
+    line-height:50px;
+    background-color:rgb(180, 255, 236, 0);
+    border-radius: 2rem;
+    font-weight: 500;
+    border-style: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+.rlink:hover {
+    border-color: black;
+    border-radius: 0;
+}
+#layout a {
+    color:rgb(154, 66, 255);
+}
+#layout a:hover {
+    color:rgb(54, 0, 116);
 }
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /*Galaxy fold */

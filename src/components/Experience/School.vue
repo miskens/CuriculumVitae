@@ -74,7 +74,7 @@ h6 {
     left: 26%;
     width: 500px;
     border-radius: 5px;
-    box-shadow: 1.5px 1.5px 2px;
+    box-shadow: .6px .6px .6px;
     font-size: 1.2rem;
     cursor: pointer;
     user-select: none;
@@ -85,8 +85,8 @@ h6 {
     background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
 }
 .descMinMaxBtn:active {
-    box-shadow: 0px 0px 0px;
-    margin-right:-5px;
+    transform: scale(0.98);
+    margin-right:-3px;
     background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
 }
 .descTransition-enter-active, .descTransition-leave-active {

@@ -140,6 +140,10 @@ body {
 }
 }
 @media all and (min-width: 500px) and (min-height:1px) {
+  #layout {
+  width: 90%;
+  margin-left: 5%;
+}
 .routerLinks {
   width:80%;
   margin-left: 6%;
@@ -149,6 +153,10 @@ body {
 }
 }
 @media all and (min-width: 600px) and (min-height:1px) {
+  #layout {
+  width: 80%;
+  margin-left: 10%;
+}
 .routerLinks {
   width: 80%;
   margin-left: 6%;
