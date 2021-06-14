@@ -723,9 +723,53 @@ body {
 }
 }
 @media all and (min-width: 1536px) and (max-width:1537px) and (min-height:2048px) and (max-height:2049px) { /* Galaxy S3 Pro rotated*/
-
+#layout {
+  width: 98%;
+  margin-left: 1%;
+}
+#layout a {
+  font-size: 1rem;
+}
+.routerLinks {
+  margin-top: 3vh;
+  margin-left:3%;
+  margin-bottom: 1vh;
+  padding-bottom: 0vh;
+}
+.rlink {
+    margin-right: 1vw;
+    padding: .8rem 2rem;
+}
+.mainDiv {
+  width: 95%;
+}
+.spacer {
+  height: 3vh;
+}
 }
 @media all and (min-width: 1440px) and (max-width:1441px) and (min-height:3168px) and (max-height:3169px) { /* Galaxy S3 Pro rotated*/
-
+#layout {
+  width: 98%;
+  margin-left: 1%;
+}
+#layout a {
+  font-size: 1rem;
+}
+.routerLinks {
+  margin-top: 3vh;
+  margin-left:3%;
+  margin-bottom: 1vh;
+  padding-bottom: 0vh;
+}
+.rlink {
+    margin-right: 1vw;
+    padding: .8rem 2rem;
+}
+.mainDiv {
+  width: 95%;
+}
+.spacer {
+  height: 3vh;
+}
 }
 </style>
