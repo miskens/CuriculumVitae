@@ -150,7 +150,7 @@ img{
 }
 .descMinMaxBtn {
     position: relative;
-    left: 22vw;
+    left: 16vw;
     padding: .8rem;
     padding-right: 13vw;
     font-size: .8rem;

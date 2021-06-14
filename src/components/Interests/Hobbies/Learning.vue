@@ -43,28 +43,37 @@ export default {
 </script>
 
 <style scoped>
-@media all and (min-width: 50px) and (min-height:50px) {
+@media all and (min-width: 1px) and (min-height:1px) {
 .hobbyDiv {
     background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(254, 255, 211), rgb(255, 255, 255));
 }
 ul {
-    width: 97%;
-    margin-left: 30%;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
     height: auto;
     padding:0;
     list-style: none;
     }
 li {
-    /* background-color: rgb(231, 231, 231); */
-    width: 20vw;
+    width: 100%;
+    /* max-width: 100px; */
     margin-bottom:6px;
     padding: 4px;
     padding-left: 0;
     font-weight: 600;
     line-height: 1px;
-    border-bottom: solid;
+    /* border-bottom: solid;
     border-color: blueviolet;
-    border-width: 1px;
+    border-width: 1px; */
+}
+}
+@media all and (min-width: 300px) and (min-height:1px) {
+    ul {
+    /* margin-left: 15%; */
+}
+li {
+    /* width: 45%; */
 }
 }
 @media all and (min-width: 280px) and (max-width:281px) and (min-height:653px) and (max-height:654px){ /*Galaxy fold */

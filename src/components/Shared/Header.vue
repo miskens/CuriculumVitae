@@ -19,7 +19,8 @@ export default {
 <style scoped>
 @media all and (min-width: 50px)  and (min-height:50px) { /* Responsive defaultish*/
 .titleDiv {
-    width:88%;
+    width:86%;
+    margin-left: 1%;
     padding: 5vh 3vw;
     border-top: 3px solid #1C6EA4;
     border-bottom: 8px double #1C6EA4;
@@ -38,9 +39,6 @@ export default {
     width:60%;
     font-size:1rem;
 }
-}
-@media all and (min-width: 50px) and (min-height:50px) { /* RESPONSIVE */
-
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /* Galaxy fold */
 .titleDiv {

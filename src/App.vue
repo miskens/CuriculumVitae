@@ -74,7 +74,8 @@ body {
     border-color: rgb(124, 124, 124);
 }
 .mainDiv {
-  width:88%;
+  width:86%;
+  margin-left: 1%;
   padding: 3vw;
   overflow: hidden;
   border-top: 8px double #1C6EA4;
@@ -114,44 +115,44 @@ body {
   height:0vh;
 }
 }
-@media all and (min-width: 340px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 220px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+.routerLinks {
+  width: 50%;
+  margin-left: 5%;
+}
 .rlink {
-  padding: 0.4rem .8rem;
+  padding: .3rem .5rem;
 }
 }
 @media all and (min-width: 340px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+.routerLinks {
+  margin-left: 10%;
+}
 .rlink {
-  padding: 0.4rem 1.1rem;
+  padding: 0.4rem .6rem;
 }
 }
 @media all and (min-width: 400px) and (min-height:1px) { /* RESPONSIVE Defaultish */
-#layout {
-  width: 90%;
-  margin-left: 5%;
-}
 .routerLinks {
-  width: 50%;
-  margin-left: 0%;
+  margin-left: 10%;
 }
 .rlink {
-  padding: 0.4rem 1.6rem;
+  padding: 0.4rem 1rem;
 }
 }
 @media all and (min-width: 500px) and (min-height:1px) { /* RESPONSIVE Defaultish */
 .routerLinks {
-  width:88%;
+  width:80%;
+  margin-left: 6%;
 }
 .rlink {
   padding: 0.5rem 2rem;
 }
 }
 @media all and (min-width: 600px) and (min-height:1px) { /* RESPONSIVE Defaultish */
-#layout {
-  width: 80%;
-  margin-left: 10%;
-}
 .routerLinks {
-  margin-left: 1%;
+  width: 80%;
+  margin-left: 6%;
 }
 }
 @media all and (min-width: 800px) and (min-height:1px) { /* RESPONSIVE Defaultish */
@@ -183,8 +184,8 @@ body {
   font-size: .6rem;
 }
 .routerLinks {
-  width: 96%;
-  margin-left: 0%;
+  width: 94%;
+  margin-left: 3%;
   padding-bottom: 1vh;
 }
 .mainDiv {

@@ -59,14 +59,30 @@
     font-size:1rem;
   }
 }
-@media all and (min-width: 1000px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 220px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+
+}
+@media all and (min-width: 340px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+
+}
+@media all and (min-width: 400px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+
+}
+@media all and (min-width: 500px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+
+}
+@media all and (min-width: 600px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+
+}
+@media all and (min-width: 800px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /*Galaxy fold */
 .footer {
   height:32vh;
-  width: 84%;
+  width: 94%;
   margin-top: 2vh;
-  margin-left:5%;
+  margin-left:3%;
   padding: 2%;
   padding-bottom:0;
   background-image: linear-gradient(to right, #ffffff, #fcfcff, #f9f9ff, #f5f7ff, #f1f4ff, #f1f4ff, #f1f4ff, #f1f4ff, #f5f7ff, #f9f9ff, #fcfcff, #ffffff);
@@ -77,10 +93,13 @@
   width: 40%;
   float:left;
 }
+.contactInfoDiv {
+  margin-left: 5%;
+}
 .rightFooter {
   width:40%;
   padding:0;
-  padding-left: 10vw;
+  padding-left: 20%;
   top: 0;
   left: 0px;
   margin: 0;

@@ -50,17 +50,15 @@ export default {
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /*Galaxy fold */
 .schoolDiv {
-    width:85%;
-    padding-left: 3%;
-    margin-left: 0%;
+    width:82%;
+    margin-left: 3%;
     margin-bottom: 3vh;
     margin-bottom: 3vh;
 }
 }@media all and (min-width: 653px) and (max-width: 654px) and (min-height:280px) and (max-height:281px) { /*Galaxy fold rotated */
 .schoolDiv {
     width:80%;
-    padding-left: 3%;
-    margin-left: 0%;
+    margin-left: 3%;
     margin-bottom: 3vh;
     margin-bottom: 3vh;
 }

@@ -176,8 +176,7 @@ img{
 .nameTd {
     display: inline-block;
     width:34vw;
-    margin-left: 35%;
-    margin-right: 1vw;
+    margin-left: 0%;
     margin-bottom: 0.5vh;
     text-align: center;
     padding: 10px;
@@ -241,7 +240,7 @@ img{
 }
 .techMinMaxBtn {
     position: relative;
-    left: 22vw;
+    left: 16vw;
     bottom: 1vh;
     padding: .8rem;
     padding-right: 13vw;
@@ -266,7 +265,6 @@ img{
     min-width: 30vw;
     width:39vw;
     height: auto;
-    margin-right: 0;
     text-align:left;
     padding: 10px;
     margin-bottom: 0.5vh;
@@ -319,7 +317,6 @@ img{
     min-width: 20vw;
     width:24vw;
     height: auto;
-    margin-right: 0;
     text-align:left;
     padding: 10px;
     margin-bottom: 0.5vh;
@@ -348,7 +345,7 @@ img {
 }
 .techMinMaxBtn {
     position: relative;
-    left: 20vw;
+    left: 16vw;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
     font-size: .8rem;

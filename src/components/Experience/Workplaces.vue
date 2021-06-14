@@ -54,7 +54,7 @@ export default {
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px){ /* Galaxy fold */
 .companyDiv {
-    width:85%;
+    width:80%;
     padding-left: 7%;
     margin-left: 1%;
     margin-bottom: 3vh;

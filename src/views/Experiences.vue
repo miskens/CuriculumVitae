@@ -94,12 +94,12 @@ export default {
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px)  { /*Galaxy fold */
 .worklifeDiv {
-    width: 92%;
-    padding-left: 3vw;
+    width: 82%;
+    padding-left: 0vw;
     padding-right:0vw;
 }
 .studiesDiv {
-    width: 92%;
+    width: 82%;
     padding: 0;
     padding-left: 3vw;
     padding-right:0vw;
@@ -119,21 +119,21 @@ export default {
 }
 @media all and (min-width: 320px) and (max-width: 321px) and (min-height:568px) and (max-height:569px) { /*iPhone 5/SE*/
 .worklifeDiv {
-    width: 90%;
+    width: 80%;
     margin-left: 2vw;
 }
 .studiesDiv {
-    width: 90%;
-    margin-left: 4vw;
+    width: 80%;
+    margin-left: 2vw;
 }
 }
 @media all and (min-width: 568px) and (max-width: 569px) and (min-height:320px) and (max-height:321px) { /*iPhone 5/SE rotated */
 .worklifeDiv {
-    width: 90%;
+    width: 80%;
     margin-left: 4%;
 }
 .studiesDiv {
-    width: 90%;
+    width: 80%;
     margin-left: 4vw;
     margin-bottom: 2%;
 }
