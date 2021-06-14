@@ -8,25 +8,26 @@
 
       <h2>presentation</h2>
         <div class="textDiv">
-        <p>Hej och välkommen!</p><br/>
+        <p>Hello and welcome!</p><br/>
 
        
-        <p>Jag är en kille från Sundsvall som har bott lite överallt i Sverige under min uppväxt
-            och har bott och arbetat inom IT i Stockholm i några år.</p>
+        <p>I´m a man living in Sundsvall, Sweden, but throughout both my childhood and adult life I´ve lived in several places all
+          along the country.</p>
         
-        <p>År 2009 läste jag om till systemutvecklare, vilket var min barndomsdröm. 
-        Jag läste en KY-utbildning med systemutveckling på heltid.</p>
+        <p>Year 2009 I left construction to follow my childhood dream of programming and working with computers. 
+        I found studies that suited me perfectly so I took a leap for it.</p>
 
-        <p>Under studierna certifierade jag mig till MCPD inom .NET 3.5.</p>
+        <p>Under the studies I certified for MCPD in .NET 3.5.</p>
 
-        <p>År 2011 började jag att arbeta inom IT och  med Microsofts integrationsmotorer och med tiden ledde det mig närmare databaser
-        tills jag arbetade ett tag som DBA och databasutvecklare.</p>
+        <p>The year 2011 I started working in IT and very soon was introduced to  Microsofts integration engines and it brought me closer
+        to databases and before I knew it I was working as a DBA and database developer.</p>
 
-        <p>Jag känner mig trygg i Microsoft-stacken och vill gärna fortsätta jobba aktivt i .NET och gärna i Azure.</p>
+        <p>I feel comfy in the Microsoft stack but have developed front end skills as a hobby so I would say I am today a full stack developer.
+            I would love an opportunity to work with Azure.</p>
         
-        <p>Kanske även som molnarkitekt, allting inom IT är roligt att arbeta med och nu har jag börjat smyga runt mer i frontend
-        också, denna CV är skriven helt och hållet i VueJS och är hostas på Azure.
+        <p>I might even look for a future in cloud architecture if needed, I love everything in IT.
       </p>
+      <p>This CV is a VueJS app and is hosted as an Azure web app. The code for it can be found <a href="" target="blank">here</a>.</p>
       </div>
       <div class="lilbox"></div>
   </div>

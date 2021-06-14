@@ -116,14 +116,19 @@ img{
     left: 30%;
 }
 }
+@media all and (min-width: 400px) and (min-height:1px) {
+.descMinMaxBtn {
+    left: 33%;
+}
+}
 @media all and (min-width: 600px) and (min-height:1px) {
 .descMinMaxBtn {
-    left: 34%;
+    left: 30%;
 }
 }
 @media all and (min-width: 700px) and (min-height:1px) {
 .descMinMaxBtn {
-    left: 38%;
+    left: 32%;
 }
 }
 @media all and (min-width: 800px) and (min-height:1px) {
@@ -213,7 +218,7 @@ img{
 }
 .descMinMaxBtn {
     position: relative;
-    left: 20vw;
+    left: 16vw;
     padding: .9rem 1.1rem;
     padding-right: 13vw;
     font-size: .8rem;
@@ -235,7 +240,7 @@ p {
 }
 .descMinMaxBtn {
     position: relative;
-    left: 23vw;
+    left: 19vw;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -284,7 +289,7 @@ p {
 }
 .descMinMaxBtn {
     position: relative;
-    left: 20vw;
+    left: 16vw;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -334,7 +339,7 @@ img {
 }
 .descMinMaxBtn {
     position: relative;
-    left: 24vw;
+    left: 22vw;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;

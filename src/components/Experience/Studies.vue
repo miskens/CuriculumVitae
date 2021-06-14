@@ -84,7 +84,7 @@ export default {
     margin-bottom: 3vh;
 }
 }
-@media all and (min-width: 640px) and (max-width: 641px) and (min-height:360px) and (max-height:361px) { /*Moto 4 & Galaxy S5 */
+@media all and (min-width: 640px) and (max-width: 641px) and (min-height:360px) and (max-height:361px) { /*Moto 4 & Galaxy S5 rotated */
 .schoolDiv {
     width:72%;
     margin:0;
@@ -94,14 +94,13 @@ export default {
 @media all and (min-width: 375px) and (max-width: 376px) and (min-height:667px) and (max-height:668px) { /*iPhone 6/7/8 */
 .schoolDiv {
     width:80%;
-    margin:0;
+    margin-left: 10%;
     margin-bottom: 3vh;
 }
 }
-@media all and (min-width: 667px) and (min-width: 668px) and (min-height:375px) and (max-height:376px) { /*iPhone 6/7/8 */
+@media all and (min-width: 667px) and (min-width: 668px) and (min-height:375px) and (max-height:376px) { /*iPhone 6/7/8 rotated*/
 .schoolDiv {
     width:100%;
-    margin:0;
     margin-bottom: 3vh;
 }
 }
@@ -115,8 +114,12 @@ export default {
 @media all and (min-width: 736px) and (max-width: 737px) and (min-height: 414px) and (max-height: 415px) { /* iPhone 6/7/8 Plus rotated*/
 .schoolDiv {
     width:72%;
-    margin-left:18%;
+    margin-left:2%;
     margin-bottom: 3vh;
+}
+.studiesDiv h2 {
+    text-align: left;
+    margin-left: 30%;
 }
 }
 @media all and (min-width: 375px) and (max-width: 376px) and (min-height:812px) and (max-height:813px) { /*iPhone X */

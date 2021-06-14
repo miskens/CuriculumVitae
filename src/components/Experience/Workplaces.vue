@@ -89,7 +89,6 @@ h2 {
 .companyDiv {
     width:80%;
     margin:0;
-    margin-left:10%;
     margin-bottom: 3vh;
 }
 h2 {
@@ -108,7 +107,6 @@ h2 {
 .companyDiv {
     width:72%;
     margin:0;
-    margin-left:18%;
     margin-bottom: 3vh;
 }
 }
@@ -116,7 +114,7 @@ h2 {
 .companyDiv {
     width:80%;
     margin:0;
-    margin-left:20%;
+    margin-left:10%;
     margin-bottom: 3vh;
 }
 }
@@ -124,7 +122,7 @@ h2 {
 .companyDiv {
     width:100%;
     margin:0;
-    margin-left:10%;
+    padding-left:2%;
     margin-bottom: 3vh;
 }
 } 
@@ -138,8 +136,12 @@ h2 {
 @media all and (min-width: 736px) and (max-width: 737px) and (min-height: 414px) and (max-height: 415px) { /* iPhone 6/7/8 Plus rotated*/
 .companyDiv {
     width:72%;
-    margin-left:18%;
+    margin-left:2%;
     margin-bottom: 3vh;
+}
+.worklifeDiv h2 {
+    text-align: left;
+    margin-left: 30%;
 }
 }
 @media all and (min-width: 375px) and (max-width: 376px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */

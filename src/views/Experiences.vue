@@ -167,7 +167,7 @@ export default {
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px)  { /*Galaxy fold */
 .worklifeDiv {
     width: 82%;
-    padding-left: 0vw;
+    padding-left: 3vw;
     padding-right:0vw;
 }
 .studiesDiv {
@@ -202,11 +202,9 @@ export default {
 @media all and (min-width: 568px) and (max-width: 569px) and (min-height:320px) and (max-height:321px) { /*iPhone 5/SE rotated */
 .worklifeDiv {
     width: 80%;
-    margin-left: 4%;
 }
 .studiesDiv {
     width: 80%;
-    margin-left: 4vw;
     margin-bottom: 2%;
 }
 }
@@ -223,32 +221,30 @@ export default {
 }
 @media all and (min-width: 640px) and (max-width: 641px) and (min-height:360px) and (max-height:361px)  { /* Moto 4 & Galaxy S5 rotated */
 .worklifeDiv {
-    width: 80%;
-    margin-left: 3%;
+    width: 70%;
+    padding-left: 15%;
 }
 .studiesDiv {
-    width: 80%;
-    margin-left: 8%;
+    width: 70%;
+    padding-left: 15%;
 }
 }
  @media all and (min-width: 375px) and (max-width: 376px) and (min-height:667px) and (max-height:668px) { /*iPhone 6/7/8  */
 .worklifeDiv {
     width: 80%;
-    margin-left: 0vw;
 }
 .studiesDiv {
     width: 80%;
-    margin-left: 4vw;
 }
 }
 @media all and (min-width: 667px) and (max-width: 668px) and (min-height:375px)and (max-height:376px) { /*iPhone 6/7/8 rotated */
 .worklifeDiv {
-    width: 65%;
-    margin-left: 12%;
+    width: 60%;
+    padding-left:13%;
 }
 .studiesDiv {
-    width: 65%;
-    margin-left: 6%;
+    width: 60%;
+    padding-left:13%;
 }
 }
 @media all and (min-width: 414px) and (max-width: 415px) and (min-height:736px) and (max-height:737px)  { /*iPhone 6/7/8 Plus */
@@ -264,11 +260,9 @@ export default {
 @media all and (min-width: 736px) and (max-width: 737px) and (min-height:414px) and (max-height:415px) { /* iPhone 6/7/8 Plus rotated */
 .worklifeDiv {
     width: 62%;
-    margin-left: 20%;
 }
 .studiesDiv {
     width: 62%;
-    margin-left: 8%;
 }
 }
 @media all and (min-width: 375px) and (max-width: 376px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */

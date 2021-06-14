@@ -202,6 +202,11 @@ p {
     left: 30%;
 }
 }
+@media all and (min-width: 400px) and (min-height:1px) {
+.techMinMaxBtn {
+    left: 33%;
+}
+}
 @media all and (min-width: 500px) and (min-height:1px) {
 .nameTd {
     margin-left: 20%;
@@ -212,12 +217,12 @@ p {
     margin-left: 12%;
 }
 .techMinMaxBtn {
-    left: 34%;
+    left: 30%;
 }
 }
 @media all and (min-width: 700px) and (min-height:1px) {
 .techMinMaxBtn {
-    left: 38%;
+    left: 32%;
 }
 }
 @media all and (min-width: 800px) and (min-height:1px) {
@@ -409,7 +414,7 @@ img {
 }
 .techMinMaxBtn {
     position: relative;
-    left: 26vw;
+    left: 22vw;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -456,8 +461,8 @@ img {
 }
 .nameTd {
     display: inline-block;
-    width:38vw;
-    margin-right: 0;
+    margin-left: 0%;
+    width:36vw;
     padding: 10px;
     margin-bottom: 0.5vh;
 }
@@ -501,7 +506,7 @@ img {
 }
 .techMinMaxBtn {
     position: relative;
-    left: 20vw;
+    left: 16vw;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
@@ -530,7 +535,7 @@ img {
     display: inline-block;
     min-width: 0;
     width:32vw;
-    margin-right: 0;
+    margin-left: 0%;
     text-align:left;
     padding: 10px;
     margin-bottom: 0.5vh;
@@ -569,7 +574,7 @@ img {
 }
 .techMinMaxBtn {
     position: relative;
-    left: 23vw;
+    left: 22vw;
     padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;

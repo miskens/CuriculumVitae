@@ -17,6 +17,10 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+        font-family: 'Cassandra';
+        src: '../sharedAssets/Cassandra.ttf';
+    }
 @media all and (min-width: 50px)  and (min-height:50px) { /* Responsive defaultish*/
 .titleDiv {
     width:86%;
@@ -37,7 +41,8 @@ export default {
     display: inline-block;
     padding:0;
     width:60%;
-    font-size:1rem;
+    font-family: "Cassandra";
+    font-size:1.4rem;
 }
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /* Galaxy fold */

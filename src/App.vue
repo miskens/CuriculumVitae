@@ -168,7 +168,7 @@ body {
   margin-left: 15%;
 }
 .routerLinks {
-  margin-left: 2%;
+  margin-left: 10%;
 }
 }
 @media all and (min-width: 1000px) and (min-height:1px) {
@@ -177,7 +177,7 @@ body {
   margin-left: 17.5%;
 }
 .routerLinks {
-  margin-left: 3%;
+  margin-left: 8%;
 }
 }
 /* // RESPONSIVENESS // */
@@ -337,7 +337,7 @@ body {
   font-size: 1rem;
 }
 .routerLinks {
-  margin-left: 5%;
+  margin-left: 8%;
   padding-bottom: 0vh;
 }
 .mainDiv {

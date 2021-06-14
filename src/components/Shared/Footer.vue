@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <h5>Vue.Js by Mikael Puusaari, hosted on Azure</h5><br/>
+    <h5>Vue.Js by Mikael Puusaari hosted on Azure</h5><br/>
     <div class="leftFooter">
       <div class="contactInfoDiv">
         <p>Mobil:</p>
@@ -113,6 +113,8 @@ p {
 }
 h5 {
   margin-bottom: 1vh;
+  padding-left: 5%;
+  padding-right: 10%;
   font-size: .9rem;
 }
 #layout a{
