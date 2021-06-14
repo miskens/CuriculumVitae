@@ -43,7 +43,7 @@ export default {
     font-size: 1.2rem;
 }
 }
-@media all and (min-width: 800px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 800px) and (min-height:1px) {
 .schoolDiv {
     width:90%;
 }

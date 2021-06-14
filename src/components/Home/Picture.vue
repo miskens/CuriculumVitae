@@ -31,7 +31,7 @@ export default {
     cursor: pointer;
     }
 
-@media all and (max-width: 280px)  and (max-height:654px){ /*Galaxy fold: maxwidth due to interference towards higher*/
+@media all and (max-width: 280px)  and (max-height:654px){ /*Galaxy fold */
 .thePic {
     width: auto;
     left:0;

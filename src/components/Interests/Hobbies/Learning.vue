@@ -19,17 +19,13 @@
             </div>
             </div>
     </div>
-  <!-- <VideoEmbed /> -->
 </template>
 
 <script>
-// import VideoEmbed from "../Shared/VideoEmbed"
-
 export default {
     name: "Learning",
     props: {},
     components: {
-        // VideoEmbed
     },
     data() {
         return {
@@ -59,15 +55,11 @@ ul {
     }
 li {
     width: 100%;
-    /* max-width: 100px; */
     margin-bottom:6px;
     padding: 4px;
     padding-left: 0;
     font-weight: 600;
     line-height: 1px;
-    /* border-bottom: solid;
-    border-color: blueviolet;
-    border-width: 1px; */
 }
 }
 @media all and (min-width: 300px) and (min-height:1px) {

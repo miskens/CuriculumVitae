@@ -22,7 +22,7 @@
 </script>
 
 <style  scoped>
-@media all and (min-width: 1px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 1px) and (min-height:1px) {
   .footer {
     height:38vh;
     margin-top: 2vh;
@@ -59,12 +59,12 @@
     font-size:.9rem;
   }
 }
-@media all and (min-width: 340px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 340px) and (min-height:1px) {
 p {
     font-size:1rem;
   }
 }
-@media all and (min-width: 400px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 400px) and (min-height:1px) {
 p {
     font-size:1rem;
   }
@@ -72,10 +72,10 @@ p {
     font-size: 1rem;
   }
 }
-@media all and (min-width: 500px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 500px) and (min-height:1px) {
 
 }
-@media all and (min-width: 600px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 600px) and (min-height:1px) {
 .contactInfoDiv {
     margin-left:20%;
   }

@@ -12,17 +12,13 @@
             <p>It is a very fun leisure hobby, if you like it, you love it.</p>
         </div>
     </div>
-  <!-- <VideoEmbed /> -->
 </template>
 
 <script>
-// import VideoEmbed from "../Shared/VideoEmbed"
-
 export default {
     name: "DiscGolf",
     props: {},
     components: {
-        // VideoEmbed
     },
     data() {
         return {

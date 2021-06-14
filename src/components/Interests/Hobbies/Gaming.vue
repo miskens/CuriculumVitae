@@ -22,17 +22,13 @@
             <p>Be crazy online!</p>
         </div>
     </div>
-  <!-- <VideoEmbed /> -->
 </template>
 
 <script>
-// import VideoEmbed from "../Shared/VideoEmbed"
-
 export default {
     name: "Gaming",
     props: {},
     components: {
-        // VideoEmbed
     },
     data() {
         return {

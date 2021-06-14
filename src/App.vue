@@ -5,8 +5,6 @@
       <router-link class="rlink" to="/">Home</router-link> 
       <router-link class="rlink" to="/experiences">Experience</router-link>
       <router-link class="rlink" to="/interests">Interest</router-link>
-      <!--<router-link to="/Education">Education</router-link> |  -->
-      <!-- <router-link to="/contact">Contact</router-link> -->
       </div>
     <div class="spacer"></div>
     <router-view/>
@@ -32,7 +30,7 @@ export default {
 </script>
 
 <style>
-@media all and (min-width: 1px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 1px) and (min-height:1px) {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

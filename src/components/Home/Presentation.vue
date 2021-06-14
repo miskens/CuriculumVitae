@@ -1,7 +1,6 @@
 <template>
 <div class="picDiv">
         <Picture id="thePic" @img-click="imageClick" alt="noting" src="https://mppersonalsg.blob.core.windows.net/cvfiles/welcome.jpg" />
-        <!-- <p>{{firstName}} {{lastName}}</p> -->
         <ImageModal id="modal" @closemodal="closeModal" alt="modalalt" src="https://mppersonalsg.blob.core.windows.net/cvfiles/welcome.jpg" />
       </div>
   <div class="presentationDiv">
@@ -27,7 +26,7 @@
         
         <p>I might even look for a future in cloud architecture if needed, I love everything in IT.
       </p>
-      <p>This CV is a VueJS app and is hosted as an Azure web app. The code for it can be found <a href="" target="blank">here</a>.</p>
+      <p>This CV is a VueJS app and is hosted as an Azure web app. The code for it can be found on <a href="https://github.com/miskens/CuriculumVitae" target="blank">github</a> and <a href="https://dev.azure.com/miskens/_git/CuriculumVitae" target="blank">Azure Devops</a>.</p>
       </div>
       <div class="lilbox"></div>
   </div>
@@ -52,11 +51,8 @@ export default {
         }
     },
     methods: {
-    //   changeToSwedish(){
-    //     this.toggleLanguage = "Swedish"
-    // },
-    //   changeToEnglish(){
-    //     this.toggleLanguage = "English"
+    //   toggleLanguage(){
+    //     this.language = !this.language
     // },
     imageClick() {
         var modal = document.getElementById("modal")
@@ -66,24 +62,8 @@ export default {
         var modal = document.getElementById("modal")
         modal.style.display = "none"
       }
-    // async fetchSomething(){
-    // },
  },
     mounted() {
-    //   document.addEventListener('DOMContentLoaded',function () {
-    //     var navDiv = document.getElementById('presNav');
-    //     var navTop = navDiv.offsetTop;
-    //     window.scroll(function () {   
-    //     if (this.scrollTop() > navTop){ 
-    //          $navDiv.css({'position': 'fixed', 'top': '0px'});
-    //          $(navDiv).removeClass('static'); 
-    //     }
-    //     if (this.scrollTop() < navTop && isPositionFixed){
-    //         $navDiv.css({'position': 'static', 'top': '0px'}); 
-    //         $(navDiv).removeClass('fixed');
-    //     } 
-    // });
-   //});
 }
 }
 </script>

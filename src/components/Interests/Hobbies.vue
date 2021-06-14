@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style>
-@media all and (min-width: 1px) and (min-height:1px) { /* RESPONSIVE Defaultish */
+@media all and (min-width: 1px) and (min-height:1px) {
 .HobbiesDiv {
     width: 100%;
     float:left;

@@ -1,8 +1,6 @@
 <template>
   <div class="mainDiv">
-    <!-- <div class="homeDiv"> -->
       <Presentation firstName="Mikael" lastName="Puusaari" age="40"/>
-    <!-- </div> -->
   </div>
 </template>
 

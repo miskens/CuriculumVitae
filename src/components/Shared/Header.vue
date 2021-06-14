@@ -29,7 +29,7 @@ export default {
     font-style: normal;
     font-size: 2rem;
     }
-@media all and (min-width: 50px)  and (min-height:50px) { /* Responsive defaultish*/
+@media all and (min-width: 50px)  and (min-height:50px) {
 .titleDiv {
     width:86%;
     margin-left: 1%;
