@@ -297,4 +297,15 @@ img {
     top: 1vh;
 }
 }
+@media all and (min-width: 1080px) and (max-width:1081px) and (min-height:2160px) and (max-height:2161px) { /* Asus Zenfone Max Pro */
+.titleDiv {
+    width: 92%;
+    margin-left: 1%;
+    padding: 1vh 3vw;
+    margin-bottom:0vh;
+}
+.title {
+    font-size: 1.6rem;
+}
+}
 </style>

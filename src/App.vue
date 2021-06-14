@@ -695,6 +695,31 @@ body {
   height: 3vh;
 }
 }
+@media all and (min-width: 1080px) and (max-width:1081px) and (min-height:2160px) and (max-height:2161px) { /* Galaxy S3 */
+#layout {
+  width: 898%;
+  margin-left: 15;
+}
+#layout a {
+  font-size: 1.1rem;
+}
+.routerLinks {
+  margin-top: 1vh;
+  margin-left:2%;
+  margin-bottom: 0vh;
+  padding-bottom: 0vh;
+}
+.rlink {
+    margin-right: 1%;
+    padding: .6rem 1.6rem;
+}
+.mainDiv {
+  width: 92%;
+}
+.spacer {
+  height: 1vh;
+}
+}
 @media all and (min-width: 1536px) and (max-width:1537px) and (min-height:2048px) and (max-height:2049px) { /* Galaxy S3 */
 #layout {
   width: 98%;
