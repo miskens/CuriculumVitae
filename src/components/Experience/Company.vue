@@ -262,8 +262,6 @@ img{
     position: relative;
     left: 16vw;
     bottom: 1vh;
-    padding: .8rem;
-    padding-right: 13vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -314,7 +312,6 @@ img{
 .techMinMaxBtn {
     position: relative;
     left: 18vw;
-    padding: .8rem .4rem;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -361,15 +358,12 @@ p {
     padding-top: 2vh;
 }
 img {
-    /* margin-top: 3vh; */
     max-width:100%;
     float:none;
 }
 .techMinMaxBtn {
     position: relative;
     left: 16vw;
-    padding: .9rem 1.1rem;
-    padding-right: 13vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -411,14 +405,12 @@ p {
     padding-top: 2vh;
 }
 img {
-    /* margin-top: 3vh; */
     max-width:100%;
     float:none;
 }
 .techMinMaxBtn {
     position: relative;
     left: 22vw;
-    padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -470,11 +462,7 @@ img {
     margin-bottom: 0.5vh;
 }
 .techMinMaxBtn {
-    /* position: relative; */
     margin-left: 4%;
-    bottom: 2vh;
-    padding: .9rem 1.1rem;
-    padding-right: 13vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -510,7 +498,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 16vw;
-    padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -546,8 +533,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 28%;
-    padding: .9rem 1.1rem;
-    padding-right: 13vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -578,7 +563,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 22vw;
-    padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -615,8 +599,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 32%;
-    padding: .9rem 1.1rem;
-    padding-right:3rem;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -653,7 +635,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 36%;
-    padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -689,8 +670,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 32%;
-    padding: .9rem 1.1rem;
-    padding-right: 13vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -727,7 +706,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 22vw;
-    padding: .9rem 1.1rem;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -763,8 +741,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 32%;
-    padding: .9rem 1.1rem;
-    padding-right: 13vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -800,7 +776,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 9vw;
-    padding: .9rem 1rem;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -834,8 +809,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 30%;
-    padding: .9rem 1.1rem;
-    padding-right: 13vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -870,7 +843,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 34%;
-    padding: .9rem 1rem;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -904,8 +876,6 @@ img {
 .techMinMaxBtn {
     position: relative;
     left: 22vw;
-    padding: 1rem 1.2rem;
-    padding-right: 10vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -939,8 +909,6 @@ img {
     position: relative;
     left: 9vw;
     bottom: 2vh;
-    padding: 1rem 1.2rem;
-    padding-right: 10vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -964,8 +932,6 @@ img{
 .techMinMaxBtn {
     margin-right: 28%;
     line-height: 4px;
-    padding: 1.4rem 1rem 1.4rem 2rem;
-    padding-right: 5rem;
     font-size: 1.6rem;
 }
 .techMinMaxBtn:active {
@@ -1007,8 +973,6 @@ img{
     left: 12vw;
     bottom: 1vh;
     line-height: 4px;
-    padding: 1.4rem 1rem 1.4rem 2rem;
-    padding-right: 5rem;
     font-size: 1.6rem;
 }
 .companyHeader h3 {
@@ -1044,8 +1008,6 @@ img{
 .techMinMaxBtn {
     margin-left: 10%;
     line-height: 4px;
-    padding: 1.4rem 1rem 1.4rem 2rem;
-    padding-right: 5rem;
     font-size: 1.7rem;
 }
 .companyHeader h2 {
@@ -1086,8 +1048,6 @@ img{
 .techMinMaxBtn {
     margin-left: 10%;
     line-height: 4px;
-    padding: 1.4rem 1rem 1.4rem 2rem;
-    padding-right: 6rem;
     font-size: 1.6rem;
 }
 .companyHeader h3 {

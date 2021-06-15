@@ -54,19 +54,24 @@ body {
   color:rgb(255, 249, 159);
 }
 .routerLinks {
-  width: 40%;
+  width: 100%;
   padding-bottom: 2vh;
-  margin-left: 3%;
+  margin-left: 0%;
+  
 }
 .rlink {
   background-image:linear-gradient(to bottom, rgb(178, 176, 255), rgb(121, 122, 185), rgb(178, 176, 255));
     margin-right: 1%;
-    padding: 0.3rem .4rem;
+    width: 30% !important;
+    height: 25% !important;
+    max-width: 200px;
+    padding: .4rem 0rem;
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     cursor: pointer;
     transition: all .3s;
     border-radius: 0.6rem;
+    overflow-x:hidden;
 }
 .mainDiv {
   width:86%;
@@ -112,26 +117,19 @@ body {
 }
 @media all and (min-width: 300px) and (min-height:1px) {
 .routerLinks {
-  margin-left: 5%;
+  position: relative;
+  right:3%;
 }
 .rlink {
-  padding: .3rem .5rem;
-}
-}
-@media all and (min-width: 340px) and (min-height:1px) { 
-.routerLinks {
-  margin-left: 10%;
-}
-.rlink {
-  padding: 0.4rem .6rem;
+  width:27% !important;
+  margin-right: 1%;
 }
 }
 @media all and (min-width: 400px) and (min-height:1px) {
-.routerLinks {
-  margin-left: 10%;
-}
 .rlink {
-  padding: 0.4rem 1rem;
+  position: relative;
+  width: 25% !important;
+  right: 3%;
 }
 }
 @media all and (min-width: 500px) and (min-height:1px) {
@@ -140,11 +138,12 @@ body {
   margin-left: 5%;
 }
 .routerLinks {
-  width:80%;
-  margin-left: 6%;
+  width:90%;
+  margin-left: 3%;
 }
 .rlink {
-  padding: 0.5rem 2rem;
+  position:static;
+  width: 24% !important;
 }
 }
 @media all and (min-width: 600px) and (min-height:1px) {
@@ -154,7 +153,7 @@ body {
 }
 .routerLinks {
   width: 80%;
-  margin-left: 6%;
+  margin-left: 10%;
 }
 }
 @media all and (min-width: 800px) and (min-height:1px) {
@@ -162,17 +161,24 @@ body {
   width: 70%;
   margin-left: 15%;
 }
-.routerLinks {
-  margin-left: 10%;
-}
 }
 @media all and (min-width: 1000px) and (min-height:1px) {
 #layout {
   width: 65%;
   margin-left: 17.5%;
 }
-.routerLinks {
-  margin-left: 8%;
+.rlink {
+  width: 20% !important;
+}
+}
+@media all and (min-width: 1200px) and (min-height:1px) {
+.rlink {
+  width: 18% !important;
+}
+}
+@media all and (min-width: 1400px) and (min-height:1px) {
+.rlink {
+  width: 15% !important;
 }
 }
 /* // RESPONSIVENESS // */
@@ -186,8 +192,6 @@ body {
   font-size: .6rem;
 }
 .routerLinks {
-  width: 94%;
-  margin-left: 3%;
   padding-bottom: 1vh;
 }
 .mainDiv {
@@ -195,9 +199,9 @@ body {
 }
 .rlink {
     width: 24w;
-    padding: .6rem 1.2rem;
     list-style-type: none;
     display:inline-table;
+    padding: 3% 0%;
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all .3s;
@@ -210,18 +214,16 @@ body {
   margin-left:0%;
 }
 #layout a {
-  font-size: .6rem;
+  font-size: .8rem;
 }
 .routerLinks {
-  width: 100%;
-  margin-left: 0%;
   padding-bottom: 0vh;
 }
 .rlink {
     width: 24w;
-    padding: .6rem 2.1rem;
     list-style-type: none;
     display:inline-table;
+    padding: 1% 0%;
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all .3s;
@@ -241,16 +243,9 @@ body {
 .routerLinks {
   margin-left: 2%;
 }
-.rlink {
-    padding: .8vh 2.8vh;
-    margin-left: 1%;
-}
 .mainDiv {
   width: 90%;
   margin-left: 0%;
-}
-.spacer {
-  height:4vh;
 }
 }
 @media all and (min-width: 568px) and (max-width:569px) and (min-height:320px) and (max-height:321px)  { /*iPhone 5/SE rotated */
@@ -264,15 +259,9 @@ body {
 .routerLinks {
   padding-bottom: 4vh;
 }
-.rlink {
-    padding: 1.8vh 6.5vh;
-}
 .mainDiv {
   width: 90%;
   margin-left: 2%;
-}
-.spacer {
-  height:2vh;
 }
 }
 @media all and (min-width: 360px) and (max-width:361px) and (min-height:640px) and (max-height:641px)  { /*Moto 4 & Galaxy S5 */
@@ -283,17 +272,8 @@ body {
 #layout a {
   font-size: .9rem;
 }
-.routerLinks {
-  margin-left: 6%;
-}
-.rlink {
-    padding: .4rem 1.2rem;
-}
 .mainDiv {
   width: 90%;
-}
-.spacer {
-  height:0vh;
 }
 }
 @media all and (min-width: 640px) and (min-height:360px) and (max-height:361px)  { /* Moto 4 & Galaxy S5 rotated */
@@ -314,9 +294,6 @@ body {
 .mainDiv {
   width: 90%;
 }
-.rlink {
-    padding: .4rem 1.6rem;
-}
 }
 @media all and (min-width: 375px) and (max-width: 376px) and (min-height:667px) and (max-height:668px)   { /*iPhone 6/7/8 */
 #layout {
@@ -332,17 +309,14 @@ body {
   font-size: 1rem;
 }
 .routerLinks {
-  margin-left: 8%;
+  
   padding-bottom: 0vh;
 }
 .mainDiv {
   width: 90%;
 }
-.rlink {
-    padding: .2rem 1rem;
-}
 .spacer {
-  height: 2vh;
+  height: 1vh;
 }
 }
 @media all and (min-width: 667px) and (max-width: 668px) and (min-height:375px) and (max-height:376px)   { /*iPhone 6/7/8 rotated */
@@ -355,9 +329,6 @@ body {
 }
 .routerLinks {
   padding-bottom: 3vh;
-}
-.rlink {
-  padding: 1.8vh 4.8vw;
 }
 .mainDiv {
   width: 91%;
@@ -372,18 +343,19 @@ body {
   font-size: .9rem;
 }
 .routerLinks {
-  margin-left: 5%;
   padding-bottom: 0vh;
 }
 .rlink {
-    padding: .4rem 1.8rem;
+  margin-right: 0;
+  margin-left: 1%;
+  padding: 2% 0%;
 }
 .mainDiv {
     width: 90%;
     margin-left: 0%;
 }
 .spacer {
-  height: 2vh;
+  height: 1vh;
 }
 }
 @media all and (min-width: 736px) and (max-width: 737px) and (min-height:414px) and (max-height:415px) { /* iPhone 6/7/8 Plus rotated */
@@ -398,15 +370,9 @@ body {
 .routerLinks {
   padding-bottom: 2vh;
 }
-.rlink {
-    padding: .4rem 2.6rem;
-}
 .mainDiv {
     width: 91%;
     margin-left: 0%;
-}
-.spacer {
-  height: 2vh;
 }
 }
 @media all and (min-width: 375px) and (max-width: 376px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */
@@ -418,18 +384,20 @@ body {
   font-size: 1rem;
 }
 .routerLinks {
-  margin-left: 3%;
+  
   padding-bottom: 0vh;
 }
 .rlink {
-    padding: .4rem 1.4rem;
+  margin-right: 0;
+  margin-left: 1%;
+    padding: 2.5% 1%;
 }
 .mainDiv {
     margin-left: 1%;
     padding-right: 5vw;
 }
 .spacer {
-  height: 2vh;
+  height: 1vh;
 }
 } 
 @media all and (min-width: 812px) and (max-width: 813px) and (min-height:375px) and (max-height:376px)  { /*iPhone X rotated */
@@ -441,19 +409,19 @@ body {
   font-size: 1rem;
 }
 .routerLinks {
-  margin-left: 3%;
+  
   padding-bottom: 0vh;
 }
 .rlink {
-    padding: .4rem 1.8rem;
-    margin-right: 1vw;
+    
+    margin-left: 1%;
 }
 .mainDiv {
     width: 91%;
     margin-left: 1%;
 }
 .spacer {
-  height: 5vh;
+  height: 2vh;
 }
 } 
 @media all and (min-width: 411px) and (max-width:412px) and (min-height:731px) and (max-height:732px) { /*Pixel 2 */
@@ -462,21 +430,21 @@ body {
   margin-left: 0;
 }
 .routerLinks {
-  margin-left: 5%;
+  
   padding-bottom: 0vh;
 }
 .rlink {
-    padding: .3rem 1.1rem;
-    display:inline;
+    margin-right: 0;
+    margin-left: 1%;
 }
 #layout a {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .mainDiv {
   width: 91%;
 }
 .spacer {
-  height: 2vh;
+  height: 1vh;
 }
 }
 @media all and (min-width: 731px) and (max-width: 732px) and (min-height:411px) and (max-height:412px) { /*Pixel 2 rotated */
@@ -488,20 +456,13 @@ body {
   font-size: 1.1rem;
 }
 .routerLinks {
-  margin-left: 4%;
+  
   margin-top: 1%;
   padding-bottom: 2vh;
-}
-.rlink {
-    padding: .3rem 1.8rem;
-    display:inline;
 }
 .mainDiv {
   width: 91%;
   margin-left: 0%;
-}
-.spacer {
-  height: 2vh;
 }
 }
 @media all and (min-width: 411px) and (max-width: 412px) and (min-height:823px) and (max-height:824px) { /* Pixel 2 XL */
@@ -513,18 +474,17 @@ body {
   font-size: 1.1rem;
 }
 .routerLinks {
-  margin-left: 5%;
+  
   padding-bottom: 0vh;
 }
 .rlink {
-  padding: .4rem 1.3rem;
-  display:inline;
+  padding: 2% 0%;
 }
 .mainDiv {
   width: 90%;
 }
 .spacer {
-  height: 2vh;
+  height: 1vh;
 }
 }
 @media all and (min-width: 823px) and (max-width: 824px) and (min-height:411px) and (max-height:412px) { /* Pixel 2 XL rotated */
@@ -536,18 +496,14 @@ body {
   font-size: 1.1rem;
 }
 .routerLinks {
-  margin-left: 4%;
+  
   padding-bottom: 0vh;
 }
-  .rlink {
-    padding: .5rem 2rem;
-    display:inline;
-  }
 .mainDiv {
   width: 91%;
 }
 .spacer {
-  height: 5vh;
+  height: 2vh;
 }
 }
 @media all and (min-width: 540px) and (max-width: 541px) and (min-height:720px) and (max-height:721px) { /*Surface Duo*/
@@ -559,19 +515,19 @@ body {
   font-size: 1.1rem;
 }
 .routerLinks {
-  margin-left: 6%;
+  
   margin-bottom: 0vh;
   padding-bottom: 0vh;
 }
 .rlink {
     margin-left: 1vw;
-    padding: .6rem 2rem;
+    
 }
 .mainDiv {
   width: 92%;
 }
 .spacer {
-  height: 3vh;
+  height: 1vh;
 }
 }
 @media all and (min-width: 720px) and (max-width: 721px) and (min-height:540px) and (max-height:541px) { /*Surface Duo rotated*/
@@ -583,19 +539,19 @@ body {
   font-size: 1.1rem;
 }
 .routerLinks {
-  margin-left: 4%;
+  
   margin-bottom: 0vh;
   padding-bottom: 0vh;
 }
 .rlink {
     margin-left: .5vw;
-    padding: .5rem 2.6rem;
+    
 }
 .mainDiv {
   width: 91%;
 }
 .spacer {
-  height: 4vh;
+  height: 1vh;
 }
 }
 @media all and (min-width: 768px) and (max-width: 769px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad*/
@@ -604,22 +560,22 @@ body {
   margin-left: 0;
 }
 #layout a {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .routerLinks {
-  margin-left: 4%;
+  
   margin-bottom: 0vh;
   padding-bottom: 0vh;
 }
 .rlink {
-    margin-right: 2vw;
-    padding: 1.1rem 3rem;
+    margin-right: 1%;
+    padding: 2% 1%;
 }
 .mainDiv {
   width: 91%;
 }
 .spacer {
-  height: 3vh;
+  height: 1vh;
 }
 }
 @media all and (min-width: 1024px) and (max-width: 1025px) and (min-height:768px) and (max-height:769px) { /* iPad rotated*/
@@ -631,19 +587,19 @@ body {
   font-size: 1.1rem;
 }
 .routerLinks {
-  margin-left:4%;
+  
   margin-bottom: 0vh;
   padding-bottom: 0vh;
 }
 .rlink {
     margin-left: 0vw;
-    padding: .9rem 4rem;
+    padding: 1.5% 1%;
 }
 .mainDiv {
   width:91%;
 }
 .spacer {
-  height: 4vh;
+  height: 1vh;
 }
 }
 @media all and (min-width: 1024px) and (min-height: 1366px) and (max-height: 1367px) { /*iPad Pro*/
@@ -655,19 +611,19 @@ body {
   font-size: 1.5rem;
 }
 .routerLinks {
-  margin-left: 4%;
+  
   margin-bottom: 0vh;
   padding-bottom: 0vh;
 }
 .rlink {
     margin-right: 2vw;
-    padding: 1.1rem 3rem;
+    padding: 1.5% 2%;
 }
 .mainDiv {
   width: 92%;
 }
 .spacer {
-  height: 3vh;
+  height: 1vh;
 }
 }
 @media all and (min-width: 1366px) and (max-width: 1367px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad Pro rotated */
@@ -680,38 +636,35 @@ body {
 }
 .routerLinks {
   margin-top: 3vh;
-  margin-left:4%;
+  
   margin-bottom: 1vh;
   padding-bottom: 0vh;
 }
 .rlink {
     margin-right: 1vw;
-    padding: 1.1rem 5rem;
+    padding: 1% .5%;
 }
 .mainDiv {
   width: 91%;
 }
-.spacer {
-  height: 3vh;
 }
-}
-@media all and (min-width: 1080px) and (max-width:1081px) and (min-height:2160px) and (max-height:2161px) { /* Galaxy S3 */
+@media all and (min-width: 1080px) and (max-width:1081px) and (min-height:2160px) and (max-height:2161px) { /* Asus Zenfone Max Pro */
 #layout {
-  width: 898%;
-  margin-left: 15;
+  width: 98%;
+  margin-left: 1%;
 }
 #layout a {
   font-size: 1.1rem;
 }
 .routerLinks {
   margin-top: 1vh;
-  margin-left:2%;
+  
   margin-bottom: 0vh;
   padding-bottom: 0vh;
 }
 .rlink {
     margin-right: 1%;
-    padding: .6rem 1.6rem;
+    
 }
 .mainDiv {
   width: 92%;
@@ -730,13 +683,13 @@ body {
 }
 .routerLinks {
   margin-top: 3vh;
-  margin-left:3%;
+  
   margin-bottom: 1vh;
   padding-bottom: 0vh;
 }
 .rlink {
     margin-right: 1vw;
-    padding: .8rem 2rem;
+    
 }
 .mainDiv {
   width: 95%;
@@ -755,13 +708,13 @@ body {
 }
 .routerLinks {
   margin-top: 3vh;
-  margin-left:3%;
+  
   margin-bottom: 1vh;
   padding-bottom: 0vh;
 }
 .rlink {
     margin-right: 1vw;
-    padding: .8rem 2rem;
+    
 }
 .mainDiv {
   width: 95%;
@@ -780,13 +733,13 @@ body {
 }
 .routerLinks {
   margin-top: 3vh;
-  margin-left:3%;
+  
   margin-bottom: 1vh;
   padding-bottom: 0vh;
 }
 .rlink {
     margin-right: 1vw;
-    padding: .8rem 2rem;
+    
 }
 .mainDiv {
   width: 95%;

@@ -26,7 +26,7 @@
         
         <p>I might even look for a future in cloud architecture if needed, I love everything in IT.
       </p>
-      <p>This CV is a VueJS app and is hosted as an Azure web app. The code for it can be found on <a href="https://github.com/miskens/CuriculumVitae" target="blank">github</a> and <a href="https://dev.azure.com/miskens/_git/CuriculumVitae" target="blank">Azure Devops</a>.</p>
+      <p>This CV is a VueJS app and is hosted as an Azure web app. The code for it can be found on my <a href="https://github.com/miskens/CuriculumVitae" target="blank">github</a> and <a href="https://dev.azure.com/miskens/_git/CuriculumVitae" target="blank">Azure Devops</a>.</p>
       </div>
       <div class="lilbox"></div>
   </div>
@@ -101,6 +101,9 @@ p {
   width: 50px;
   height: 50px;
   background-color: rgb(255, 88, 88, 0);
+}
+a {
+  color:rgb(50, 161, 108) !important;
 }
 }
 @media all and (min-width: 280px) and (max-width:281px) and (min-height:653px)  and (max-height:654px){ /*Galaxy fold */

@@ -12,13 +12,15 @@
 <script>
 import Studies from '../components/Experience/Studies.vue'
 import Workplaces from '../components/Experience/Workplaces.vue'
+import NonworkExperience from '../components/Experience/NonworkExperience.vue'
 
 export default {
     name: 'Experiences',
     props: {},
     components: {
         Studies,
-        Workplaces
+        Workplaces,
+        NonworkExperience
     },
     data() {
         return {
