@@ -39,7 +39,8 @@ export default {
     border-radius: 130px 0px 130px 0px;
     background-image: url('./sharedAssets/swirlbckgrndtop.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
+    background-size: cover;
     caret-color: transparent;
     margin-top: 1vh;
     margin-bottom:0vh;

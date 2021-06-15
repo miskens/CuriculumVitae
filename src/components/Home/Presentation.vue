@@ -18,7 +18,7 @@
 
         <p>Under the studies I certified for MCPD in .NET 3.5.</p>
 
-        <p>The year 2011 I started working in IT and very soon was introduced to  Microsofts integration engines and it brought me closer
+        <p>The year 2011 I started working in IT as a system developer and very soon was introduced to  Microsofts integration engines and it brought me closer
         to databases and before I knew it I was working as a DBA and database developer.</p>
 
         <p>I feel comfy in the Microsoft stack but have developed front end skills as a hobby so I would say I am today a full stack developer.

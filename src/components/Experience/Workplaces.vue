@@ -35,7 +35,8 @@ export default {
 @media all and (min-width: 1px) and (min-height:1px) {
 .companyDiv {
     width:100%;
-    background-image:linear-gradient(to right, rgb(198, 206, 240), rgb(255, 230, 230), rgb(255, 240, 226));
+    /* background-image:linear-gradient(to right, rgb(198, 206, 240), rgb(255, 230, 230), rgb(255, 240, 226)); */
+    background: linear-gradient(to right, rgb(198, 206, 240), transparent, transparent);
     border: 1px solid;
     border-radius: 10px;
     box-shadow: -12px 12px 10px 1px rgb(211, 200, 189);
