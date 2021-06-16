@@ -10,24 +10,25 @@
         <p>Hello and welcome!</p><br/>
 
        
-        <p>I´m a man living in Sundsvall, Sweden, but throughout both my childhood and adult life I´ve lived in several places all
-          along the country.</p>
+        <p>I´m a man living in Sundsvall, Sweden, but throughout both my childhood and adult life I´ve lived in many places all
+          along the country, both due to studies and work.</p>
         
-        <p>Year 2009 I left construction to follow my childhood dream of programming and working with computers. 
+        <p>In the year 2009 I left construction to follow my childhood dream of programming and working with computers. 
         I found studies that suited me perfectly so I took a leap for it.</p>
 
         <p>Under the studies I certified for MCPD in .NET 3.5.</p>
 
-        <p>The year 2011 I started working in IT as a system developer and very soon was introduced to  Microsofts integration engines and it brought me closer
+        <p>In 2011 I started working in IT as a system developer and very soon was introduced to  Microsofts integration engines and it brought me closer
         to databases and before I knew it I was working as a DBA and database developer.</p>
 
-        <p>I feel comfy in the Microsoft stack but have developed front end skills as a hobby so I would say I am today a full stack developer.
-            I would love an opportunity to work with Azure.</p>
-        
-        <p>I might even look for a future in cloud architecture if needed, I love everything in IT.
+        <p>I feel comfy in the Microsoft stack but have gained some front end skills too through coding as a hobby so I would say I am today a full stack
+          developer even though I don´t have much experience from front end in my work life.
+        </p>
+        <p>I would love an opportunity to work with Azure. 
+          I might even look for a future in cloud architecture later on, I love everything in IT.
       </p>
-      <p>This CV is a VueJS app and is hosted as an Azure web app. The code for it can be found on my <a href="https://github.com/miskens/CuriculumVitae" target="blank">github</a> and <a href="https://dev.azure.com/miskens/_git/CuriculumVitae" target="blank">Azure Devops</a>.</p>
-      </div>
+      <p>NB: This CV is a VueJS app and is hosted as an Azure web app. The code for it can be found on my <a href="https://github.com/miskens/CuriculumVitae" target="blank">github</a> and <a href="https://dev.azure.com/miskens/_git/CuriculumVitae" target="blank">Azure Devops</a>.</p>
+     </div>
       <div class="lilbox"></div>
   </div>
 </template>
