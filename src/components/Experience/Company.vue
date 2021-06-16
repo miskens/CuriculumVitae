@@ -943,7 +943,7 @@ img{
     font-size: 1.5rem;
 }
 .companyHeader p {
-    font-size: x-large;
+    font-size: 1rem;
 }
 .techListTable {
     width:65%;
@@ -976,10 +976,10 @@ img{
     font-size: 1.6rem;
 }
 .companyHeader h3 {
-    font-size: xx-large;
+    font-size: 1.3rem;
 }
 .companyHeader p {
-    font-size: x-large;
+    font-size: 1.2rem;
 }
 .techListTable {
     width:65%;

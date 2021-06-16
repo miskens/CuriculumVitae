@@ -296,7 +296,7 @@ p {
   font-size: 1.8rem;
 }
 .textDiv p {
-  font-size: x-large;
+  font-size: 1.1rem;
 }
 .picDiv {
   width:100%;

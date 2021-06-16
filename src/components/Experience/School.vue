@@ -617,13 +617,13 @@ img{
     background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
 }
 .schoolHeader h3 {
-    font-size: xx-large;
+    font-size: 1.3rem;
 }
 .schoolHeader p {
-    font-size: x-large;
+    font-size: 1.1rem;
 }
 p {
-    font-size: large;
+    font-size: 1rem;
 }
 h6 {
     font-size: 1.4rem;
@@ -696,10 +696,10 @@ img{
     font-size: 1.6rem;
 }
 .scoolHeader h3 {
-    font-size: 1.6;
+    font-size: 1.6rem;
 }
 .scoolHeader p {
-    font-size: 1.6;
+    font-size: 1.6rem;
 }
 p {
     font-size: 1.6rem;
