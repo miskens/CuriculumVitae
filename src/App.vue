@@ -82,7 +82,7 @@ body {
   border-radius: 0px 130px 0px 130px;
   background-image: url("./assets/swirlbckgrndbottom.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 5000px;
   caret-color: transparent;
 }
 .btn {
