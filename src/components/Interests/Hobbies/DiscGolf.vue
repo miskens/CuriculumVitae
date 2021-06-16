@@ -1,7 +1,7 @@
 <template>
     <div class="hobbyDiv">
         <h2 class="hobbyHeader">Discgolf</h2>
-        <img src="" alt="">
+        <img class="hobbyImg" src="./assets/discgolfbasket.png" alt="">
         <div class="hobbyTextDiv>">
             <p>Meet your friends, get a long nice walk in the nature, especially in the bushes, searching for your discs,
             practicing a fun skill and getting to throw stuff in high speed.
@@ -9,7 +9,6 @@
             <p>
             What is there not to like?
             </p>
-            <p>It is a very fun leisure hobby, if you like it, you love it.</p>
         </div>
     </div>
 </template>
@@ -35,6 +34,9 @@ export default {
 @media all and (min-width: 1px) and (min-height:1px) {
 .hobbyDiv {
     background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(222, 231, 216), rgb(255, 255, 255));
+}
+.hobbyImg {
+    height: 20vh;
 }
 }
 @media all and (min-width: 280px) and (max-width:281px) and (min-height:653px) and (max-height:654px){ /*Galaxy fold */

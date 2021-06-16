@@ -4,7 +4,7 @@
       <div class="routerLinks">
       <router-link class="rlink" to="/">Home</router-link> 
       <router-link class="rlink" to="/experiences">Experience</router-link>
-      <router-link class="rlink" to="/interests">Interest</router-link>
+      <router-link class="rlink" to="/interests">Hobbies</router-link>
       </div>
     <div class="spacer"></div>
     <router-view/>
@@ -74,17 +74,15 @@ body {
     overflow-x:hidden;
 }
 .mainDiv {
-  width:86%;
+  width:96%;
   margin-left: 1%;
-  padding: 3vw;
   overflow: hidden;
   border-top: 8px double #1C6EA4;
   border-bottom: 3px solid #1C6EA4;
   border-radius: 0px 130px 0px 130px;
   background-image: url("./assets/swirlbckgrndbottom.png");
   background-repeat: no-repeat;
-  /* background-size: 100% 100%; */
-  background-size: cover;
+  background-size: 100% 100%;
   caret-color: transparent;
 }
 .btn {

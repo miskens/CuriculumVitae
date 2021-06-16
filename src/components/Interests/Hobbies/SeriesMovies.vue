@@ -63,6 +63,7 @@ h5 {
     border-bottom: solid;
     border-color: blueviolet;
     border-width: 1px;
+    text-align: left;
 }
 @media all and (min-width: 1px) and (min-height:1px) {
 .hobbyDiv {
@@ -74,14 +75,21 @@ ul {
     height: auto;
     padding:0;
     list-style: none;
+    text-align: left;
     }
 li {
     width: 100%;
     margin-bottom:6px;
+    margin-left: 20%;
     padding: 4px;
     padding-left: 0;
     font-weight: 600;
-    line-height: 1px
+    line-height: 1px;
+    text-align: left;
+    background: linear-gradient(to right, rgb(244, 209, 255), transparent, transparent);
+}
+li p {
+    margin-left: 4%;
 }
 }
 @media all and (min-width: 300px) and (min-height:1px) {
@@ -116,14 +124,25 @@ li {
     .hobbyDiv {
     width: 60%;
     margin-left: 15%;
-
     }
 }
 @media all and (min-width: 800px) and (min-height:1px) {
     .hobbyDiv {
     width: 65%;
     margin-left: 15%;
-
+    }
+}
+@media all and (min-width: 1000px) and (min-height:1px) {
+    .moviesDiv {
+        width: 50%;
+        float:left;
+    }
+    .seriesDiv {
+        width: 50%;
+        overflow:hidden;
+    }
+    ul {
+        width: 100%;
     }
 }
 @media all and (min-width: 1100px) and (min-height:1px) {

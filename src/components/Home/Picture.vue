@@ -25,6 +25,7 @@ export default {
     border-color:rgb(126, 170, 126);
     border-radius: 50%;
     margin-bottom: 1rem;
+    /* margin-top: 8vh; */
     caret-color: transparent;
 }:hover {
     opacity: 0.92;

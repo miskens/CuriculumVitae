@@ -8,15 +8,16 @@
             <p>
                 I guess I just love learning about various things, and it is a hobby that will never seize to offer you something new.
             </p>
-            <div><p>Some of the things I love(even if there´s never enough time to learn enough):</p>
+            <div><p>Some of the things I love(even if there´s never enough time to learn enough)</p>
                 <ul>
                     <li><p>Science</p></li>
                     <li><p>Languages</p></li>
-                    <li><p>Cultures</p></li>
+                    <li><p>Culture</p></li>
                     <li><p>History</p></li>
                     <li><p>The IT world</p></li>
                 </ul>
             </div>
+            <p>Remember, it is ok to be a little bit crazy.</p>
             </div>
     </div>
 </template>
