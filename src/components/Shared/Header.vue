@@ -2,7 +2,6 @@
 <div class="titleDiv">
         <h1 class="title">{{title}}</h1> 
         <h2 class="name">Mikael Puusaari</h2>
-            <!-- <img src="./sharedAssets/flag_swedish.jpg"> -->
   </div>
   
 </template>

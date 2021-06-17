@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import Embed from 'v-video-embed'
+// import VueI18n from 'vue-i18n';
+// .use(VueI18n)
 
-createApp(App).use(router).use(Embed).mount('#app')
+createApp(App).use(router).mount('#app')

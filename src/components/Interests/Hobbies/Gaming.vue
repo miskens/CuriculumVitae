@@ -50,6 +50,7 @@ export default {
 }
 .hobbyImg {
     height: 20vh;
+    max-width: 80%;
 }
 }
 @media all and (min-width: 280px) and (max-width:281px) and (min-height:653px) and (max-height:654px){ /*Galaxy fold */
