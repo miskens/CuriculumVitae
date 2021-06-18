@@ -10,9 +10,9 @@
         <p v-if="!descHidden">{{school.Desc}}</p>
         <div class="gradesHolderDiv" v-if="!descHidden">
         <img class="gradesPic" v-if="school.GradesPic" alt="gradesPic" :src="school.GradesPic"  v-on:click='imageClick("gradesModal")' />
-        <Button class="downloadBtn" v-if="school.GradesPic" text="Download grades" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/Utb_Nord01.jpg', 'Utb_Nord01.jpg')" ></Button>
+        <Button class="downloadBtn" v-if="school.GradesPic" text="Download" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/Utb_Nord01.jpg', 'Utb_Nord01.jpg')" ></Button>
         <img  class="certificatePic" v-if="school.CertificatePic" alt="certificatePic" :src="school.CertificatePic" v-on:click="imageClick('certModal')" />
-        <Button class="downloadBtn" v-if="school.CertificatePic" text="Download certificate" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/c7.jpg', 'c7.jpg')" ></Button>
+        <Button class="downloadBtn" v-if="school.CertificatePic" text="Download" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/c7.jpg', 'c7.jpg')" ></Button>
         <a class="certificatePdf" v-if="school.CertificatePdf" type="application/pdf" alt="certificatePdf" :href="school.CertificatePdf" target="blank"><img class="pdfClickableImg" src="./assets/campus_pdf.png" /></a>
         <Button class="downloadBtn" v-if="school.CertificatePdf" text="Download as pdf" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/Utbildningsbevis_Microsoft_Azure_Mikael_Puusaari.pdf', 'Utbildningsbevis_Microsoft_Azure_Mikael_Puusaari.pdf')" ></Button>
         </div>
@@ -191,12 +191,16 @@ img{
     height: 6% !important;
     width: 115px !important;
     min-width: 115px !important;
-    margin-top: .5rem;
+    margin-top: 0rem;
     margin-bottom: .5rem;
-    border: none;
+    border: solid;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 2px;
+    color: rgb(240, 240, 240);
+    padding: .6rem 0rem;
     border-bottom: solid;
     border-width: 2px;
-    background-color:rgb(215, 231, 190);
+    background-image: linear-gradient(lightgreen, green,lightgreen);
 }
 .downloadBtn:hover {
     cursor: pointer;
