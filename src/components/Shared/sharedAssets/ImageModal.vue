@@ -1,6 +1,8 @@
 <template>
   <modal :id="id" class="modal" :name="modalname" height="auto">
-    <img class="modalContent" :alt="alt" :src="src"  />
+    <div class="modalDiv">
+      <img class="modalContent" :alt="alt" :src="src"  />
+    </div>
   </modal>
 </template>
 
@@ -27,6 +29,10 @@ export default {
   display: none;
   position: fixed;
   z-index: 1;
+  height: auto;
+  max-height: 80%;
+  width:95%;
+  max-width: 95%;
   padding-top: 2.5vh;
   padding-bottom: 2.5vh;
   right: 0vw;
@@ -36,27 +42,24 @@ export default {
   background-color: rgba(0,0,0,0.6);
   caret-color: transparent;
 }
+.modalDiv {
+  height: 90vh;
+  width: auto;
+}
 .modalContent {
   margin: auto;
   display: block;
   width: auto;
-  height: 95vh;
-  max-height: 95vh;
+  height: 84%;
+  max-height: 84%;
   caret-color: transparent;
-}
-#closer {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-  caret-color: transparent;
+  border: double;
+  overflow: hidden;
+  border-color: gold;
+  border-width: .6rem;
 }
 
-.modal, .modalContent, #closer {  
+.modal, .modalContent {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.4s;
 
@@ -72,21 +75,6 @@ export default {
 @keyframes zoom {
   from {transform:scale(0)} 
   to {transform:scale(1)}
-}
-.closeBtn {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-.closeBtn:hover,
-.closeBtn:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
 }
 @media only screen and (max-width: 700px){
   .modal-content {

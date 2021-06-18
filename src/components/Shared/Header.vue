@@ -54,7 +54,7 @@ export default {
     border-bottom: double;
     border-width: .5rem;
     animation: skewTitle 3s infinite;
-    transform: skewTitle(15deg);
+    transform: skewTitle(5deg);
     animation-direction: alternate;
 }
 .name {
@@ -64,35 +64,35 @@ export default {
     font-size: 1rem;
     color: rgb(114, 112, 212);
     animation: skewName 3s infinite;
-    transform: skewName(15deg);
+    transform: skewName(5deg);
     animation-direction: alternate;
 }
 @keyframes skewTitle {
   0% {
-    transform: skewX(-15deg);
+    transform: skewX(-5deg);
   }
   3% {
-      transform: skewX(-15deg);
+      transform: skewX(-5deg);
   }
   97% {
-    transform: skewX(15deg);
+    transform: skewX(5deg);
   }
   100% {
-    transform: skewX(15deg);
+    transform: skewX(5deg);
   }
 }
 @keyframes skewName {
   0% {
-    transform: skewX(15deg);
+    transform: skewX(5deg);
   }
   3% {
-      transform: skewX(15deg);
+      transform: skewX(5deg);
   }
   97% {
-    transform: skewX(-15deg);
+    transform: skewX(-5deg);
   }
   100% {
-    transform: skewX(-15deg);
+    transform: skewX(-5deg);
   }
 }
 img {

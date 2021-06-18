@@ -10,8 +10,11 @@
         <p v-if="!descHidden">{{school.Desc}}</p>
         <div class="gradesHolderDiv" v-if="!descHidden">
         <img class="gradesPic" v-if="school.GradesPic" alt="gradesPic" :src="school.GradesPic"  v-on:click='imageClick("gradesModal")' />
+        <Button class="downloadBtn" v-if="school.GradesPic" text="Download grades" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/Utb_Nord01.jpg', 'Utb_Nord01.jpg')" ></Button>
         <img  class="certificatePic" v-if="school.CertificatePic" alt="certificatePic" :src="school.CertificatePic" v-on:click="imageClick('certModal')" />
+        <Button class="downloadBtn" v-if="school.CertificatePic" text="Download certificate" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/c7.jpg', 'c7.jpg')" ></Button>
         <a class="certificatePdf" v-if="school.CertificatePdf" type="application/pdf" alt="certificatePdf" :href="school.CertificatePdf" target="blank"><img class="pdfClickableImg" src="./assets/campus_pdf.png" /></a>
+        <Button class="downloadBtn" v-if="school.CertificatePdf" text="Download as pdf" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/Utbildningsbevis_Microsoft_Azure_Mikael_Puusaari.pdf', 'Utbildningsbevis_Microsoft_Azure_Mikael_Puusaari.pdf')" ></Button>
         </div>
       </transition-group>
       <ImageModal id="gradesModal" alt="gradesmodalalt" modalname="gradesModal" :src="school.GradesPic" />
@@ -21,6 +24,7 @@
 <script>
 import Button from "../Shared/sharedAssets/Button"
 import ImageModal from "../Shared/sharedAssets/ImageModal"
+import axios from 'axios';
 
 export default {
     inheritAttrs: false,
@@ -32,6 +36,7 @@ export default {
     components: {
         Button,
         ImageModal,
+        axios,
     },
     data() {
         return {
@@ -46,12 +51,28 @@ export default {
         var modal = document.getElementById(picRef)
         modal.style.display = "block"
         },
+        async downloadFile(url, fileName) {
+            axios({
+                    url: url,
+                    method: 'GET',
+                    responseType: 'blob',
+                }).then((response) => {
+                     var fileURL = window.URL.createObjectURL(new Blob([response.data]));
+                     var fileLink = document.createElement('a');
+
+                     fileLink.href = fileURL;
+                     fileLink.setAttribute('download', fileName);
+                     document.body.appendChild(fileLink);
+
+                     fileLink.click();
+                });
+        }
     },
     created() {
       window.addEventListener("mousedown",(event)=>{
             if(document.getElementById('gradesModal').style.display != "none" && document.getElementById('gradesModal') != null)
             {
-            if(!event.target.closest('div div div #gradesModal')) {
+            if(!event.target.closest('div #gradesModal')) {
                   document.getElementById('gradesModal').style.display = "none";
             }
             }
@@ -165,6 +186,20 @@ img{
 }
 #layout a {
     color: black !important;
+}
+.downloadBtn {
+    height: 6% !important;
+    width: 115px !important;
+    min-width: 115px !important;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border: none;
+    border-bottom: solid;
+    border-width: 2px;
+    background-color:rgb(215, 231, 190);
+}
+.downloadBtn:hover {
+    cursor: pointer;
 }
 @media all and (min-width: 350px) and (min-height:1px) {
 .descMinMaxBtn {
