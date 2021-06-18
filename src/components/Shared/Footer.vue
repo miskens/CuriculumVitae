@@ -31,7 +31,7 @@
     height:100%;
     margin-top: 2%;
     padding: 2%;
-    padding-bottom:0;
+    padding-bottom:5%;
     background-image: linear-gradient(to right, #ffffff, #fcfcff, #f9f9ff, #f5f7ff, #f1f4ff, #f1f4ff, #f1f4ff, #f1f4ff, #f5f7ff, #f9f9ff, #fcfcff, #ffffff);
     caret-color: transparent;
   }
@@ -39,7 +39,8 @@
     background-color: rgb(241, 255, 248, .8);
     width: 94%;
     margin-left: 2%;
-    height:38%;
+    height:auto;
+    overflow: hidden;
     border: solid;
     border-width: 1px;
     border-color: mediumturquoise;
@@ -101,6 +102,9 @@
   }
 }
 @media all and (min-width: 340px) and (min-height:1px) {
+  .footer {
+    padding-bottom:0;
+  }
   .topFooter {
     height:38%;
   }

@@ -7,7 +7,7 @@ module.exports = {
                 logLevel: 'debug',
                 pathRewrite: { '^/api': '/'},
             },
-        }
+        },
     // },
     // azure: {
     //     proxy: {

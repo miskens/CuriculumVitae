@@ -23,6 +23,8 @@ export default {
     },
     components: {
         School,
+    },
+    methods: {
     }
 }
 </script>

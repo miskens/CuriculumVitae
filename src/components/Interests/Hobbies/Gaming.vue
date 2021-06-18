@@ -11,7 +11,7 @@
                 I play online with friends all around the world. I have played with people in most countries in the world through the years.
             </p>
             <p>
-                In 2001-2002 I started a multinational clan that through a lot of practice became the nr.1 clan in the world in a mod of a game
+                In 2001 I started a multinational clan that through a lot of practice became the nr.1 clan in the world in a mod of a game
                 called Quake 3 Arena.
             </p>
             <p>

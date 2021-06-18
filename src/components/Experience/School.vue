@@ -6,13 +6,21 @@
       <p>{{school.When}}</p>
 </div>
         <Button text="More" class="descMinMaxBtn" @click="showHideDesc"></Button>
-      <transition-group  name="descTransition" mode="out-in" >
+      <transition-group :key="school.id"  name="descTransition" mode="out-in" >
         <p v-if="!descHidden">{{school.Desc}}</p>
+        <div class="gradesHolderDiv" v-if="!descHidden">
+        <img class="gradesPic" v-if="school.GradesPic" alt="gradesPic" :src="school.GradesPic"  v-on:click='imageClick("gradesModal")' />
+        <img  class="certificatePic" v-if="school.CertificatePic" alt="certificatePic" :src="school.CertificatePic" v-on:click="imageClick('certModal')" />
+        <a class="certificatePdf" v-if="school.CertificatePdf" type="application/pdf" alt="certificatePdf" :href="school.CertificatePdf" target="blank"><img class="pdfClickableImg" src="./assets/campus_pdf.png" /></a>
+        </div>
       </transition-group>
+      <ImageModal id="gradesModal" alt="gradesmodalalt" modalname="gradesModal" :src="school.GradesPic" />
+    <ImageModal id="certModal" alt="certmodalalt" modalname="certModal" :src="school.CertificatePic" />
 </template>
 
 <script>
 import Button from "../Shared/sharedAssets/Button"
+import ImageModal from "../Shared/sharedAssets/ImageModal"
 
 export default {
     inheritAttrs: false,
@@ -22,7 +30,8 @@ export default {
         src: String
     },
     components: {
-        Button
+        Button,
+        ImageModal,
     },
     data() {
         return {
@@ -32,8 +41,30 @@ export default {
     methods: {
         async showHideDesc() {
             this.descHidden = !this.descHidden
-        }
-    }
+        },
+        imageClick(picRef) {
+        var modal = document.getElementById(picRef)
+        modal.style.display = "block"
+        },
+    },
+    created() {
+      window.addEventListener("mousedown",(event)=>{
+            if(document.getElementById('gradesModal').style.display != "none" && document.getElementById('gradesModal') != null)
+            {
+            if(!event.target.closest('div div div #gradesModal')) {
+                  document.getElementById('gradesModal').style.display = "none";
+            }
+            }
+          });
+          window.addEventListener("mousedown",(event)=>{
+            if(document.getElementById('certModal').style.display != "none")
+            {
+            if(!event.target.closest('div #certModal')) {
+                  document.getElementById('certModal').style.display = "none";
+            }
+            }
+          });
+    },
 }
 </script>
 
@@ -111,6 +142,29 @@ img{
     border-width: 1px;
     border-color:mediumturquoise;
     cursor:pointer;
+}
+.gradesHolderDiv {
+    width: 80%;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+.gradesPic {
+    width: 80%;
+    max-width: 160px;
+    height: 120px;
+    margin-bottom: 5%;
+}
+.certificatePic {
+    width: 80%;
+    max-width: 160px;
+    height: 120px;
+}
+.pdfClickableImg {
+    height: 80px;
+    border-radius: 0;
+}
+#layout a {
+    color: black !important;
 }
 @media all and (min-width: 350px) and (min-height:1px) {
 .descMinMaxBtn {

@@ -21,9 +21,9 @@ export default {
 <style scoped>
 @font-face {
     font-family: 'cassandra';
-    src: url('./sharedAssets/cassandra-webfont.woff2') format('woff2'),
-         url('./sharedAssets/cassandra-webfont.woff') format('woff'),
-         url('./sharedAssets/cassandra.ttf');
+    src: url('./sharedAssets/fonts/cassandra-webfont.woff2') format('woff2'),
+         url('./sharedAssets/fonts/cassandra-webfont.woff') format('woff'),
+         url('./sharedAssets/fonts/cassandra.ttf');
     font-weight: normal;
     font-style: normal;
     font-size: 2rem;
@@ -43,6 +43,7 @@ export default {
     margin-top: 1vh;
     margin-bottom:0vh;
 }
+
 .title {
     font-weight: 500;
     display:inline-block;
@@ -52,6 +53,9 @@ export default {
     font-size: 1.2rem;
     border-bottom: double;
     border-width: .5rem;
+    animation: skewTitle 3s infinite;
+    transform: skewTitle(15deg);
+    animation-direction: alternate;
 }
 .name {
     display: inline-block;
@@ -59,6 +63,37 @@ export default {
     font-family: "cassandra";
     font-size: 1rem;
     color: rgb(114, 112, 212);
+    animation: skewName 3s infinite;
+    transform: skewName(15deg);
+    animation-direction: alternate;
+}
+@keyframes skewTitle {
+  0% {
+    transform: skewX(-15deg);
+  }
+  3% {
+      transform: skewX(-15deg);
+  }
+  97% {
+    transform: skewX(15deg);
+  }
+  100% {
+    transform: skewX(15deg);
+  }
+}
+@keyframes skewName {
+  0% {
+    transform: skewX(15deg);
+  }
+  3% {
+      transform: skewX(15deg);
+  }
+  97% {
+    transform: skewX(-15deg);
+  }
+  100% {
+    transform: skewX(-15deg);
+  }
 }
 img {
     width: 50px;

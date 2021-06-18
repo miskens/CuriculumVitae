@@ -1,6 +1,5 @@
 <template>
-  <modal :id="id" class="modal" name="modal" height="auto">
-    <span id="closer" class="closeBtn" @click="$emit('closemodal')">X</span>
+  <modal :id="id" class="modal" :name="modalname" height="auto">
     <img class="modalContent" :alt="alt" :src="src"  />
   </modal>
 </template>
@@ -12,6 +11,7 @@ export default {
       id: String,
       alt: String,
       src: String,
+      modalname: String,
   },
   data() {
       return {
@@ -22,12 +22,13 @@ export default {
 }
 </script>
 
-<style>
+<style>  
 .modal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
   right: 0vw;
   top: 0;
   overflow: auto;
@@ -39,8 +40,8 @@ export default {
   margin: auto;
   display: block;
   width: auto;
-  height: 100vh;
-  max-height: 80vh;
+  height: 95vh;
+  max-height: 95vh;
   caret-color: transparent;
 }
 #closer {

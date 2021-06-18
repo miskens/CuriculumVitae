@@ -55,7 +55,7 @@ body {
 }
 .routerLinks {
   width: 100%;
-  padding-bottom: 2vh;
+  padding-bottom: vh;
   margin-left: 0%;
   
 }
@@ -120,7 +120,7 @@ body {
   right:3%;
 }
 .rlink {
-  width:27% !important;
+  width:25% !important;
   margin-right: 1%;
 }
 }
@@ -128,37 +128,48 @@ body {
 .rlink {
   position: relative;
   width: 25% !important;
-  right: 3%;
+  right: 1%;
 }
 }
 @media all and (min-width: 500px) and (min-height:1px) {
   #layout {
-  width: 90%;
-  margin-left: 5%;
+  width: 98%;
+  margin-left: 1%;
 }
 .routerLinks {
-  width:90%;
-  margin-left: 3%;
+  width:85%;
+  margin-left: 7.5%;
 }
 .rlink {
   position:static;
+  padding: .4rem .5rem;
   width: 24% !important;
 }
 }
 @media all and (min-width: 600px) and (min-height:1px) {
   #layout {
-  width: 80%;
-  margin-left: 10%;
+  width: 90%;
+  margin-left: 5%;
 }
 .routerLinks {
   width: 80%;
   margin-left: 10%;
 }
+.rlink {
+  padding: .5rem .5rem;
+}
 }
 @media all and (min-width: 800px) and (min-height:1px) {
 #layout {
-  width: 70%;
-  margin-left: 15%;
+  width: 80%;
+  margin-left: 10%;
+}
+/* .routerLinks {
+  width: 80%;
+  margin-left: 10%;
+} */
+.rlink {
+  padding: .6rem .8rem;
 }
 }
 @media all and (min-width: 1000px) and (min-height:1px) {

@@ -1,6 +1,6 @@
 <template>
   <div class="mainDiv">
-      <Presentation firstName="Mikael" lastName="Puusaari" age="40"/>
+      <Presentation firstName="Mikael" lastName="Puusaari"/>
   </div>
 </template>
 

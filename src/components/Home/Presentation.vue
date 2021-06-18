@@ -1,8 +1,9 @@
 <template>
 <div class="picDiv">
-        <Picture id="thePic" @img-click="imageClick" alt="noting" src="https://mppersonalsg.blob.core.windows.net/cvfiles/welcome.jpg" />
-        <ImageModal id="modal" @closemodal="closeModal" alt="modalalt" src="https://mppersonalsg.blob.core.windows.net/cvfiles/welcome.jpg" />
+        <Picture id="thePic" v-on:click="imageClick" alt="noting" src="https://mppersonalsg.blob.core.windows.net/cvfiles/welcome.jpg" />
+        
       </div>
+      <ImageModal id="modal" modalname="presModal" alt="modalalt" src="https://mppersonalsg.blob.core.windows.net/cvfiles/welcome.jpg" />
   <div class="presentationDiv">
 
       <h2>presentation</h2>
@@ -35,7 +36,7 @@
 
 <script>
 import Picture from './Picture'
-import ImageModal from './ImageModal'
+import ImageModal from '../Shared/sharedAssets/ImageModal'
 
 export default {
     name: "Presentation",
@@ -59,13 +60,19 @@ export default {
         var modal = document.getElementById("modal")
         modal.style.display = "block"
         },
-    closeModal() {
-        var modal = document.getElementById("modal")
-        modal.style.display = "none"
-      }
- },
+    },
+    created() {
+      window.addEventListener("mousedown",(event)=>{
+            if(document.getElementById('modal').style.display != "none" && document.getElementById('modal')  != null)
+            {
+              if(!event.target.closest('div #modal')) {
+                  document.getElementById('modal').style.display = "none";
+              }
+            }
+          });
+    },
     mounted() {
-}
+  }
 }
 </script>
 
