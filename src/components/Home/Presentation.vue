@@ -22,8 +22,7 @@
         <p>In 2011 I started working in IT as a system developer and very soon was introduced to  Microsofts integration engines and it brought me closer
         to databases and before I knew it I was working as a DBA and database developer.</p>
 
-        <p>I feel comfy in the Microsoft stack but have gained some front end skills too through coding as a hobby so I would say I am today a full stack
-          developer even though I don´t have much experience from front end in my work life.
+        <p>I feel comfortable in the Microsoft stack but have gained some front end skills too through coding as a hobby.
         </p>
         <p>I would love an opportunity to work with Azure. 
           I might even look for a future in cloud architecture later on, I love everything in IT.

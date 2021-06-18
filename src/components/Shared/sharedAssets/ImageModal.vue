@@ -49,8 +49,8 @@ export default {
 .modalContent {
   margin: auto;
   display: block;
-  width: auto;
-  height: 84%;
+  width: 80%;
+  height: auto;
   max-height: 84%;
   caret-color: transparent;
   border: double;
@@ -58,7 +58,6 @@ export default {
   border-color: gold;
   border-width: .6rem;
 }
-
 .modal, .modalContent {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.4s;
@@ -76,9 +75,24 @@ export default {
   from {transform:scale(0)} 
   to {transform:scale(1)}
 }
+@media only screen and (min-width: 600px) and (min-height:1px) {
+  .modalContent {
+    width: 65%;
+  }
+}
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
+  }
+}
+@media only screen and (min-width: 800px) and (min-height:1px) {
+  .modalContent {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1000px) and (min-height:1px) {
+  .modalContent {
+    max-width: 500px;
   }
 }
 </style>

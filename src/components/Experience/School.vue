@@ -9,10 +9,13 @@
       <transition-group :key="school.id"  name="descTransition" mode="out-in" >
         <p v-if="!descHidden">{{school.Desc}}</p>
         <div class="gradesHolderDiv" v-if="!descHidden">
+            <p v-if="school.GradesPic">Grades</p>
         <img class="gradesPic" v-if="school.GradesPic" alt="gradesPic" :src="school.GradesPic"  v-on:click='imageClick("gradesModal")' />
         <Button class="downloadBtn" v-if="school.GradesPic" text="Download" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/Utb_Nord01.jpg', 'Utb_Nord01.jpg')" ></Button>
+        <p v-if="school.CertificatePic">Certificate</p>
         <img  class="certificatePic" v-if="school.CertificatePic" alt="certificatePic" :src="school.CertificatePic" v-on:click="imageClick('certModal')" />
         <Button class="downloadBtn" v-if="school.CertificatePic" text="Download" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/c7.jpg', 'c7.jpg')" ></Button>
+        <p v-if="school.CertificatePdf">Certificate Pdf</p>
         <a class="certificatePdf" v-if="school.CertificatePdf" type="application/pdf" alt="certificatePdf" :href="school.CertificatePdf" target="blank"><img class="pdfClickableImg" src="./assets/campus_pdf.png" /></a>
         <Button class="downloadBtn" v-if="school.CertificatePdf" text="Download as pdf" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/Utbildningsbevis_Microsoft_Azure_Mikael_Puusaari.pdf', 'Utbildningsbevis_Microsoft_Azure_Mikael_Puusaari.pdf')" ></Button>
         </div>
@@ -122,25 +125,27 @@ h6 {
     position:relative;
     width: 80px !important;
     height: 30px !important;
-    background-image:linear-gradient(to right, rgb(245, 245, 245), rgb(224, 224, 224), rgb(245, 245, 245));
+    background-image: linear-gradient(lightgreen, green,lightgreen);
+    color: rgb(245, 245, 245);
+    /* background-image:linear-gradient(to right, rgb(245, 245, 245), rgb(224, 224, 224), rgb(245, 245, 245)); */
     left: 26%;
     width: 500px;
-    border-color: lightgrey;
+    border-color: transparent;
     border-radius: 5px;
     box-shadow: .6px .6px .6px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     cursor: pointer;
     user-select: none;
     caret-color: transparent;
     transition: ease-in-out, 0.02s;
 }
 .descMinMaxBtn:hover {
-    background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
+    background-image: linear-gradient(lightgreen, green,lightgreen);
 }
 .descMinMaxBtn:active {
     transform: scale(0.98);
     margin-right:-3px;
-    background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
+    background-image: linear-gradient(rgb(138, 228, 138), rgb(0, 122, 0),rgb(138, 228, 138));
 }
 .descTransition-enter-active, .descTransition-leave-active {
     transition: opacity 1s ease-in-out;
@@ -187,18 +192,22 @@ img{
 #layout a {
     color: black !important;
 }
+.gradesHolderDiv p {
+    display: inline-block;
+    font-size: 1.1rem;
+    width:60%;
+}
 .downloadBtn {
     height: 6% !important;
     width: 115px !important;
     min-width: 115px !important;
     margin-top: 0rem;
     margin-bottom: .5rem;
-    border: solid;
     border-radius: .5rem;
     box-shadow: 2px 2px 2px;
     color: rgb(240, 240, 240);
     padding: .6rem 0rem;
-    border-bottom: solid;
+    border: solid;
     border-width: 2px;
     background-image: linear-gradient(lightgreen, green,lightgreen);
 }

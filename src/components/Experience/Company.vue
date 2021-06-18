@@ -79,12 +79,14 @@ h6 {
     position:relative;
     width: 80px !important;
     height: 30px !important;
-    background-image:linear-gradient(to right, rgb(235, 235, 235), rgb(245,245,245), rgb(235, 235, 235));
+    background-image: linear-gradient(rgb(151, 215, 226), rgb(30, 127, 172),rgb(151, 215, 226));
+    color: rgb(245, 245, 245);
+    /* background-image:linear-gradient(to right, rgb(235, 235, 235), rgb(245,245,245), rgb(235, 235, 235)); */
     left: 26%;
-    border-color: lightgrey;
+    border-color: transparent;
     border-radius: 5px;
     box-shadow: .6px .6px .6px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     cursor: pointer;
     user-select: none;
     caret-color: transparent;
@@ -93,7 +95,7 @@ h6 {
 .techMinMaxBtn:active {
     transform: scale(0.98);
     margin-right:-3px;
-    background-image:linear-gradient(to right, rgb(240, 240, 240), rgb(218, 218, 218), rgb(240, 240, 240));
+    background-image: linear-gradient(rgb(144, 205, 216), rgb(29, 122, 165),rgb(144, 205, 216));
 }
 .techTransition-enter-active, .techTransition-leave-active {
     transition: opacity ease-in-out;

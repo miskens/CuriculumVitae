@@ -82,24 +82,24 @@ export default {
 }
 @media all and (min-width: 300px) and (min-height:1px) {
 .worklifeDiv {
-    width: 75%;
+    width: 80%;
     padding-left: 3%;
     margin-left: 1%;
 }
 .studiesDiv {
-    width: 75%;
+    width: 80%;
     padding-left: 3%;
     margin-left: 1%;
 }
 }
 @media all and (min-width: 340px) and (min-height:1px) {
 .worklifeDiv {
-    width: 70%;
+    width: 76%;
     padding-left: 5%;
     margin-left: 1%;
 }
 .studiesDiv {
-    width: 70%;
+    width: 76%;
     padding-left: 5%;
     margin-left: 1%;
 }
@@ -117,6 +117,7 @@ export default {
 }
 }
 @media all and (min-width: 500px) and (min-height:1px) {
+    
 .worklifeDiv {
     width: 55%;
     padding-left: 15%;
