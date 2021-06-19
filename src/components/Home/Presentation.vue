@@ -62,12 +62,9 @@ export default {
     },
     created() {
       window.addEventListener("mousedown",(event)=>{
-            if(document.getElementById('modal').style.display != "none" && document.getElementById('modal')  != null)
-            {
               if(!event.target.closest('div #modal')) {
                   document.getElementById('modal').style.display = "none";
               }
-            }
           });
     },
     mounted() {

@@ -48,9 +48,20 @@ export default {
     font-size: 1.2rem;
 }
 }
+@media all and (min-width: 500px) and (max-width:799px) and (min-height:1px) {
+.companyDiv {
+    max-height: 30%;
+}
+}
+@media all and (min-width: 500px) and (max-width:799px) and (min-height:1px) {
+.companyDiv {
+    margin-left: 8%;
+    max-width: 80%;
+}
+}
 @media all and (min-width: 800px) and (min-height:1px) {
 .companyDiv {
-    width: 90%;
+    width: 98%;
 }
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px){ /* Galaxy fold */

@@ -73,19 +73,13 @@ export default {
     },
     created() {
       window.addEventListener("mousedown",(event)=>{
-            if(document.getElementById('gradesModal').style.display != "none" && document.getElementById('gradesModal') != null)
-            {
             if(!event.target.closest('div #gradesModal')) {
                   document.getElementById('gradesModal').style.display = "none";
             }
-            }
           });
           window.addEventListener("mousedown",(event)=>{
-            if(document.getElementById('certModal').style.display != "none")
-            {
             if(!event.target.closest('div #certModal')) {
                   document.getElementById('certModal').style.display = "none";
-            }
             }
           });
     },
@@ -99,7 +93,7 @@ export default {
     }
 p {
     font-size: .9rem;
-    display:flex;
+    display:block;
     align-items: center;
     justify-content: space-between;
 }
@@ -109,7 +103,7 @@ h2 {
 }
 h6 {
     font-size: .9rem;
-    display:flex;
+    display:block;
     align-items: center;
     justify-content: space-between;
 }
@@ -171,8 +165,9 @@ img{
 }
 .gradesHolderDiv {
     width: 80%;
+    max-width:240px;
     margin-top: 8%;
-    margin-left: 10%;
+    margin:auto;
 }
 .gradesPic {
     width: 80%;

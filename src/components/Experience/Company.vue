@@ -1,12 +1,16 @@
 <template>
     <div class="companyHeader">
-        <h2>{{company.Name}} </h2>
-        <img alt="pic" :src="company.Picture" />
-        <h6>{{company.Assignment}}</h6>
+        <div class="titlePicDiv">
+            <h2>{{company.Name}} </h2>
+            <img alt="pic" :src="company.Picture" />
+            <Button text="More" class="techMinMaxBtn" @click="showHideTech"></button>
+        </div>
+        <div class="assignmentInfoDiv">
+            <h6>{{company.Assignment}}</h6>
             <p>When: {{company.When}}</p>
             <p>Boss: {{company.Boss}}</p>
+        </div>
     </div>
-    <Button text="More" class="techMinMaxBtn" @click="showHideTech"></button>
     
         <div class="moreInfoDiv">  
             <transition-group  name="techTransition" mode="out-in" >
@@ -68,6 +72,14 @@ p {
     height:auto;
     padding: 3%;
 }
+.titlePicDiv {
+    width: 100%;
+    float:left;
+    clear:left;
+}
+.assignmentInfoDiv {
+    margin-top: 250px;
+}
 h2 {
     font-size: 1.2rem;
     padding-bottom: 2vh;
@@ -76,13 +88,12 @@ h6 {
     font-size: 1rem;
 }
 .techMinMaxBtn {
-    position:relative;
-    width: 80px !important;
+    width: 100px !important;
     height: 30px !important;
     background-image: linear-gradient(rgb(151, 215, 226), rgb(30, 127, 172),rgb(151, 215, 226));
     color: rgb(245, 245, 245);
-    /* background-image:linear-gradient(to right, rgb(235, 235, 235), rgb(245,245,245), rgb(235, 235, 235)); */
-    left: 26%;
+    margin: auto;
+    margin-top: 10%;
     border-color: transparent;
     border-radius: 5px;
     box-shadow: .6px .6px .6px;
@@ -113,9 +124,6 @@ h6 {
 @keyframes bouncein {
         0% {
           transform: scale(0);
-        }
-        50% {
-          transform: scale(1.2);
         }
         100% {
           transform: scale(1);
@@ -149,14 +157,14 @@ h6 {
     margin-bottom: 4vh;
 }
 .techListTable {
-    width:40%;
+    width:60%;
     height: auto;
+    margin-left:0%;
 }
 img{
+    display: block;
     height: 80px;
-    width: auto;
-    max-width: 100%;
-    float:none;
+    margin: auto;
     border-style: solid;
     border-radius: 10%;
     border-width: 1px;
@@ -177,11 +185,11 @@ img{
     text-decoration: none;
 }
 .nameTd {
-    display: inline-block;
-    width:34vw;
-    margin-left: 0%;
+    display: block;
+    width:100%;
+    margin: auto;
     margin-bottom: 0.5vh;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     border-left: solid;
     border-bottom: solid;
@@ -197,55 +205,53 @@ p {
     font-size: .9rem;
 }
 @media all and (min-width: 350px) and (min-height:1px) {
+    .techListTable {
+        margin:auto;
+    }
 .nameTd {
-    width:28vw;
-    margin-left: 45%;
-}
-.techMinMaxBtn {
-    left: 30%;
+    width:100%;
 }
 }
 @media all and (min-width: 400px) and (min-height:1px) {
-.techMinMaxBtn {
-    left: 33%;
+.companyHeader {
+    display:inline;
+    max-height:20% !important;
+}
+.companyHeader h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10%;
+}
+.titlePicDiv {
+    width: 50%;
+}
+.assignmentInfoDiv {
+    width:40%;
+    float:right;
+    margin-top: 0%;
+    margin-right: 3%;
+}
+.assignmentInfoDiv h6 {
+    padding: 0;
 }
 }
 @media all and (min-width: 500px) and (min-height:1px) {
 .nameTd {
-    margin-left: 20%;
+    max-width: 240px;
 }
+}
+@media all and (min-width: 500px) and (max-width:799px) and (min-height:1px) {
+
 }
 @media all and (min-width: 600px) and (min-height:1px) {
-.nameTd {
-    margin-left: 12%;
-}
-.techMinMaxBtn {
-    left: 30%;
-}
 }
 @media all and (min-width: 700px) and (min-height:1px) {
-.techMinMaxBtn {
-    left: 32%;
-}
 }
 @media all and (min-width: 800px) and (min-height:1px) {
-.nameTd {
-    width:14vw;
-    margin-left: 25%;
-}
-.techMinMaxBtn {
-    left: 23%;
-}
 }
 @media all and (min-width: 1000px) and (min-height:1px) {
-.techMinMaxBtn {
-    left: 28%;
-}
 }
 @media all and (min-width: 1200px) and (min-height:1px) {
-.techMinMaxBtn {
-    left: 33%;
-}
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px){ /*Galaxy fold */
 .companyHeader {
@@ -262,7 +268,6 @@ img{
 }
 .techMinMaxBtn {
     position: relative;
-    left: 16vw;
     bottom: 1vh;
     font-size: .8rem;
     line-height: 2px;

@@ -47,7 +47,7 @@ export default {
         })
         const data = await resp.json()
 
-        console.log(data)
+        // console.log(data)
 
         return data.company
     }
@@ -106,18 +106,18 @@ export default {
 }
 @media all and (min-width: 400px) and (min-height:1px) {
 .worklifeDiv {
-    width: 65%;
+    width: 74%;
     padding-left: 8%;
     margin-left: 1%;
 }
 .studiesDiv {
-    width: 65%;
+    width: 74%;
     padding-left: 8%;
     margin-left: 1%;
 }
 }
 @media all and (min-width: 500px) and (min-height:1px) {
-    
+/*     
 .worklifeDiv {
     width: 55%;
     padding-left: 15%;
@@ -127,10 +127,22 @@ export default {
     width: 55%;
     padding-left: 15%;
     margin-left: 1%;
+} */
+}
+@media all and (min-width: 500px) and (max-width:799px) and (min-height:1px) {
+    .worklifeDiv {
+    width: 86%; 
+    padding-left: 0;
+    margin-left: 2%;
+}
+.studiesDiv {
+    width: 86%; 
+    padding-left: 0;
+    margin-left: 2%;
 }
 }
 @media all and (min-width: 600px) and (min-height:1px) {
-.worklifeDiv {
+/* .worklifeDiv {
     width: 50%;
     padding-left: 18%;
     margin-left: 1%;
@@ -139,10 +151,10 @@ export default {
     width: 50%;
     padding-left: 18%;
     margin-left: 1%;
-}
+} */
 }
 @media all and (min-width: 600px) and (min-height:1px) {
-.worklifeDiv {
+/* .worklifeDiv {
     width: 48%;
     padding-left: 22%;
     margin-left: 1%;
@@ -151,7 +163,7 @@ export default {
     width: 48%;
     padding-left: 22%;
     margin-left: 1%;
-}
+} */
 }
 @media all and (min-width: 800px) and (min-height:1px) {
 .worklifeDiv {
