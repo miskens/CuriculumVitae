@@ -32,7 +32,7 @@ export default {
     cursor: pointer;
     }
 
-@media all and (max-width: 280px)  and (max-height:654px){ /*Galaxy fold */
+@media all and (min-width: 280px) and (max-width: 281px) and  (min-height:653px) and (max-height:654px) { /*Galaxy fold */
 .thePic {
     width: auto;
     left:0;
@@ -41,7 +41,7 @@ export default {
     border-width: 0px;
 }
 }
-@media all and (min-width: 320px) and (max-height:570px) { /*iPhone 5/SE*/
+@media all and (min-width: 320px) and (max-width: 321px) and (min-height:568px) and (max-height:569px)  { /*iPhone 5/SE*/
 .thePic {
     width: auto;
     padding:0;
@@ -49,7 +49,7 @@ export default {
     border-width: 0px;
 }
 }
-@media all and (min-width: 360px) and (max-height:641px) { /*Moto 4 & Galaxy S5 */
+@media all and (min-width: 360px) and (max-width:361px) and (min-height:640px) and (max-height:641px)  { /*Moto 4 & Galaxy S5 */
 .thePic {
     width: auto;
     padding:0;
@@ -57,7 +57,7 @@ export default {
     border-width: 0px;
 }
 }
-@media all and (min-width: 375px) and (max-height:669px) { /*iPhone 6/7/8 */
+@media all and (min-width: 375px) and (max-width: 376px) and (min-height:667px) and (max-height:668px)   { /*iPhone 6/7/8 */
 .thePic {
     width: auto;
     padding:0;
@@ -65,7 +65,7 @@ export default {
     border-width: 0px;
 }
 }
-@media all and (min-width: 414px) and (min-height:736) and (max-height:737px) { /*iPhone 6/7/8 Plus */
+@media all and (min-width: 414px) and (max-width: 415px)  and (min-height:736px) and (max-height:737px)  { /*iPhone 6/7/8 Plus */
 .thePic {
     width: auto;
     padding:0;
@@ -73,17 +73,7 @@ export default {
     border-width: 0px;
 }
 }
-@media all and (min-width: 411px) and (min-height:731px) and (max-height:732px) { /*Pixel 2 */
-.thePic {
-    width: auto;
-    float:left;
-    padding:0;
-    margin:0;
-    margin-bottom: 4vh;
-    border-width: 0px;
-}
-}
-@media all and (min-width: 411px) and (min-height:823px) and (max-height:824px) { /* Pixel 2 XL */
+@media all and (min-width: 411px) and (max-width:412px) and (min-height:731px) and (max-height:732px) { /*Pixel 2 */
 .thePic {
     width: auto;
     float:left;
@@ -93,7 +83,17 @@ export default {
     border-width: 0px;
 }
 }
-@media all and (min-width: 375px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */
+@media all and (min-width: 411px) and (max-width: 412px) and (min-height:823px) and (max-height:824px) { /* Pixel 2 XL */
+.thePic {
+    width: auto;
+    float:left;
+    padding:0;
+    margin:0;
+    margin-bottom: 4vh;
+    border-width: 0px;
+}
+}
+@media all and (min-width: 375px) and (max-width: 376px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */
 .thePic {
     width: auto;
     padding:0;
@@ -102,13 +102,13 @@ export default {
     border-width: 0px;
 }
 }
-@media all and (min-width: 540px) and (min-height:721px) and (max-height:723px)  { /*Surface Duo*/
+@media all and (min-width: 540px) and (max-width: 541px) and (min-height:720px) and (max-height:721px) { /*Surface Duo*/
 }
 @media all and (min-width: 768px) { /*iPad*/
 }
 @media all and (min-width: 1024px) { /*iPad Pro*/
 }
-@media all and (min-width: 1366px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad Pro rotated */
+@media all and (min-width: 1024px) and (max-width: 1025px) and (min-height:768px) and (max-height:769px) { /* iPad rotated*/
 .thePic {
     height:310px;
 }

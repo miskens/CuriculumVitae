@@ -96,7 +96,7 @@ h6 {
     margin-top: 10%;
     border-color: transparent;
     border-radius: 5px;
-    box-shadow: .6px .6px .6px;
+    box-shadow: 3px 3px 3px rgb(221, 221, 221);
     font-size: 1.1rem;
     cursor: pointer;
     user-select: none;
@@ -164,6 +164,7 @@ h6 {
 img{
     display: block;
     height: 80px;
+    max-width:100%;
     margin: auto;
     border-style: solid;
     border-radius: 10%;
@@ -215,7 +216,6 @@ p {
 @media all and (min-width: 400px) and (min-height:1px) {
 .companyHeader {
     display:inline;
-    max-height:20% !important;
 }
 .companyHeader h2 {
     padding: 0;

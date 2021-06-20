@@ -1,11 +1,16 @@
 <template>
 <div class="schoolHeader">
+    <div class="titlePicDiv">
       <h2>{{school.Name}} </h2>
       <img alt="pic" :src="school.Picture" />
+      <Button text="More" class="descMinMaxBtn" @click="showHideDesc"></Button>
+    </div>
+    <div class="courseInfoDiv">
       <h6>{{school.Course}}</h6>
       <p>{{school.When}}</p>
+    </div>
 </div>
-        <Button text="More" class="descMinMaxBtn" @click="showHideDesc"></Button>
+    <div class="moreInfoDiv"> 
       <transition-group :key="school.id"  name="descTransition" mode="out-in" >
         <p v-if="!descHidden">{{school.Desc}}</p>
         <div class="gradesHolderDiv" v-if="!descHidden">
@@ -20,6 +25,7 @@
         <Button class="downloadBtn" v-if="school.CertificatePdf" text="Download as pdf" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/Utbildningsbevis_Microsoft_Azure_Mikael_Puusaari.pdf', 'Utbildningsbevis_Microsoft_Azure_Mikael_Puusaari.pdf')" ></Button>
         </div>
       </transition-group>
+    </div>
       <ImageModal id="gradesModal" alt="gradesmodalalt" modalname="gradesModal" :src="school.GradesPic" />
     <ImageModal id="certModal" alt="certmodalalt" modalname="certModal" :src="school.CertificatePic" />
 </template>
@@ -88,9 +94,19 @@ export default {
 
 <style scoped>
 @media all and (min-width: 1px) and (min-height:1px) {
-    .schoolHeader {
-        padding: 3%;
-    }
+.schoolHeader {
+        width:100%;
+    height:auto;
+    padding: 3%;
+}
+.titlePicDiv {
+    width: 100%;
+    float:left;
+    clear:left;
+}
+.courseInfoDiv {
+    margin-top: 250px;
+}
 p {
     font-size: .9rem;
     display:block;
@@ -107,26 +123,16 @@ h6 {
     align-items: center;
     justify-content: space-between;
 }
-.descDiv {
-    width:100%;
-    height: 100%;
-    margin-right: 30px;
-    margin-bottom: 4vh;
-    margin-top: 5vh;
-    padding:0;
-}
 .descMinMaxBtn {
-    position:relative;
-    width: 80px !important;
+    width: 100px !important;
     height: 30px !important;
     background-image: linear-gradient(lightgreen, green,lightgreen);
     color: rgb(245, 245, 245);
-    /* background-image:linear-gradient(to right, rgb(245, 245, 245), rgb(224, 224, 224), rgb(245, 245, 245)); */
-    left: 26%;
-    width: 500px;
+    margin:auto;
+    margin-top: 10%;
     border-color: transparent;
     border-radius: 5px;
-    box-shadow: .6px .6px .6px;
+    box-shadow: 3px 3px 3px rgb(221, 221, 221);
     font-size: 1.1rem;
     cursor: pointer;
     user-select: none;
@@ -152,11 +158,24 @@ h6 {
     opacity: 1;
     transition-duration: 1s;
 }
+.moreInfoDiv {
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+.descDiv {
+    margin-top: 5vh;
+    padding:0;
+    width:100%;
+    height: 100%;
+    margin-right: 30px;
+    margin-bottom: 4vh;
+}
 img{
-    height: 65px;
-    width: auto;
-    max-width: 100%;
-    float:none;
+    display: block;
+    height: 80px;
+    max-width:100%;
+    margin: auto;
     border-style: solid;
     border-radius: 10%;
     border-width: 1px;
@@ -171,16 +190,17 @@ img{
 }
 .gradesPic {
     width: 80%;
-    max-width: 160px;
-    height: 120px;
+    max-width: 120px;
+    height: 80px;
     margin-bottom: 5%;
 }
 .certificatePic {
     width: 80%;
-    max-width: 160px;
-    height: 120px;
+    max-width: 120px;
+    height: 80px;
 }
 .pdfClickableImg {
+    max-width: 160px;
     height: 80px;
     border-radius: 0;
 }
@@ -210,39 +230,38 @@ img{
     cursor: pointer;
 }
 @media all and (min-width: 350px) and (min-height:1px) {
-.descMinMaxBtn {
-    left: 30%;
-}
 }
 @media all and (min-width: 400px) and (min-height:1px) {
-.descMinMaxBtn {
-    left: 33%;
+.schoolHeader {
+    display:inline;
+}
+.schoolHeader h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10%;
+}
+.titlePicDiv {
+    width: 50%;
+}
+.courseInfoDiv {
+    width:40%;
+    float:right;
+    margin-top: 0%;
+    margin-right: 3%;
+}
+.courseInfoDiv h6 {
+    padding: 0;
 }
 }
 @media all and (min-width: 600px) and (min-height:1px) {
-.descMinMaxBtn {
-    left: 30%;
-}
 }
 @media all and (min-width: 700px) and (min-height:1px) {
-.descMinMaxBtn {
-    left: 32%;
-}
 }
 @media all and (min-width: 800px) and (min-height:1px) {
-.descMinMaxBtn {
-    left: 23%;
-}
 }
 @media all and (min-width: 1000px) and (min-height:1px) {
-.descMinMaxBtn {
-    left: 28%;
-}
 }
 @media all and (min-width: 1200px) and (min-height:1px) {
-.descMinMaxBtn {
-    left: 33%;
-}
 }
 @media all and (min-width: 280px) and (max-width:281px) and (min-height:653px) and (max-height:654px){ /*Galaxy fold */
 .schoolHeader h2 {
@@ -254,8 +273,6 @@ img{
 .descMinMaxBtn {
     position: relative;
     left: 16vw;
-    /* padding: .8rem;
-    padding-right: 13vw; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -282,7 +299,6 @@ img{
 .descMinMaxBtn {
     position: relative;
     left: 18vw;
-    /* padding: .8rem .4rem; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -318,8 +334,6 @@ img{
 .descMinMaxBtn {
     position: relative;
     left: 16vw;
-    /* padding: .9rem 1.1rem;
-    padding-right: 13vw; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -340,7 +354,6 @@ p {
 .descMinMaxBtn {
     position: relative;
     left: 19vw;
-    /* padding: .9rem 1.1rem; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -370,8 +383,6 @@ img{
 .descMinMaxBtn {
     position: relative;
     left: 18vw;
-    /* padding: .9rem 1.1rem;
-    padding-right: 13vw; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -389,7 +400,6 @@ p {
 .descMinMaxBtn {
     position: relative;
     left: 16vw;
-    /* padding: .9rem 1.1rem; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -414,8 +424,6 @@ img{
 .descMinMaxBtn {
     position: relative;
     left: 28%;
-    /* padding: .9rem 1.1rem;
-    padding-right: 13vw; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -439,7 +447,6 @@ img {
 .descMinMaxBtn {
     position: relative;
     left: 22vw;
-    /* padding: .9rem 1.1rem; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -463,8 +470,6 @@ img{
 .descMinMaxBtn {
     position: relative;
     left: 32%;
-    /* padding: .9rem 1.1rem;
-    padding-right:3rem; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -488,7 +493,6 @@ img {
 .descMinMaxBtn {
     position: relative;
     left: 36%;
-    /* padding: .9rem 1.1rem; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -512,8 +516,6 @@ img{
 .descMinMaxBtn {
     position: relative;
     left: 32%;
-    /* padding: .9rem 1.1rem;
-    padding-right: 13vw; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -535,7 +537,6 @@ img {
 .descMinMaxBtn {
     position: relative;
     left: 22vw;
-    /* padding: .9rem 1.1rem; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -559,8 +560,6 @@ img{
 .descMinMaxBtn {
     position: relative;
     left: 32%;
-    /* padding: .9rem 1.1rem;
-    padding-right: 13vw; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -582,7 +581,6 @@ img {
 .descMinMaxBtn {
     position: relative;
     left: 9vw;
-    /* padding: .9rem 1rem; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -604,8 +602,6 @@ img {
 .descMinMaxBtn {
     position: relative;
     left: 30%;
-    /* padding: .9rem 1.1rem;
-    padding-right: 13vw; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -629,7 +625,6 @@ img {
 .descMinMaxBtn {
     position: relative;
     left: 34%;
-    /* padding: .9rem 1rem; */
     font-size: .8rem;
     line-height: 2px;
 }
@@ -653,8 +648,6 @@ img {
 .descMinMaxBtn {
     position: relative;
     left: 22vw;
-    /* padding: 1rem 1.6rem;
-    padding-right: 3.5rem; */
     font-size: .9rem;
     line-height: 2px;
 }
@@ -678,8 +671,6 @@ img {
 .descMinMaxBtn {
     position: relative;
     left: 10vw;
-    /* padding: 1rem 1.6rem;
-    padding-right: 3.5rem; */
     font-size: .9rem;
     line-height: 2px;
 }
@@ -703,8 +694,6 @@ img{
 .descMinMaxBtn {
     margin-right: 28%;
     margin-bottom: 1vh;
-    /* padding: 1.4rem 1rem 1.4rem 2rem;
-    padding-right: 5rem; */
     line-height: 4px;  
     font-size: 1.6rem;
 }
@@ -734,8 +723,6 @@ img {
     left: 12vw;
     bottom: 1vh;
     line-height: 4px;
-    /* padding: 1.4rem 1rem 1.4rem 2rem;
-    padding-right: 5rem; */
     font-size: 1.6rem;
 }
 h6 {
@@ -757,8 +744,6 @@ img{
 }
 .descMinMaxBtn {
     margin-left: 11%;
-    /* padding: 1.4rem 1rem 1.4rem 2rem;
-    padding-right: 4.8rem; */
     font-size: 1.7rem;
     line-height: 2px;
 }
@@ -788,8 +773,6 @@ img{
 .descMinMaxBtn {
     margin-left: 10%;
     line-height: 4px;
-    /* padding: 1.4rem 1rem 1.4rem 2rem;
-    padding-right: 6rem; */
     font-size: 1.6rem;
 }
 .scoolHeader h3 {

@@ -33,7 +33,6 @@ export default {
 @media all and (min-width: 1px) and (min-height:1px) {
 .schoolDiv {
     width:100%;
-    background-image:linear-gradient(to right, rgb(213, 230, 191), rgb(255, 230, 230), rgb(255, 240, 226));
     background: linear-gradient(to right, rgb(213, 230, 191), transparent);
     border: 1px solid;
     border-radius: 10px;
@@ -49,16 +48,6 @@ export default {
 @media all and (min-width: 500px) and (max-width:799px) and (min-height:1px) {
 .schoolDiv {
     max-height: 30%;
-}
-}
-@media all and (min-width: 500px) and (max-width:799px) and (min-height:1px) {
-.schoolDiv {
-    margin-left: 8%;
-    max-width: 80%;
-}
-}
-@media all and (min-width: 500px) and (max-width:799px) and (min-height:1px) {
-.schoolDiv {
     margin-left: 8%;
     max-width: 80%;
 }

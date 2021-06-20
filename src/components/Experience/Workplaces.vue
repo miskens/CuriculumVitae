@@ -35,7 +35,6 @@ export default {
 @media all and (min-width: 1px) and (min-height:1px) {
 .companyDiv {
     width:100%;
-    /* background-image:linear-gradient(to right, rgb(198, 206, 240), rgb(255, 230, 230), rgb(255, 240, 226)); */
     background: linear-gradient(to right, rgb(198, 206, 240), transparent);
     border: 1px solid;
     border-radius: 10px;
@@ -51,10 +50,6 @@ export default {
 @media all and (min-width: 500px) and (max-width:799px) and (min-height:1px) {
 .companyDiv {
     max-height: 30%;
-}
-}
-@media all and (min-width: 500px) and (max-width:799px) and (min-height:1px) {
-.companyDiv {
     margin-left: 8%;
     max-width: 80%;
 }
