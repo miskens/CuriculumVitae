@@ -196,7 +196,7 @@ img{
     border-bottom: solid;
     border-width: 2px;
     border-color: rgba(117, 172, 172, 0.8);
-    background-color: rgba(240, 240, 240, 0.8);
+    background-image:linear-gradient(to bottom, rgb(211, 245, 255), rgb(217, 217, 255), rgb(255, 255, 255));
     text-decoration: none;
 }
 h6 {
