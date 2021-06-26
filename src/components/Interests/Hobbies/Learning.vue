@@ -1,14 +1,10 @@
 <template>
-    <div class="hobbyDiv">
-        <h2 class="hobbyHeader">Learning</h2>
+    <div id="learningScrollpoint" class="hobbyDiv">
+        <img class="hobbyImg" src="./assets/knowl.png" alt="">
         <div class="hobbyTextDiv">
-            <p>Kind of a weird thing to add to your CV, I know. The world is a very interesting place, so learning a bit of
-                everything around us is just fun.
+            <p>I love learning about various things. It is a something that will never seize to offer you something new.
             </p>
-            <p>
-                I guess I just love learning about various things, and it is a hobby that will never seize to offer you something new.
-            </p>
-            <div><p>Some of the things I love(even if there´s never enough time to learn enough)</p>
+            <div><p>Some of the things I love.</p>
                 <table>
                     <thead>
                         <th class="fieldTh">Field</th>
@@ -46,13 +42,6 @@
                         </tr>
                     </tbody>
                 </table>
-                <!-- <ul>
-                    <li><p>Science</p></li>
-                    <li><p>Languages</p></li>
-                    <li><p>Culture</p></li>
-                    <li><p>History</p></li>
-                    <li><p>The IT world</p></li>
-                </ul> -->
             </div>
             <p>Remember, it is ok to be a little bit crazy.</p>
             </div>
@@ -110,22 +99,9 @@ export default {
     margin-left: 2%;
     background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(254, 255, 211), rgb(255, 255, 255));
 }
-/* ul {
-    display: block;
-    width: 80%;
-    margin-left: 10%;
-    height: auto;
-    padding:0;
-    list-style: none;
-    }
-li {
-    width: 100%;
-    margin-bottom:6px;
-    padding: 4px;
-    padding-left: 0;
-    font-weight: 600;
-    line-height: 1px;
-} */
+.hobbyImg {
+    height: 20vh;
+}
 }
 @media all and (min-width: 300px) and (min-height:1px) {
     .hobbyDiv {

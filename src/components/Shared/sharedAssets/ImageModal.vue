@@ -1,9 +1,7 @@
 <template>
-  <modal :id="id" class="modal" :name="modalname" height="auto">
-    <div class="modalDiv">
+  <div :id="id" class="modal" :name="modalname" height="auto">
       <img class="modalContent" :alt="alt" :src="src"  />
-    </div>
-  </modal>
+  </div>
 </template>
 
 <script>
@@ -41,10 +39,6 @@ export default {
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.6);
   caret-color: transparent;
-}
-.modalDiv {
-  height: 90vh;
-  width: auto;
 }
 .modalContent {
   margin: auto;

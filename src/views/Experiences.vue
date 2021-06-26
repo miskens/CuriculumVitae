@@ -1,9 +1,9 @@
 <template>
     <div class="mainDiv" id="maindiv" >
-        <div class="worklifeDiv">
+        <div class="worklifeDiv expDiv">
             <Workplaces title="Work experience" :companies="companies"/>
         </div>
-        <div class="studiesDiv">
+        <div class="studiesDiv expDiv">
             <Studies title="Studies" :schools="studies" />
         </div>
   </div>
@@ -63,144 +63,79 @@ export default {
 
 <style scoped>
 @media all and (min-width: 1px) and (min-height:1px) {
-.worklifeDiv {
+.expDiv {
     width: 80%;
     float:left;
     padding: 0;
-    padding-left: 1%;
-    padding-top: 4vh;
     margin-left: 1%;
+    padding-top: 4vh;
+}
+.worklifeDiv {
+    padding-left: 1%;
 }
 .studiesDiv {
-    width: 80%;
-    float:left;
-    padding: 0;
-    padding-top: 4vh;
-    margin-left: 1%;
     margin-bottom:14%;
 }
 }
 @media all and (min-width: 300px) and (min-height:1px) {
-.worklifeDiv {
-    width: 80%;
+.expDiv {
     padding-left: 3%;
-    margin-left: 1%;
-}
-.studiesDiv {
-    width: 80%;
-    padding-left: 3%;
-    margin-left: 1%;
 }
 }
 @media all and (min-width: 340px) and (min-height:1px) {
-.worklifeDiv {
+.expDiv {
     width: 76%;
     padding-left: 5%;
-    margin-left: 1%;
-}
-.studiesDiv {
-    width: 76%;
-    padding-left: 5%;
-    margin-left: 1%;
 }
 }
 @media all and (min-width: 400px) and (min-height:1px) {
-.worklifeDiv {
+.expDiv {
     width: 74%;
     padding-left: 8%;
-    margin-left: 1%;
-}
-.studiesDiv {
-    width: 74%;
-    padding-left: 8%;
-    margin-left: 1%;
 }
 }
 @media all and (min-width: 500px) and (min-height:1px) {
-/*     
-.worklifeDiv {
-    width: 55%;
-    padding-left: 15%;
-    margin-left: 1%;
-}
-.studiesDiv {
-    width: 55%;
-    padding-left: 15%;
-    margin-left: 1%;
-} */
 }
 @media all and (min-width: 500px) and (max-width:799px) and (min-height:1px) {
-    .worklifeDiv {
-    width: 86%; 
-    padding-left: 0;
-    margin-left: 2%;
-}
-.studiesDiv {
+.expDiv {
     width: 86%; 
     padding-left: 0;
     margin-left: 2%;
 }
 }
 @media all and (min-width: 600px) and (min-height:1px) {
-/* .worklifeDiv {
-    width: 50%;
-    padding-left: 18%;
-    margin-left: 1%;
-}
-.studiesDiv {
-    width: 50%;
-    padding-left: 18%;
-    margin-left: 1%;
-} */
 }
 @media all and (min-width: 600px) and (min-height:1px) {
-/* .worklifeDiv {
-    width: 48%;
-    padding-left: 22%;
-    margin-left: 1%;
-}
-.studiesDiv {
-    width: 48%;
-    padding-left: 22%;
-    margin-left: 1%;
-} */
 }
 @media all and (min-width: 800px) and (min-height:1px) {
-.worklifeDiv {
+.expDiv {
     width: 40%;
-    float:left;
     padding-left: 2%;
+ }
+.worklifeDiv {
     padding-bottom: 3vh;
     margin-left: 1%;
 }
 .studiesDiv {
-    width:40%;
-    padding-left: 3%;
     margin-left: 5%;
 }
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px)  { /*Galaxy fold */
-.worklifeDiv {
+.expDiv {
     width: 82%;
     padding-left: 3vw;
     padding-right:0vw;
 }
 .studiesDiv {
-    width: 82%;
-    padding: 0;
-    padding-left: 3vw;
-    padding-right:0vw;
     padding-bottom: 13vh;
 }
 }
 @media all and (min-width: 653px) and (max-width: 654px) and (min-height:280px) and (max-height:281px){ /*Galaxy fold rotated */
-.worklifeDiv {
+.expDiv {
     width: 72%;
     padding-left: 15%;
 }
 .studiesDiv {
-    width: 72%;
-    padding-left: 15%;
     padding-bottom: 13vh;
 }
 }

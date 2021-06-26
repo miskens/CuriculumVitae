@@ -1,7 +1,6 @@
 <template>
-    <div class="hobbyDiv"> 
-        <h2 class="hobbyHeader">Gaming</h2>
-        <img class="hobbyImg" src="./assets/gameon.png" alt="">
+    <div id="gamingScrollpoint" class="hobbyDiv"> 
+        <img class="hobbyImg" src=".//assets/dice.png" alt="">
         <div class="hobbyTextDiv>">
             <p>I´ve played many different team games online. When I was younger I would enjoy playing by myself or with just a friend, and
                 I enjoyed it but by chance I was introduced to team playing and I loved the fact that you need to accomplish

@@ -3,7 +3,7 @@
         <div class="titlePicDiv">
             <h2>{{company.Name}} </h2>
             <img alt="pic" :src="company.Picture" />
-            <Button text="More" class="techMinMaxBtn" @click="showHideTech"></button>
+            <Button text="More" class="techMinMaxBtn" @click="showHideTech" />
         </div>
         <div class="assignmentInfoDiv">
             <h6>{{company.Assignment}}</h6>

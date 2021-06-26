@@ -4,7 +4,8 @@
     <Gaming/>
     <SeriesMovies />
     <Learning />
-  </div>
+</div>
+
 </template>
 
 <script>
@@ -16,12 +17,13 @@ import Learning from "../Interests/Hobbies/Learning"
 export default {
     inheritAttrs: false,
     name: "Hobbies",
-    props:{},
+    props:{
+    },
     components: {
         DiscGolf,
         Gaming,
         SeriesMovies,
-        Learning
+        Learning,
     },
     methods: {
     },
@@ -38,9 +40,8 @@ export default {
     padding-bottom: 4vh;
 }
 .hobbyDiv {
-    /* width:60%; */
     resize: both;
-    padding: 2vh 3vw 1vh;
+    padding: 10vh 3vw 1vh;
     margin-bottom: 4vh;
     border-radius: 10px;
     box-shadow: -12px 12px 10px 1px rgb(211, 200, 189); 

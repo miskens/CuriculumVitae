@@ -14,19 +14,25 @@
       <transition-group :key="school.id"  name="descTransition" mode="out-in" >
         <p v-if="!descHidden">{{school.Desc}}</p>
         <div class="gradesHolderDiv" v-if="!descHidden">
-            <p v-if="school.GradesPic">Grades</p>
-        <img class="gradesPic" v-if="school.GradesPic" alt="gradesPic" :src="school.GradesPic"  v-on:click='imageClick("gradesModal")' />
-        <Button class="downloadBtn" v-if="school.GradesPic" text="Download" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/Utb_Nord01.jpg', 'Utb_Nord01.jpg')" ></Button>
-        <p v-if="school.CertificatePic">Certificate</p>
-        <img  class="certificatePic" v-if="school.CertificatePic" alt="certificatePic" :src="school.CertificatePic" v-on:click="imageClick('certModal')" />
-        <Button class="downloadBtn" v-if="school.CertificatePic" text="Download" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/c7.jpg', 'c7.jpg')" ></Button>
-        <p v-if="school.CertificatePdf">Certificate Pdf</p>
-        <a class="certificatePdf" v-if="school.CertificatePdf" type="application/pdf" alt="certificatePdf" :href="school.CertificatePdf" target="blank"><img class="pdfClickableImg" src="./assets/campus_pdf.png" /></a>
-        <Button class="downloadBtn" v-if="school.CertificatePdf" text="Download as pdf" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/Utbildningsbevis_Microsoft_Azure_Mikael_Puusaari.pdf', 'Utbildningsbevis_Microsoft_Azure_Mikael_Puusaari.pdf')" ></Button>
+            <div class="gradesPicDiv" v-if="school.GradesPic">
+                <p>Grades</p>
+                <img class="gradesPic" alt="gradesPic" :src="school.GradesPic"  v-on:click='imageClick("gradesModal")' />
+                <Button class="downloadBtn" text="Download" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/Utb_Nord01.jpg', 'Utb_Nord01.jpg')" ></Button>
+            </div>
+            <div class="certPicDiv" v-if="school.CertificatePic">
+                <p>Certificate</p>
+                <img  class="certificatePic"  alt="certificatePic" :src="school.CertificatePic" v-on:click="imageClick('certModal')" />
+                <Button class="downloadBtn" text="Download" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/c7.jpg', 'c7.jpg')" ></Button>
+            </div>
+            <div class="certPdfDov" v-if="school.CertificatePdf">
+                <p>Certificate Pdf</p>
+                <a class="certificatePdf" type="application/pdf" alt="certificatePdf" :href="school.CertificatePdf" target="blank"><img class="pdfClickableImg" src="./assets/campus_pdf.png" /></a>
+                <Button class="downloadBtn" text="Download as pdf" @click="downloadFile('https://mppersonalsg.blob.core.windows.net/cvfiles/Utbildningsbevis_Microsoft_Azure_Mikael_Puusaari.pdf', 'Utbildningsbevis_Microsoft_Azure_Mikael_Puusaari.pdf')" ></Button>
+            </div>
         </div>
       </transition-group>
     </div>
-      <ImageModal id="gradesModal" alt="gradesmodalalt" modalname="gradesModal" :src="school.GradesPic" />
+    <ImageModal id="gradesModal" alt="gradesmodalalt" modalname="gradesModal" :src="school.GradesPic" />
     <ImageModal id="certModal" alt="certmodalalt" modalname="certModal" :src="school.CertificatePic" />
 </template>
 
@@ -75,20 +81,24 @@ export default {
 
                      fileLink.click();
                 });
-        }
-    },
-    created() {
-      window.addEventListener("mousedown",(event)=>{
+        },
+        mouseDown(event){
             if(!event.target.closest('div #gradesModal')) {
                   document.getElementById('gradesModal').style.display = "none";
             }
-          });
-          window.addEventListener("mousedown",(event)=>{
             if(!event.target.closest('div #certModal')) {
                   document.getElementById('certModal').style.display = "none";
             }
-          });
+          }
     },
+    created() {
+    },
+    mounted() {
+      window.addEventListener('mousedown', this.mouseDown);
+    },
+    unmounted() {
+      window.removeEventListener('mousedown', this.mouseDown);
+    }
 }
 </script>
 
@@ -192,17 +202,20 @@ img{
     width: 80%;
     max-width: 120px;
     height: 80px;
+    margin:auto;
     margin-bottom: 5%;
 }
 .certificatePic {
     width: 80%;
     max-width: 120px;
     height: 80px;
+    margin:auto;
 }
 .pdfClickableImg {
     max-width: 160px;
     height: 80px;
     border-radius: 0;
+    margin:auto;
 }
 #layout a {
     color: black !important;
@@ -272,7 +285,6 @@ img{
 }
 .descMinMaxBtn {
     position: relative;
-    left: 16vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -292,13 +304,7 @@ p {
     font-size: 1rem;
     margin-left: 25%;
 }
-img{
-    margin-top: 3vh;
-    margin-left: 0vw;
-}
 .descMinMaxBtn {
-    position: relative;
-    left: 18vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -329,11 +335,8 @@ p {
 }
 img{
     margin-top: 3vh;
-    margin-left: 0vw;
 }
 .descMinMaxBtn {
-    position: relative;
-    left: 16vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -352,8 +355,6 @@ p {
     padding-top: 2vh;
 }
 .descMinMaxBtn {
-    position: relative;
-    left: 19vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -378,11 +379,8 @@ p {
 }
 img{
     margin-top: 1vh;
-    margin-left: 0vw;
 }
 .descMinMaxBtn {
-    position: relative;
-    left: 18vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -398,8 +396,6 @@ p {
     font-size: 1rem;
 }
 .descMinMaxBtn {
-    position: relative;
-    left: 16vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -419,11 +415,8 @@ p {
 }
 img{
     margin-top: 1vh;
-    margin-left: 0vw;
 }
 .descMinMaxBtn {
-    position: relative;
-    left: 28%;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -445,8 +438,6 @@ img {
     font-size: 1.1rem;
 }
 .descMinMaxBtn {
-    position: relative;
-    left: 22vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -468,8 +459,6 @@ img{
     float:none;
 }
 .descMinMaxBtn {
-    position: relative;
-    left: 32%;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -491,8 +480,6 @@ img {
     font-size: .9rem;
 }
 .descMinMaxBtn {
-    position: relative;
-    left: 36%;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -514,8 +501,6 @@ img{
     float:none;
 }
 .descMinMaxBtn {
-    position: relative;
-    left: 32%;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -535,8 +520,6 @@ img {
     font-size: .9rem;
 }
 .descMinMaxBtn {
-    position: relative;
-    left: 22vw;
     font-size: .8rem;
     line-height: 2px;
 }
@@ -555,7 +538,6 @@ img{
     height: 50px;
     float:none;
     margin-top: 1vh;
-    margin-left: 0vw;
 }
 .descMinMaxBtn {
     position: relative;

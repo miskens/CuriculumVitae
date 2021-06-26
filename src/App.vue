@@ -1,6 +1,6 @@
 <template>
   <div id="layout">
-    <Header title="Curiculum Vitae"/><br>
+    <Header id="header" title="Curiculum Vitae"/><br>
       <div class="routerLinks">
       <router-link class="rlink" to="/">Home</router-link> 
       <router-link class="rlink" to="/experiences">Experience</router-link>
@@ -43,7 +43,7 @@ body {
 }
 #layout {
   width: 100%;
-  overflow: hidden;
+  height:100%;
 }
 #layout a {
   font-size: 1rem;

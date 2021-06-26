@@ -1,7 +1,6 @@
 <template>
-    <div class="hobbyDiv">
-        <h2 class="hobbyHeader">Discgolf</h2>
-        <img class="hobbyImg" src="./assets/discgolfbasket.png" alt="">
+    <div id="discgolfScrollpoint" class="hobbyDiv">
+        <img class="hobbyImg" src="./assets/basket.png" alt="">
         <div class="hobbyTextDiv>">
             <p>Meet your friends, get a long nice walk in the nature, especially in the bushes, searching for your discs,
             practicing a fun skill and getting to throw stuff in high speed.

@@ -47,9 +47,9 @@ export default {
 }
 @media all and (min-width: 500px) and (max-width:799px) and (min-height:1px) {
 .schoolDiv {
+    max-width: 80%;
     max-height: 30%;
     margin-left: 8%;
-    max-width: 80%;
 }
 }
 @media all and (min-width: 800px) and (min-height:1px) {

@@ -1,62 +1,74 @@
-<template>
+<template>  
+        <div id="scrollDiv" class="scrollDiv">
+                <img class="scrollBtn" @click="scrollTo('header')" src="../components/Interests/Hobbies/assets/up_arrow.png" />
+                <img class="scrollBtn" @click="scrollTo('discgolfScrollpoint')" src="../components/Interests/Hobbies/assets/basket.png" />
+                <img class="scrollBtn" @click="scrollTo('gamingScrollpoint')" src="../components/Interests/Hobbies/assets/dice.png" />
+                <img class="scrollBtn" @click="scrollTo('movserScrollpoint')" src="../components/Interests/Hobbies/assets/movie.png" />
+                <img class="scrollBtn" @click="scrollTo('learningScrollpoint')" src="../components/Interests/Hobbies/assets/knowl.png" />
+        </div>
     <div class="mainDiv" id="maindiv" >
         <div class="interestsDiv">
             <Hobbies />
         </div>
-        <!-- <div class="rightDiv">    
-            <nav>
-                <ul>
-                    <li ><router-link class="rlink" to="/discgolf.vue">Discgolf</router-link></li>
-                    <li><router-link class="rlink" to="/seriesmovies.vue">Series / Movies</router-link></li>
-                    <li><router-link class="rlink" to="/dnd.vue">D&D</router-link></li>
-                    <li><router-link class="rlink" to="/learning.vue">Learning</router-link></li>
-                </ul>
-            </nav>
-        </div> -->
   </div>
 </template>
 
 <script>
  import Hobbies from '../components/Interests/Hobbies.vue'
+ import Button from '../components/Shared/sharedAssets/Button.vue'
 
 export default {
-  name: 'Interests',
-  components: {
-    Hobbies,
-}
+    name: 'Interests',
+    components: {
+        Hobbies,
+        Button,
+    },
+    methods: {
+        scrollTo(id) {
+            const div = document.getElementById(id).scrollIntoView( { behavior: "smooth",  });
+        },
+        handleScroll(event) {
+        var scrollDiv = document.getElementById('scrollDiv');
+        var scrollDivHolder = document.getElementById('scrollDivHolder');
+
+                if(window.scrollY > this.st)
+                {
+                    scrollDiv.style.top = '1%';
+                    scrollDiv.style.marginleft = '5%';
+                    scrollDiv.style.zIndex = 1;
+                    scrollDiv.style.position = 'sticky';
+                    scrollDivHolder.style.display = 'inline';
+                    
+                }
+                else if (window.scrollY < this.st)
+                    scrollDiv.style.position = 'relative';
+                }
+    },
+    created () {  
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+        var scrollDiv = document.getElementById('scrollDiv');
+        var scrolltop = scrollDiv.offsetTop;
+        this.st = scrolltop;
+    },
+    unmounted () {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    data() {
+        return {
+            st: this.scrolltop
+    }
+    },
 }
 </script>
 
 <style scoped>
 @media all and (min-width: 1px) and (min-height:1px) {
 .interestsDiv {
-    width: 90%;
+    width: 80%;
     margin-left: 2%;
-}
-.rightDiv {   
-    width:20vw;
-    overflow: hidden;
-    margin-top: 3vw;
-    padding-right:2vw;
-}
-nav {
-    height:auto;
-    width:auto;
-}
-ul {
     float:left;
-    list-style: none;
-    overflow: hidden;
-    padding-top: 3vh;
-}
-li {
-    width: 14vw;
-    height: 6vh;
-    background-color:rgba(216, 216, 216, 0);
-    transition: all .2s;
-}
-li:hover {
-    background-color:rgba(216, 216, 216, 0.4);
 }
 .rlink {
     text-align: center;
@@ -78,13 +90,44 @@ li:hover {
 #layout a:hover {
     color:rgb(54, 0, 116);
 }
+.scrollDiv {
+    position: relative;
+    float:left;
+    height:auto;
+    width:100%;
+    margin-top: 0%;
+}
+.scrollBtn {
+    width: 60px !important;
+    height: 60px !important;
+    margin:auto;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    margin-right: 4%;
+    padding:0;
+    background-color:transparent;
+    caret-color: transparent;
+    user-select: none;
+    outline: none;
+    box-shadow: none;
+}
+.scrollBtn:focus {
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    user-select: none;
+    caret-color: transparent;
+}
+.scrollBtn:hover {
+    border: solid;
+    border-color: gold;
+    border-width: 1px;
+    background-color: rgb(255, 254, 203);
+}
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /*Galaxy fold */
 }
 @media all and (min-width: 320px) and (max-width: 321px) and (min-height:570px) and (max-height:571px) { /*iPhone 5/SE*/
-nav {
-    display: none;
-}
 }
 @media all and (min-width: 414px) and (max-width: 415px) and (min-height:736px) and (max-height:737px) { /*  iPhone 6/7/8 Plus*/
 .interestsDiv {

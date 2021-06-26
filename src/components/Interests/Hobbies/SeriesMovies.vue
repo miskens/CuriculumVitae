@@ -1,6 +1,6 @@
 <template>
-    <div class="hobbyDiv">
-        <h2 class="hobbyHeader">A Series and Movies thing</h2>
+    <div id="movserScrollpoint" class="hobbyDiv">
+        <img class="hobbyImg" src="./assets/movie.png" alt="">
         <div class="hobbyTextDiv">
             <p>I like series and movies, they just take you to another place for a while.
             </p>
@@ -68,6 +68,9 @@ h5 {
 @media all and (min-width: 1px) and (min-height:1px) {
 .hobbyDiv {
     background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(231, 216, 231), rgb(255, 255, 255));
+}
+.hobbyImg {
+    height: 20vh;
 }
 ul {
     width: 80%;

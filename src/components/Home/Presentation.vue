@@ -1,9 +1,9 @@
 <template>
 <div class="picDiv">
-        <Picture id="thePic" v-on:click="imageClick" alt="noting" src="https://mppersonalsg.blob.core.windows.net/cvfiles/welcome.jpg" />
+        <Picture id="thePic" v-on:click="imageClick" alt="noting" :src="src" />
         
       </div>
-      <ImageModal id="modal" modalname="presModal" alt="modalalt" src="https://mppersonalsg.blob.core.windows.net/cvfiles/welcome.jpg" />
+      <ImageModal id="modal" modalname="presModal" alt="modalalt" :src="src" />
   <div class="presentationDiv">
 
       <h2>presentation</h2>
@@ -35,13 +35,17 @@
 
 <script>
 import Picture from './Picture'
-import ImageModal from '../Shared/sharedAssets/ImageModal'
+import ImageModal from '../Shared/sharedAssets/ImageModal.vue'
 
 export default {
     name: "Presentation",
     props: {
       firstName: String,
       lastName: String,
+      src: {
+        type: String,
+        default: "https://mppersonalsg.blob.core.windows.net/cvfiles/welcome.jpg",
+      }
     },
     components: {
         Picture,
@@ -58,17 +62,21 @@ export default {
     imageClick() {
         var modal = document.getElementById("modal")
         modal.style.display = "block"
-        },
+    },
+    mouseDown(event){
+        if(!event.target.closest('div #modal')) {
+                  document.getElementById('modal').style.display = "none";
+        }
+      }
     },
     created() {
-      window.addEventListener("mousedown",(event)=>{
-              if(!event.target.closest('div #modal')) {
-                  document.getElementById('modal').style.display = "none";
-              }
-          });
     },
     mounted() {
-  }
+      window.addEventListener('mousedown', this.mouseDown);
+    },
+    unmounted() {
+      window.removeEventListener('mousedown', this.mouseDown);
+    }
 }
 </script>
 
