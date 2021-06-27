@@ -1,10 +1,10 @@
 <template>  
         <div id="scrollDiv" class="scrollDiv">
-                <img class="scrollBtn" @click="scrollTo('header')" src="../components/Interests/Hobbies/assets/up_arrow.png" />
-                <img class="scrollBtn" @click="scrollTo('discgolfScrollpoint')" src="../components/Interests/Hobbies/assets/basket.png" />
-                <img class="scrollBtn" @click="scrollTo('gamingScrollpoint')" src="../components/Interests/Hobbies/assets/dice.png" />
-                <img class="scrollBtn" @click="scrollTo('movserScrollpoint')" src="../components/Interests/Hobbies/assets/movie.png" />
-                <img class="scrollBtn" @click="scrollTo('learningScrollpoint')" src="../components/Interests/Hobbies/assets/knowl.png" />
+                <img class="scrollImg" @click="scrollTo('header')" src="../components/Interests/Hobbies/assets/up_arrow.png" />
+                <img class="scrollImg" @click="scrollTo('discgolfScrollpoint')" src="../components/Interests/Hobbies/assets/basket.png" />
+                <img class="scrollImg" @click="scrollTo('gamingScrollpoint')" src="../components/Interests/Hobbies/assets/dice.png" />
+                <img class="scrollImg" @click="scrollTo('movserScrollpoint')" src="../components/Interests/Hobbies/assets/movie.png" />
+                <img class="scrollImg" @click="scrollTo('learningScrollpoint')" src="../components/Interests/Hobbies/assets/knowl.png" />
         </div>
     <div class="mainDiv" id="maindiv" >
         <div class="interestsDiv">
@@ -33,7 +33,7 @@ export default {
 
                 if(window.scrollY > this.st)
                 {
-                    scrollDiv.style.top = '1%';
+                    scrollDiv.style.top = '2%';
                     scrollDiv.style.marginleft = '5%';
                     scrollDiv.style.zIndex = 1;
                     scrollDiv.style.position = 'sticky';
@@ -97,13 +97,13 @@ export default {
     width:100%;
     margin-top: 0%;
 }
-.scrollBtn {
-    width: 60px !important;
-    height: 60px !important;
+.scrollImg {
+    width: 40px !important;
+    height: 40px !important;
     margin:auto;
     margin-top: 4%;
     margin-bottom: 1%;
-    margin-right: 4%;
+    margin-right: 5%;
     padding:0;
     background-color:transparent;
     caret-color: transparent;
@@ -111,18 +111,18 @@ export default {
     outline: none;
     box-shadow: none;
 }
-.scrollBtn:focus {
+.scrollImg:focus {
     background-color: transparent;
     outline: none;
     box-shadow: none;
     user-select: none;
     caret-color: transparent;
 }
-.scrollBtn:hover {
+.scrollImg:hover {
     border: solid;
-    border-color: gold;
+    border-color: rgb(255, 232, 99);
     border-width: 1px;
-    background-color: rgb(255, 254, 203);
+    background-color: rgb(255, 254, 223);
 }
 }
 @media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /*Galaxy fold */
