@@ -101,10 +101,13 @@ export default {
     width: 40px !important;
     height: 40px !important;
     margin:auto;
-    margin-top: 4%;
+    margin-top: 1%;
     margin-bottom: 1%;
     margin-right: 5%;
     padding:0;
+    border:solid;
+    border-width: 1px;
+    border-color: transparent;
     background-color:transparent;
     caret-color: transparent;
     user-select: none;
@@ -125,40 +128,10 @@ export default {
     background-color: rgb(255, 254, 223);
 }
 }
-@media all and (min-width: 280px) and (max-width: 281px) and (min-height:653px) and (max-height:654px) { /*Galaxy fold */
-}
-@media all and (min-width: 320px) and (max-width: 321px) and (min-height:570px) and (max-height:571px) { /*iPhone 5/SE*/
-}
-@media all and (min-width: 414px) and (max-width: 415px) and (min-height:736px) and (max-height:737px) { /*  iPhone 6/7/8 Plus*/
-.interestsDiv {
-    width: 80%;
-    margin-left: 8%;
-}
-}
-@media all and (min-width: 736px) and (max-width: 737px) and (min-height:414px) and (max-height:415px) { /* iPhone 6/7/8 Plus rotated */
-}
-@media all and (min-width: 375px) and (min-height:812px) and (max-height:813px)  { /*iPhone X */
-.interestsDiv {
-    width: 86%;
-    margin-left: 3%;
-}
-} 
-@media all and (min-width: 540px) and (max-width: 541px) and (min-height:720px) and (max-height:721px) { /*Surface Duo*/
-.interestsDiv {
-    width: 80%;
-    margin-left: 8%;
-}
-}
-@media all and (min-width: 768px) and (max-width: 769px) and (min-height: 1024px) and (max-height: 1025px) { /*iPad*/
-.interestsDiv {
-    width: 78%;
-    margin-left: 8%;
-}
-}
-@media all and (min-width: 1024px) and (max-width: 1025px) and (min-height: 1366px) and (max-height: 1367px) { /*iPad Pro*/
-.interestsDiv {
-    width: 76%;
-    margin-left: 8%;
+@media all and (min-width: 800px) and (min-height:1px) {
+.scrollImg {
+    width: 50px !important;
+    height: 50px !important;
 }
 }
 </style>
