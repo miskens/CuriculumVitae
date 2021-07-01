@@ -3,8 +3,8 @@
     <h1 class="title">{{title}}</h1> 
     <h2 class="name">Mikael Puusaari</h2>
     <div class="languageImgWrap">
-        <img class="languageImg" src="./sharedAssets/flag_swedish.jpg">
-        <div class="tempTextDiv">Swedish/English toggler coming soon</div>
+        <img class="languageImg" :src="src" @click="toggleLanguage">
+        <!-- <div class="tempTextDiv">Swedish/English toggler coming soon</div> -->
     </div>
   </div>
   
@@ -18,7 +18,27 @@ export default {
             type: String,
             default: "titleDefault"
         }
+    },
+    data() {
+        return {
+        english: false,
+        src: require("./sharedAssets/flag_swedish.png")
+        }
+    },
+  methods: {
+    toggleLanguage(){
+        console.log(this.english)
+        this.english = !this.english
+        if (this.english == true)
+        {
+            this.src = require("./sharedAssets/flag_english.png")
+        }
+        else
+        {
+            this.src = require("./sharedAssets/flag_swedish.png")
+        }
     }
+  } 
 }
 </script>
 
@@ -30,10 +50,12 @@ export default {
 }
 .languageImg {
     position: absolute;
+    height: 30px;
     left:0%;
     bottom: 0;
+    cursor: pointer;
 }
-.tempTextDiv {
+/* .tempTextDiv {
     position:absolute;
     width:140px;
     margin-left: 18%;
@@ -44,14 +66,22 @@ export default {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
+.languageImgWrap:active .languageImg {
+  opacity: 0.5;
+}
 .languageImgWrap:hover .languageImg {
   opacity: 0.5;
+}
+.languageImgWrap:active .tempTextDiv {
+  opacity: 1;
+  background-color: aliceblue;
+  border:solid;
 }
 .languageImgWrap:hover .tempTextDiv {
   opacity: 1;
   background-color: aliceblue;
   border:solid;
-}
+} */
 
 /* End of Temp Info-Text */
 

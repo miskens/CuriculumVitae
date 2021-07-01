@@ -37,7 +37,6 @@ export default {
                     scrollDiv.style.marginleft = '5%';
                     scrollDiv.style.zIndex = 1;
                     scrollDiv.style.position = 'sticky';
-                    scrollDivHolder.style.display = 'inline';
                     
                 }
                 else if (window.scrollY < this.st)
