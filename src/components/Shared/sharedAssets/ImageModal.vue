@@ -44,7 +44,6 @@ export default {
   margin: auto;
   display: block;
   width: 80%;
-  height: auto;
   max-height: 84%;
   caret-color: transparent;
   border: double;
@@ -69,24 +68,54 @@ export default {
   from {transform:scale(0)} 
   to {transform:scale(1)}
 }
-@media only screen and (min-width: 600px) and (min-height:1px) {
+@media screen and (min-width: 600px) and (min-height:1px) {
   .modalContent {
     width: 65%;
   }
 }
-@media only screen and (max-width: 700px){
+@media screen and (max-width: 700px){
   .modal-content {
     width: 100%;
   }
 }
-@media only screen and (min-width: 800px) and (min-height:1px) {
+@media screen and (min-width: 800px) and (min-height:1px) {
   .modalContent {
-    width: 50%;
+    width: auto;
   }
 }
-@media only screen and (min-width: 1000px) and (min-height:1px) {
+@media screen and (min-width: 1000px) and (min-height:1px) {
+  .modal {
+    height: 70%;
+  }
   .modalContent {
-    max-width: 500px;
+    height: 100%;
+    width: auto;
+  }
+}
+@media (orientation: landscape) and (max-width: 900px) {
+  .modal {
+    max-height: 100%;
+    height:100vh;
+    padding: 1% 3%;
+    max-width: 40vw;
+  }
+  .modalContent {
+    margin-top: 3%;
+    height: 98vh;
+    width: auto;
+  }
+}
+@media (orientation: landscape) and (min-width: 901px) {
+  .modal {
+    max-height: 100%;
+    height:100vh;
+    padding: 1% 3%;
+    max-width: 50vw;
+  }
+  .modalContent {
+    margin-top: 3%;
+    height: 98vh;
+    width: auto;
   }
 }
 </style>

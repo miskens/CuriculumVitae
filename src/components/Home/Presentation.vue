@@ -90,7 +90,8 @@ export default {
     caret-color: transparent;
 }
 .picDiv {
-    height:auto;
+    /* height:auto; */
+    max-height: 100vh;
     width: 100%;
     padding-top: 8vh;
     float: left;

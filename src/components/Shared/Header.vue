@@ -21,22 +21,23 @@ export default {
     },
     data() {
         return {
-        english: false,
+        language: "english",
         src: require("./sharedAssets/flag_swedish.png")
         }
     },
   methods: {
     toggleLanguage(){
-        console.log(this.english)
-        this.english = !this.english
-        if (this.english == true)
+        if (this.language == "swedish")
         {
-            this.src = require("./sharedAssets/flag_english.png")
+            this.language = "english"
+            this.src = require("./sharedAssets/flag_swedish.png")
         }
         else
         {
-            this.src = require("./sharedAssets/flag_swedish.png")
+            this.language = "swedish"
+            this.src = require("./sharedAssets/flag_english.png")
         }
+        console.log(this.language)
     }
   } 
 }
