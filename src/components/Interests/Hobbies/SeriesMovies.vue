@@ -2,10 +2,7 @@
     <div id="movserScrollpoint" class="hobbyDiv">
         <img class="hobbyImg" src="./assets/movie.png" alt="">
         <div class="hobbyTextDiv">
-            <p>I like series and movies, they just take you to another place for a while.
-            </p>
-            <p>
-                I especially enjoy movies that make you think and leaves you with a feeling of wonder afterwards.
+            <p>I like series and movies, they just take you to another place for a while and I especially enjoy movies that make you think and leaves you with a feeling of wonder afterwards.
             </p>
             <p>
                 Or just something that gives you a good laugh.
@@ -17,7 +14,7 @@
                     <ul>
                         <li><p>K-Pax</p></li>
                         <li><p>The man from earth</p></li>
-                        <li><p>Dumb and dumber</p></li>
+                        <li><p>Deadpool</p></li>
                         <li><p>Good will hunting</p></li>
                         <li><p>Lord of the rings</p></li>
                     </ul>

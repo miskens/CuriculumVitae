@@ -15,9 +15,9 @@
             </p>
             <p>
                 In 2006-2010 I was the leader of a very successful European guild of 80+ players in World of warcraft. We were players
-                from about 15 different countries.
-                Nowadays it is just a leisure hobby that I do when I find the time.
+                from about 10 different countries in Europe.
             </p>
+            <p>Nowadays gaming is just a leisure hobby that I do when I find the time.</p>
             <p>
                 I also play roleplaying tabletop games with friends around the world each week. 
             </p>

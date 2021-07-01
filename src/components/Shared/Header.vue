@@ -1,7 +1,11 @@
 <template>
 <div class="titleDiv">
-        <h1 class="title">{{title}}</h1> 
-        <h2 class="name">Mikael Puusaari</h2>
+    <h1 class="title">{{title}}</h1> 
+    <h2 class="name">Mikael Puusaari</h2>
+    <div class="languageImgWrap">
+        <img class="languageImg" src="./sharedAssets/flag_swedish.jpg">
+        <div class="tempTextDiv">Swedish/English toggler coming soon</div>
+    </div>
   </div>
   
 </template>
@@ -19,6 +23,38 @@ export default {
 </script>
 
 <style scoped>
+/* Temp Info-Text */
+.languageImgWrap {
+    position: relative;
+    margin-left: 2%;
+}
+.languageImg {
+    position: absolute;
+    left:0%;
+    bottom: 0;
+}
+.tempTextDiv {
+    position:absolute;
+    width:140px;
+    margin-left: 18%;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: .8rem;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.languageImgWrap:hover .languageImg {
+  opacity: 0.5;
+}
+.languageImgWrap:hover .tempTextDiv {
+  opacity: 1;
+  background-color: aliceblue;
+  border:solid;
+}
+
+/* End of Temp Info-Text */
+
 @font-face {
     font-family: 'cassandra';
     src: url('./sharedAssets/fonts/cassandra-webfont.woff2') format('woff2'),
@@ -43,7 +79,6 @@ export default {
     margin-top: 1vh;
     margin-bottom:0vh;
 }
-
 .title {
     font-weight: 500;
     display:inline-block;
@@ -110,9 +145,12 @@ img {
 .name {
     font-size: 1.1rem;
 }
+.languageImgWrap {
+    margin-bottom: 2%;
+}
 }
 @media all and (min-width: 500px) and (min-height:1px) {
-    .titleDiv {
+.titleDiv {
     padding-top: 1%;
     padding-bottom: 0%;
 }
@@ -121,6 +159,9 @@ img {
 }
 .name {
     font-size: 1.2rem;
+}
+.languageImg {
+    bottom: 5%;
 }
 }
 </style>

@@ -66,8 +66,8 @@ export default {
 <style scoped>
 @media all and (min-width: 1px) and (min-height:1px) {
 .interestsDiv {
-    width: 80%;
-    margin-left: 2%;
+    width: 90%;
+    margin-left: 3%;
     float:left;
 }
 .rlink {
@@ -126,6 +126,11 @@ export default {
     border-color: rgb(255, 232, 99);
     border-width: 1px;
     background-color: rgb(255, 254, 223);
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    transition: all .6s ease;
 }
 }
 @media all and (min-width: 800px) and (min-height:1px) {

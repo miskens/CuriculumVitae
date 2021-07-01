@@ -1,6 +1,6 @@
 <template>
     <div id="learningScrollpoint" class="hobbyDiv">
-        <img class="hobbyImg" src="./assets/knowl.png" alt="">
+        <img class="hobbyImg" title="Swedish/english toggler coming soon.." src="./assets/knowl.png" alt="">
         <div class="hobbyTextDiv">
             <p>I love learning about various things. It is a something that will never seize to offer you something new.
             </p>
@@ -13,13 +13,12 @@
                     <tbody>
                         <tr>
                             <td>Science</td>
-                            <td>Everything that we know about how our world functions? I can´t imagine how it can´t be interesting :)</td>
+                            <td>Everything about us trying to figure out how our world functions. Just incredibly interesting :)</td>
                         </tr>
                         <tr>
                             <td>Languages</td>
-                            <td>Languages are guttural noise changed through our throats and fine tuned with our tongues
-                                to create specific sounds that we use to understand each other. <br/><br/>Every language has evolved with time,
-                                it is quite amazing.
+                            <td>Guttural noise changed through our throats and fine tuned with our tongues to create specific sounds that
+                                we use to understand each other. <br/><br/>Every language has evolved differently with time, it is quite amazing.
                             </td>
                         </tr>
                         <tr>
@@ -35,9 +34,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>The IT world</td>
-                            <td>How amazing is it that only 100 years ago the only way we could imagine contacting friends in other countries was
-                                to send a piece of paper with a person and wait a couple of months for a reply?
+                            <td>Technology</td>
+                            <td>100 years ago contacting friends in other countries meant sending a piece of paper with a person
+                                and wait a couple of months for a reply. Things changed so much in such a short time.
                             </td>
                         </tr>
                     </tbody>

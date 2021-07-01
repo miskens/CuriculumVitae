@@ -2,12 +2,13 @@
     <div id="discgolfScrollpoint" class="hobbyDiv">
         <img class="hobbyImg" src="./assets/basket.png" alt="">
         <div class="hobbyTextDiv>">
-            <p>Meet your friends, get a long nice walk in the nature, especially in the bushes, searching for your discs,
+            <p>Discgolf - Meet your friends, get a long nice walk in the nature, especially in the bushes, searching for your discs,
             practicing a fun skill and getting to throw stuff in high speed.
             </p>
             <p>
             What is there not to like?
             </p>
+            <p>It is hard to describe how much fun it is to share an hour out in the fields with friends, throwing hard plastic bits.</p>
         </div>
     </div>
 </template>
