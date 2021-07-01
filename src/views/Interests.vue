@@ -112,6 +112,7 @@ export default {
     user-select: none;
     outline: none;
     box-shadow: none;
+    cursor: pointer;
 }
 .scrollImg:focus {
     background-color: transparent;
