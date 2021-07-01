@@ -116,8 +116,8 @@ export default {
     width:60%;
     font-family: "cassandra";
     font-size: 1.2rem;
-    border-bottom: double;
-    border-width: .5rem;
+    /* border-bottom: double;
+    border-width: .5rem; */
     animation: skewTitle 3s infinite;
     transform: skewTitle(5deg);
     animation-direction: alternate;
