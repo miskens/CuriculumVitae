@@ -3,8 +3,8 @@
     <h1 class="title">{{title}}</h1> 
     <h2 class="name">Mikael Puusaari</h2>
     <div class="languageImgWrap">
+      <div class="tempTextDiv">Swedish/English toggler coming soon</div>
         <img class="languageImg" :src="src" @click="toggleLanguage">
-        <!-- <div class="tempTextDiv">Swedish/English toggler coming soon</div> -->
     </div>
   </div>
   
@@ -43,7 +43,6 @@ export default {
 </script>
 
 <style scoped>
-/* Temp Info-Text */
 .languageImgWrap {
     position: relative;
     margin-left: 2%;
@@ -53,14 +52,17 @@ export default {
     height: 30px;
     left:0%;
     bottom: 0;
+    opacity: 0.8;
     cursor: pointer;
 }
-/* .tempTextDiv {
+/* Temp Info-Text */
+.tempTextDiv {
     position:absolute;
+    z-index: 1;
     width:140px;
     margin-left: 18%;
     transition: .5s ease;
-    opacity: 0;
+    visibility: hidden;
     font-size: .8rem;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -73,15 +75,15 @@ export default {
   opacity: 0.5;
 }
 .languageImgWrap:active .tempTextDiv {
-  opacity: 1;
-  background-color: aliceblue;
+  visibility: visible;
+  background-color: rgb(241, 248, 255, 1);
   border:solid;
 }
 .languageImgWrap:hover .tempTextDiv {
-  opacity: 1;
+  visibility: visible;
   background-color: aliceblue;
   border:solid;
-} */
+}
 
 /* End of Temp Info-Text */
 
